@@ -8,7 +8,6 @@
 }
 .header a {
   color: #ffffff;
-  text-decoration: none;
 }
 .header .header__logo-link {
   display: block;
@@ -30,6 +29,7 @@
   display: inline-block;
   font-size: 12px;
   padding: 0 15px;
+  transform: scaleX(0.87);
 }
 .header .header__phone {
   padding-top: 18px;
@@ -140,6 +140,67 @@
   margin-bottom: 10px;
   position: relative;
   left: -147px;
+}
+.content .search-for-services {
+  padding: 73px 0 65px 0;
+  background: #292c3a;
+  text-align: center;
+}
+.content .search-for-services .search-for-services__heading {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: #ffffff;
+  border-bottom: 2px solid #b1e06f;
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+}
+.content .search-for-services .search-for-services__search-form .wrap {
+  display: inline-block;
+  width: 500px;
+  height: 43px;
+  background: #424554;
+  padding: 6px 19px;
+}
+.content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-text {
+  width: 438px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 21px;
+  color: #9b9eac;
+}
+.content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-text::-webkit-input-placeholder {
+  color: #9b9eac;
+}
+.content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-text::-moz-placeholder {
+  color: #9b9eac;
+}
+.content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-text:-moz-placeholder {
+  color: #9b9eac;
+}
+.content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-text:-ms-input-placeholder {
+  color: #9b9eac;
+}
+.content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-button {
+  width: 20px;
+  background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  color: #9b9eac;
+}
+.content .services {
+  padding: 115px 0 118px 0;
+}
+.content .services .services__heading {
+  text-transform: uppercase;
+  color: #282a33;
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 2px solid #b1e06f;
+  padding-bottom: 29px;
+  margin-bottom: 54px;
 }
 .sprite {
   background-image: url(../img/sprites/spritesheet.png);

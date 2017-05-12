@@ -1,9 +1,19 @@
 @import "reset.css";
 
 @white: #ffffff;
+@dark-white: #fafafa;
 @light-green: #b1e06f;
-@light-grey: #fafafa;
+@super-light-grey: #bfbfc2;
+@light-grey: #9b9eac;
+@medium-grey: #84868b;
+@dark-grey: #7c7d83;
+@from-grey-to-blue: #50535b;
+@light-blue: #424554;
+@medium-blue: #292c3a;
 @dark-blue: #282a33;
+
+
+
 
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
@@ -14,7 +24,7 @@
 
   a {
     color: @white;
-    text-decoration: none;
+    //text-decoration: none;
   }
 
   .header__logo-link {
@@ -43,6 +53,7 @@
       //display: table-cell;
       font-size: 12px;
       padding: 0 15px;
+      transform: scaleX(0.87);
 
       .menu__list-item-link {
         //display: block;
@@ -106,7 +117,7 @@
   .about-clinic {
     padding-top: 117px;
     padding-bottom: 117px;
-    background: @light-grey;
+    background: @dark-white;
 
     .about-clinic__heading {
       text-transform: uppercase;
@@ -181,6 +192,72 @@
       left: -147px;
     }
   }
+
+  .search-for-services {
+    padding: 73px 0 65px 0;
+    background: @medium-blue;
+    text-align: center;
+
+    .search-for-services__heading {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 19px;
+      color: @white;
+      border-bottom: 2px solid @light-green;
+      padding-bottom: 24px;
+      margin-bottom: 25px;
+    }
+
+    .search-for-services__search-form {
+      .wrap {
+        display: inline-block;
+        width: 500px;
+        height: 43px;
+        background: @light-blue;
+        padding: 6px 19px;
+      }
+
+      .search-for-services__search-form-item-text {
+        width: 438px;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 21px;
+        color: @light-grey;
+
+        &::-webkit-input-placeholder {
+          color: @light-grey;
+        }
+        &::-moz-placeholder {
+          color: @light-grey;
+        }
+        &:-moz-placeholder {
+          color: @light-grey;
+        }
+        &:-ms-input-placeholder {
+          color: @light-grey;
+        }
+      }
+
+      .search-for-services__search-form-item-button {
+        width: 20px;
+        background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
+        border: none;
+        outline: none;
+        font-size: 21px;
+        color: @light-grey;
+      }
+    }
+  }
+
+  .services {
+    padding: 115px 0 118px 0;
+
+    .services__heading {
+      .about-clinic.about-clinic__heading;
+    }
+  }
+
 }
 
 
