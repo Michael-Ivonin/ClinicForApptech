@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ЦКБ</title>
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
@@ -14,9 +14,7 @@
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-3">
           <a href="#" class="header__logo-link">
-            <!-- <i class="header__logo-link-icon"></i>
-            <p class="header__logo-link-name">ЦКБ</p>
-            <span class="header__logo-link-slogan">Новая клиника</span> -->
+            <i class="sprite sprite-logo"></i>
           </a> <!-- /header__logo-link -->
         </div>
         <div class="col-lg-6 col-md-5 col-sm-5">
@@ -158,7 +156,6 @@
               Будьте здоровы!<br>
               Искренне Ваш, коллектив ЦКБ.
             </p>
-
           </div>
         </div>
       </div>
@@ -170,7 +167,10 @@
           <form class="search-for-services__search-form" action="">
             <div class="wrap">
               <input class="search-for-services__search-form-item-text" type="search" placeholder="Гастроэнтерология">
-              <input class="search-for-services__search-form-item-button" type="submit" value="">
+              <button class="search-for-services__search-form-item-button" type="submit">
+                <i class="sprite sprite-loupe"></i>
+              </button>
+              <!-- <input class="search-for-services__search-form-item-button" type="submit" value=""> -->
             </div>
           </form>
         </div>
@@ -180,26 +180,152 @@
       <div class="container">
         <h1 class="services__heading">Услуги</h1>
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <div class="services__group">
-              <p class="services__group-heading">В</p>
+              <h1 class="services__group-heading">В</h1>
               <a class="services__group-item" href="#">Вакцинация</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Г</h1>
+              <a class="services__group-item" href="#">Гастроэнтерология</a>
+              <a class="services__group-item" href="#">Генетические исследование</a>
+              <a class="services__group-item" href="#">Гинекология</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Д</h1>
+              <a class="services__group-item" href="#">Дерматология</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">И</h1>
+              <a class="services__group-item" href="#">Иглорефлексотерапия</a>
+              <a class="services__group-item" href="#">Инфекционные заболевания</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">К</h1>
+              <a class="services__group-item" href="#">Кардиология</a>
+              <a class="services__group-item" href="#">Комплексные программы</a>
+              <a class="services__group-item" href="#">Косметология</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Л</h1>
+              <a class="services__group-item" href="#">Лабораторные исследования</a>
+              <a class="services__group-item" href="#">Лучевая диагностика</a>
+            </div> <!-- /services__group -->
+          </div>
+          <div class="col-lg-4 padding-left">
+            <div class="services__group">
+              <h1 class="services__group-heading">М</h1>
+              <a class="services__group-item" href="#">Маммология</a>
+              <a class="services__group-item" href="#">Мануальная терапия</a>
+              <a class="services__group-item" href="#">Массаж</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Н</h1>
+              <a class="services__group-item" href="#">Наркология</a>
+              <a class="services__group-item" href="#">Неврология</a>
+              <a class="services__group-item" href="#">Нейрофизиология и сомнология</a>
+              <a class="services__group-item" href="#">Нейрохирургия</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">О</h1>
+              <a class="services__group-item" href="#">Остеопатия</a>
+              <a class="services__group-item" href="#">Оториноларингология</a>
+              <a class="services__group-item" href="#">Офтальмология</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">П</h1>
+              <a class="services__group-item" href="#">Проктология</a>
+              <a class="services__group-item" href="#">Психиатрия</a>
+              <a class="services__group-item" href="#">Профпатология</a>
+              <a class="services__group-item" href="#">Психотерапия</a>
+              <a class="services__group-item" href="#">Пульмонология</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Р</h1>
+              <a class="services__group-item" href="#">Ревматология</a>
+            </div> <!-- /services__group -->
+          </div>
+          <div class="col-lg-4 padding-left">
+            <div class="services__group">
+              <h1 class="services__group-heading">С</h1>
+              <a class="services__group-item" href="#">Сосудистая хирургия</a>
+              <a class="services__group-item" href="#">Стационар дневной</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Т</h1>
+              <a class="services__group-item" href="#">Терапия</a>
+              <a class="services__group-item" href="#">Травматология и ортопедия</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">У</h1>
+              <a class="services__group-item" href="#">Ультразвуковая диагностика</a>
+              <a class="services__group-item" href="#">Урология</a>
+              <a class="services__group-item" href="#">Услуги на выезде</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Ф</h1>
+              <a class="services__group-item" href="#">Функциональная диагностика</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Х</h1>
+              <a class="services__group-item" href="#">Хирургия</a>
+            </div> <!-- /services__group -->
+            <div class="services__group">
+              <h1 class="services__group-heading">Э</h1>
+              <a class="services__group-item" href="#">Экспертиза. Справки</a>
+              <a class="services__group-item" href="#">Эндокринология</a>
+              <a class="services__group-item" href="#">Эндоскопическая диагностика</a>
             </div> <!-- /services__group -->
           </div>
         </div>
       </div>
     </section> <!-- /services -->
+    <div class="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <button class="feedback__review" type="button">Оставить отзыв</button>
+          </div>
+          <div class="col-lg-4">
+            <div class="feedback__logo">
+              <i class="sprite sprite-feedback-logo center-block"></i>
+              <p class="feedback__logo-text">Центральная клиническая больница</p>
+              <hr class="feedback__logo-line">
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <button class="feedback__question" type="button">Задать вопрос врачу</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /feedback -->
+    <section class="experts">
+      <div class="container">
+        <h1 class="experts_heading">Специалисты</h1>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><i class="sprite sprite-Pashkina"></i></div>
+            <div class="item"><i class="sprite sprite-Bogdan"></i></div>
+            <div class="item"><i class="sprite sprite-Vakulenchik"></i></div>
+            <div class="item"><i class="sprite sprite-Zolin"></i></div>
+            <div class="item"><i class="sprite sprite-Davalchenko"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main> <!-- /content -->
 
 
 
 
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jQuery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/owlCarousel/owl.carousel.min.js"></script>
   <script>
-    /*$(document).ready(function() {
+    $(document).ready(function() {
       $('.carousel').carousel();
-    });*/
+      $(".owl-carousel").owlCarousel();
+    });
   </script>
 </body>
 </html>

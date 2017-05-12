@@ -1,4 +1,6 @@
 @import "reset.css";
+@import "../vendor/bootstrap/css/bootstrap.min.css";
+@import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 
 @white: #ffffff;
 @dark-white: #fafafa;
@@ -11,8 +13,6 @@
 @light-blue: #424554;
 @medium-blue: #292c3a;
 @dark-blue: #282a33;
-
-
 
 
 .header {
@@ -28,14 +28,10 @@
   }
 
   .header__logo-link {
-    display: block;
-    width: 133px;
-    height: 50px;
-    background: url(../img/sprites/logo.png) no-repeat;
-
-    /*.header__logo-link-name {
-      float: left;
-    }*/
+    display: inline-block;
+    //width: 133px;
+    //height: 50px;
+    //background: url(../img/sprites/logo.png) no-repeat;
   }
 
   .menu {
@@ -214,11 +210,11 @@
         width: 500px;
         height: 43px;
         background: @light-blue;
-        padding: 6px 19px;
+        padding: 8px 19px;
       }
 
       .search-for-services__search-form-item-text {
-        width: 438px;
+        width: 429px;
         background: none;
         outline: none;
         border: none;
@@ -240,12 +236,16 @@
       }
 
       .search-for-services__search-form-item-button {
-        width: 20px;
-        background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
+        //width: 20px;
+        //background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
         border: none;
         outline: none;
-        font-size: 21px;
-        color: @light-grey;
+        background: none;
+        position: relative;
+        top: 2px;
+        padding: 0;
+        //font-size: 21px;
+        //color: @light-grey;
       }
     }
   }
@@ -255,6 +255,92 @@
 
     .services__heading {
       .about-clinic.about-clinic__heading;
+    }
+
+    .padding-left {
+      padding-left: 100px;
+    }
+
+    .services__group {
+
+      .services__group-heading {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 39px;
+        font-weight: 700;
+        color: @dark-grey;
+        padding: 3px 0;
+        border: 2px solid @light-green;
+        margin-bottom: 29px;
+      }
+
+      .services__group-item {
+        font-size: 21px;
+        font-weight: 700;
+        color: @dark-grey;
+        display: block;
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  .feedback {
+    padding: 88px 0 104px 0;
+    background: @medium-blue;
+    text-align: center;
+
+    .feedback__review {
+      width: 287px;
+      height: 58px;
+      background: @light-green;
+      border: none;
+      outline: none;
+      color: @dark-blue;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 36px;
+    }
+
+    .feedback__logo {
+      .feedback__logo-text {
+        color: @dark-grey;
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 11px;
+      }
+
+      .feedback__logo-line {
+        border-top: 2px solid @dark-grey;
+        width: 36%;
+        margin: 0 auto;
+        //margin-bottom: 10px;
+        //position: relative;
+        //left: -147px;
+      }
+    }
+
+    .feedback__question {
+      .feedback__review;
+    }
+  }
+
+  .experts {
+    padding: 147px 0 85px 0;
+    background: @light-green;
+    text-align: center;
+
+    .experts_heading {
+      font-size: 36px;
+      font-weight: 700;
+      color: @white;
+      text-transform: uppercase;
+      border-bottom: 2px solid @white;
+      display: inline-block;
+      padding-bottom: 22px;
     }
   }
 
@@ -277,36 +363,64 @@
   background-repeat: no-repeat;
   display: block;
 
+  &.sprite-Bogdan {
+    .stitches-sprite(-5px, -5px, 204px, 205px);
+  }
+
+  &.sprite-Davalchenko {
+    .stitches-sprite(-219px, -5px, 205px, 205px);
+  }
+
+  &.sprite-Pashkina {
+    .stitches-sprite(-5px, -220px, 205px, 205px);
+  }
+
+  &.sprite-Vakulenchik {
+    .stitches-sprite(-220px, -220px, 204px, 205px);
+  }
+
+  &.sprite-Zolin {
+    .stitches-sprite(-434px, -5px, 204px, 205px);
+  }
+
   &.sprite-doctor {
-    .stitches-sprite(-5px, -5px, 151px, 151px);
+    .stitches-sprite(-648px, -5px, 151px, 151px);
+  }
+
+  &.sprite-feedback-logo {
+    .stitches-sprite(-648px, -166px, 33px, 57px);
   }
 
   &.sprite-left {
-    .stitches-sprite(-166px, -5px, 18px, 36px);
+    .stitches-sprite(-691px, -166px, 18px, 36px);
   }
 
   &.sprite-list {
-    .stitches-sprite(-194px, -5px, 151px, 150px);
+    .stitches-sprite(-434px, -233px, 151px, 150px);
   }
 
   &.sprite-logo {
-    .stitches-sprite(-166px, -165px, 133px, 50px);
+    .stitches-sprite(-595px, -233px, 133px, 50px);
+  }
+
+  &.sprite-loupe {
+    .stitches-sprite(-719px, -166px, 16px, 17px);
   }
 
   &.sprite-network {
-    .stitches-sprite(-355px, -5px, 150px, 150px);
+    .stitches-sprite(-595px, -293px, 150px, 150px);
   }
 
   &.sprite-placeholder {
-    .stitches-sprite(-309px, -165px, 151px, 150px);
+    .stitches-sprite(-5px, -453px, 151px, 150px);
   }
 
   &.sprite-right {
-    .stitches-sprite(-470px, -165px, 18px, 36px);
+    .stitches-sprite(-745px, -166px, 18px, 36px);
   }
 
   &.sprite-time {
-    .stitches-sprite(-5px, -325px, 151px, 150px);
+    .stitches-sprite(-166px, -453px, 151px, 150px);
   }
 }
 // /Sprites

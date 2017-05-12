@@ -1,4 +1,6 @@
 @import "reset.css";
+@import "../vendor/bootstrap/css/bootstrap.min.css";
+@import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
   background-size: cover;
@@ -10,13 +12,7 @@
   color: #ffffff;
 }
 .header .header__logo-link {
-  display: block;
-  width: 133px;
-  height: 50px;
-  background: url(../img/sprites/logo.png) no-repeat;
-  /*.header__logo-link-name {
-      float: left;
-    }*/
+  display: inline-block;
 }
 .header .menu {
   padding-top: 18px;
@@ -160,10 +156,10 @@
   width: 500px;
   height: 43px;
   background: #424554;
-  padding: 6px 19px;
+  padding: 8px 19px;
 }
 .content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-text {
-  width: 438px;
+  width: 429px;
   background: none;
   outline: none;
   border: none;
@@ -183,12 +179,12 @@
   color: #9b9eac;
 }
 .content .search-for-services .search-for-services__search-form .search-for-services__search-form-item-button {
-  width: 20px;
-  background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
   border: none;
   outline: none;
-  font-size: 21px;
-  color: #9b9eac;
+  background: none;
+  position: relative;
+  top: 2px;
+  padding: 0;
 }
 .content .services {
   padding: 115px 0 118px 0;
@@ -202,48 +198,160 @@
   padding-bottom: 29px;
   margin-bottom: 54px;
 }
+.content .services .padding-left {
+  padding-left: 100px;
+}
+.content .services .services__group .services__group-heading {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 700;
+  color: #7c7d83;
+  padding: 3px 0;
+  border: 2px solid #b1e06f;
+  margin-bottom: 29px;
+}
+.content .services .services__group .services__group-item {
+  font-size: 21px;
+  font-weight: 700;
+  color: #7c7d83;
+  display: block;
+  margin-bottom: 26px;
+}
+.content .feedback {
+  padding: 88px 0 104px 0;
+  background: #292c3a;
+  text-align: center;
+}
+.content .feedback .feedback__review {
+  width: 287px;
+  height: 58px;
+  background: #b1e06f;
+  border: none;
+  outline: none;
+  color: #282a33;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+.content .feedback .feedback__logo .feedback__logo-text {
+  color: #7c7d83;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 11px;
+}
+.content .feedback .feedback__logo .feedback__logo-line {
+  border-top: 2px solid #7c7d83;
+  width: 36%;
+  margin: 0 auto;
+}
+.content .feedback .feedback__question {
+  width: 287px;
+  height: 58px;
+  background: #b1e06f;
+  border: none;
+  outline: none;
+  color: #282a33;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+.content .experts {
+  padding: 147px 0 85px 0;
+  background: #b1e06f;
+  text-align: center;
+}
+.content .experts .experts_heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+  display: inline-block;
+  padding-bottom: 22px;
+}
 .sprite {
   background-image: url(../img/sprites/spritesheet.png);
   background-repeat: no-repeat;
   display: block;
 }
-.sprite.sprite-doctor {
+.sprite.sprite-Bogdan {
   background-position: -5px -5px;
+  width: 204px;
+  height: 205px;
+}
+.sprite.sprite-Davalchenko {
+  background-position: -219px -5px;
+  width: 205px;
+  height: 205px;
+}
+.sprite.sprite-Pashkina {
+  background-position: -5px -220px;
+  width: 205px;
+  height: 205px;
+}
+.sprite.sprite-Vakulenchik {
+  background-position: -220px -220px;
+  width: 204px;
+  height: 205px;
+}
+.sprite.sprite-Zolin {
+  background-position: -434px -5px;
+  width: 204px;
+  height: 205px;
+}
+.sprite.sprite-doctor {
+  background-position: -648px -5px;
   width: 151px;
   height: 151px;
 }
+.sprite.sprite-feedback-logo {
+  background-position: -648px -166px;
+  width: 33px;
+  height: 57px;
+}
 .sprite.sprite-left {
-  background-position: -166px -5px;
+  background-position: -691px -166px;
   width: 18px;
   height: 36px;
 }
 .sprite.sprite-list {
-  background-position: -194px -5px;
+  background-position: -434px -233px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-logo {
-  background-position: -166px -165px;
+  background-position: -595px -233px;
   width: 133px;
   height: 50px;
 }
+.sprite.sprite-loupe {
+  background-position: -719px -166px;
+  width: 16px;
+  height: 17px;
+}
 .sprite.sprite-network {
-  background-position: -355px -5px;
+  background-position: -595px -293px;
   width: 150px;
   height: 150px;
 }
 .sprite.sprite-placeholder {
-  background-position: -309px -165px;
+  background-position: -5px -453px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-right {
-  background-position: -470px -165px;
+  background-position: -745px -166px;
   width: 18px;
   height: 36px;
 }
 .sprite.sprite-time {
-  background-position: -5px -325px;
+  background-position: -166px -453px;
   width: 151px;
   height: 150px;
 }
