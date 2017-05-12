@@ -1,0 +1,188 @@
+@import "reset.css";
+.header {
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 64px;
+}
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header .header__logo-link {
+  display: block;
+  width: 133px;
+  height: 50px;
+  background: url(../img/sprites/logo.png) no-repeat;
+  /*.header__logo-link-name {
+      float: left;
+    }*/
+}
+.header .menu {
+  padding-top: 18px;
+}
+.header .menu .menu__list {
+  font-size: 0;
+  text-align: center;
+}
+.header .menu .menu__list-item {
+  display: inline-block;
+  font-size: 12px;
+  padding: 0 15px;
+}
+.header .header__phone {
+  padding-top: 18px;
+}
+.header .header__button {
+  width: 160px;
+  height: 35px;
+  margin-top: 7px;
+  background: none;
+  font-size: 11px;
+  font-weight: 700;
+  outline: 2px solid #b1e06f;
+  border: none;
+}
+.header .header__presentation {
+  padding-top: 246px;
+  padding-bottom: 263px;
+}
+.header .header__presentation .header__presentation-heading {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header .header__presentation .header__presentation-text {
+  font-size: 21px;
+  color: #b1e06f;
+}
+.content .benefits {
+  background: #b1e06f;
+  padding-top: 139px;
+  padding-bottom: 126px;
+}
+.content .benefits .benefits__item {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.content .benefits .benefits__item .benefits__item-text {
+  margin-top: 29px;
+  font-size: 17px;
+  text-align: center;
+}
+.content .about-clinic {
+  padding-top: 117px;
+  padding-bottom: 117px;
+  background: #fafafa;
+}
+.content .about-clinic .about-clinic__heading {
+  text-transform: uppercase;
+  color: #282a33;
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 2px solid #b1e06f;
+  padding-bottom: 29px;
+  margin-bottom: 54px;
+}
+.content .about-clinic .about-clinic__introduction-text {
+  font-size: 28px;
+  color: #282a33;
+  margin-bottom: 42px;
+}
+.content .about-clinic .carousel-control {
+  top: 314px;
+  bottom: 19px;
+  background-image: none;
+  width: 3.5%;
+}
+.content .about-clinic .left {
+  margin-left: 21px;
+}
+.content .about-clinic .right {
+  margin-right: 22px;
+}
+.content .about-clinic .about-clinic__reason-text {
+  font-size: 27px;
+  color: #282a33;
+  margin-bottom: 43px;
+}
+.content .about-clinic .about-clinic__team-text {
+  font-size: 21px;
+  color: #282a33;
+  margin-bottom: 21px;
+}
+.content .about-clinic .about-clinic__equipment-text {
+  font-size: 21px;
+  color: #282a33;
+  margin-bottom: 21px;
+}
+.content .about-clinic .about-clinic__space-text {
+  font-size: 21px;
+  color: #282a33;
+  margin-bottom: 21px;
+}
+.content .about-clinic .about-clinic__time-text {
+  font-size: 21px;
+  color: #282a33;
+  margin-bottom: 21px;
+}
+.content .about-clinic .about-clinic__wish-text {
+  font-size: 21px;
+  color: #282a33;
+  margin-bottom: 21px;
+  margin: 35px 0 0 0;
+  margin-left: 232px;
+}
+.content .about-clinic .about-clinic__green-line {
+  border-top: 2px solid #b1e06f;
+  width: 47%;
+  margin-bottom: 10px;
+  position: relative;
+  left: -147px;
+}
+.sprite {
+  background-image: url(../img/sprites/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite.sprite-doctor {
+  background-position: -5px -5px;
+  width: 151px;
+  height: 151px;
+}
+.sprite.sprite-left {
+  background-position: -166px -5px;
+  width: 18px;
+  height: 36px;
+}
+.sprite.sprite-list {
+  background-position: -194px -5px;
+  width: 151px;
+  height: 150px;
+}
+.sprite.sprite-logo {
+  background-position: -166px -165px;
+  width: 133px;
+  height: 50px;
+}
+.sprite.sprite-network {
+  background-position: -355px -5px;
+  width: 150px;
+  height: 150px;
+}
+.sprite.sprite-placeholder {
+  background-position: -309px -165px;
+  width: 151px;
+  height: 150px;
+}
+.sprite.sprite-right {
+  background-position: -470px -165px;
+  width: 18px;
+  height: 36px;
+}
+.sprite.sprite-time {
+  background-position: -5px -325px;
+  width: 151px;
+  height: 150px;
+}
