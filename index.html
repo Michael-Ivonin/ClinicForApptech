@@ -120,10 +120,10 @@
                 <div class="item"><img src="img/our-team-2.jpg" alt="Our-team-2"></div>
               </div>
               <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <i class="sprite sprite-left"></i>
+                <i class="sprite sprite-about-clinic-left"></i>
               </a>
               <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <i class="sprite sprite-right"></i>
+                <i class="sprite sprite-about-clinic-right"></i>
               </a>
             </div> <!-- /carousel -->
           </div>
@@ -135,16 +135,16 @@
             <p class="about-clinic__team-text">
               Собрали команду профессионалов и экспертов в одном месте.
             </p>
-            <hr class="about-clinic__green-line">
+            <hr class="about-clinic__line">
             <p class="about-clinic__equipment-text">
               Установили в клинику новое современное медицинское оборудование.
             </p>
-            <hr class="about-clinic__green-line">
+            <hr class="about-clinic__line">
             <p class="about-clinic__space-text">
               Организовали пространство так, чтобы можно было<br>
               без очередей получить все виды медицинских услуг.
             </p>
-            <hr class="about-clinic__green-line">
+            <hr class="about-clinic__line">
             <p class="about-clinic__time-text">
               Построили рабочий график таким образом, чтобы<br>
               Вы могли посетить наиболее востребованных<br>
@@ -302,17 +302,67 @@
     <section class="experts">
       <div class="container">
         <h1 class="experts_heading">Специалисты</h1>
-        <div class="row">
-          <div class="owl-carousel owl-theme">
-            <div class="item"><i class="sprite sprite-Pashkina"></i></div>
-            <div class="item"><i class="sprite sprite-Bogdan"></i></div>
-            <div class="item"><i class="sprite sprite-Vakulenchik"></i></div>
-            <div class="item"><i class="sprite sprite-Zolin"></i></div>
-            <div class="item"><i class="sprite sprite-Davalchenko"></i></div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <i class="sprite sprite-Pashkina"></i>
+            <p class="item__name">Пашкина Екатерина Мехайловна</p>
+            <p class="item__post">Главный врач - кардиолог</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Bogdan"></i>
+            <p class="item__name">Богдан Дарья Сергеевна</p>
+            <p class="item__post">Врач - гастроэнтеролог</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Vakulenchik"></i>
+            <p class="item__name">Вакуленчик Николай Сергеевич</p>
+            <p class="item__post">Врач уролог - андролог</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Zolin"></i>
+            <p class="item__name">Золин Николай Федорович</p>
+            <p class="item__post">Психотерапевт, психиатр</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Davalchenko"></i>
+            <p class="item__name">Давальченко Марина Анатольевна</p>
+            <p class="item__post">Врач акушер-гинеколог</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Davalchenko"></i>
+            <p class="item__name">Давальченко Марина Анатольевна</p>
+            <p class="item__post">Врач акушер-гинеколог</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Davalchenko"></i>
+            <p class="item__name">Давальченко Марина Анатольевна</p>
+            <p class="item__post">Врач акушер-гинеколог</p>
+          </div>
+          <div class="item">
+            <i class="sprite sprite-Davalchenko"></i>
+            <p class="item__name">Давальченко Марина Анатольевна</p>
+            <p class="item__post">Врач акушер-гинеколог</p>
           </div>
         </div>
       </div>
-    </section>
+    </section> <!-- /experts -->
+    <section class="offers">
+      <div class="container">
+        <h1 class="offers__heading">Специальные предложения от Центральной Клинической Больницы</h1>
+        <hr class="offers__heading-line">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="offers__item">Акции</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="offers__item">Спецпредложения</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="offers__item">Комплексные программы</div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- /offers -->
   </main> <!-- /content -->
 
 
@@ -324,7 +374,38 @@
   <script>
     $(document).ready(function() {
       $('.carousel').carousel();
-      $(".owl-carousel").owlCarousel();
+      $('.owl-carousel').owlCarousel({
+        nav: true,
+        navText: ["", ""],
+        dots: false,
+        //loop: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            //margin: 2,
+            nav: false
+          },
+          768: {
+            items: 3,
+            margin: 54,
+            nav: false
+          },
+          992: {
+            items: 4,
+            margin: 36
+
+          },
+          1200: {
+            items: 5,
+            margin: 28
+          }
+        }
+      });
     });
   </script>
 </body>
