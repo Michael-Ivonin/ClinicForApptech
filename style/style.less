@@ -2,8 +2,39 @@
 @import "../vendor/bootstrap/css/bootstrap.min.css";
 @import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+  url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+  url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
 @white: #ffffff;
-@dark-white: #fafafa;
+@medium-white: #fafafa;
+@dark-white: #f7f9f9;
 @light-green: #b1e06f;
 @super-light-grey: #bfbfc2;
 @light-grey: #9b9eac;
@@ -13,6 +44,10 @@
 @light-blue: #424554;
 @medium-blue: #292c3a;
 @dark-blue: #282a33;
+
+body {
+  font-family: "MyriadProRegular", sans-serif;
+}
 
 
 .header {
@@ -113,7 +148,7 @@
   .about-clinic {
     padding-top: 117px;
     padding-bottom: 117px;
-    background: @dark-white;
+    background: @medium-white;
 
     .about-clinic__heading {
       text-transform: uppercase;
@@ -289,7 +324,7 @@
     background: @medium-blue;
     text-align: center;
 
-    .feedback__review {
+    .feedback__review-button {
       width: 287px;
       height: 58px;
       background: @light-green;
@@ -322,8 +357,8 @@
       }
     }
 
-    .feedback__question {
-      .feedback__review;
+    .feedback__question-button {
+      .feedback__review-button;
     }
   }
 
@@ -376,6 +411,7 @@
 
   .offers {
     padding: 82px 0 59px 0;
+    background: @white;
 
     .offers__heading {
       text-align: center;
@@ -402,6 +438,11 @@
       margin-bottom: 88px;
     }
 
+    /*.flex {
+      display: flex;
+      justify-content: space-between;
+    }*/
+
     .offers__item {
       width: 287px;
       height: 57px;
@@ -412,6 +453,88 @@
       text-align: center;
       text-transform: uppercase;
       padding-top: 20px;
+      margin-bottom: 88px;
+      display: inline-block;
+    }
+
+    .offers__item_center {
+      .offers__item;
+      margin-left: 37px;
+    }
+
+    .offers__item_to-right {
+      .offers__item;
+      float: right;
+    }
+
+    .offers__paragraphs {
+      background: @dark-white;
+      padding: 53px 33px;
+
+      .offers__paragraphs-item {
+        color: @dark-blue;
+        font-size: 23px;
+        font-weight: 600;
+        padding-bottom: 53px;
+        border-bottom: 2px solid @light-green;
+        margin-bottom: 53px;
+        line-height: 26px;
+      }
+
+      .offers__paragraphs-item_no-line {
+        .offers__paragraphs-item;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .offers__description {
+      background: @dark-white;
+      padding: 0 37px 31px 37px;
+
+      .offers__description-important {
+        width: 28px;
+        height: 29px;
+        background: @light-green;
+        color: @white;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 6px;
+        float: right;
+        margin-bottom: 38px;
+      }
+
+      .offers__description-heading {
+        clear: both;
+        color: @dark-blue;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 36px;
+      }
+
+      .offers__description-text {
+        .offers__description-heading;
+        color: @medium-grey;
+        margin-bottom: 82px;
+        line-height: 21px;
+      }
+
+      .offers__description-participate-button {
+        background: none;
+        width: 135px;
+        height: 37px;
+        border: 2px solid @medium-blue;
+        outline: none;
+        text-transform: uppercase;
+        margin-left: 150px;
+      }
+    }
+
+    .offers__appointment-button {
+      .feedback.feedback__review-button;
+      color: @white;
+      margin: 32px 0 0 442px;
     }
   }
 }

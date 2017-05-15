@@ -1,6 +1,30 @@
 @import "reset.css";
 @import "../vendor/bootstrap/css/bootstrap.min.css";
 @import "../vendor/owlCarousel/assets/owl.carousel.min.css";
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: "MyriadProRegular", sans-serif;
+}
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
   background-size: cover;
@@ -224,7 +248,7 @@
   background: #292c3a;
   text-align: center;
 }
-.content .feedback .feedback__review {
+.content .feedback .feedback__review-button {
   width: 287px;
   height: 58px;
   background: #b1e06f;
@@ -249,7 +273,7 @@
   width: 36%;
   margin: 0 auto;
 }
-.content .feedback .feedback__question {
+.content .feedback .feedback__question-button {
   width: 287px;
   height: 58px;
   background: #b1e06f;
@@ -307,6 +331,11 @@
 }
 .content .offers {
   padding: 82px 0 59px 0;
+  background: #ffffff;
+  /*.flex {
+      display: flex;
+      justify-content: space-between;
+    }*/
 }
 .content .offers .offers__heading {
   text-align: center;
@@ -339,6 +368,116 @@
   text-align: center;
   text-transform: uppercase;
   padding-top: 20px;
+  margin-bottom: 88px;
+  display: inline-block;
+}
+.content .offers .offers__item_center {
+  width: 287px;
+  height: 57px;
+  background: #292c3a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 88px;
+  display: inline-block;
+  margin-left: 37px;
+}
+.content .offers .offers__item_to-right {
+  width: 287px;
+  height: 57px;
+  background: #292c3a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 88px;
+  display: inline-block;
+  float: right;
+}
+.content .offers .offers__paragraphs {
+  background: #f7f9f9;
+  padding: 53px 33px;
+}
+.content .offers .offers__paragraphs .offers__paragraphs-item {
+  color: #282a33;
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 53px;
+  border-bottom: 2px solid #b1e06f;
+  margin-bottom: 53px;
+  line-height: 26px;
+}
+.content .offers .offers__paragraphs .offers__paragraphs-item_no-line {
+  color: #282a33;
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 53px;
+  border-bottom: 2px solid #b1e06f;
+  margin-bottom: 53px;
+  line-height: 26px;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.content .offers .offers__description {
+  background: #f7f9f9;
+  padding: 0 37px 31px 37px;
+}
+.content .offers .offers__description .offers__description-important {
+  width: 28px;
+  height: 29px;
+  background: #b1e06f;
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 6px;
+  float: right;
+  margin-bottom: 38px;
+}
+.content .offers .offers__description .offers__description-heading {
+  clear: both;
+  color: #282a33;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+.content .offers .offers__description .offers__description-text {
+  clear: both;
+  color: #282a33;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  color: #84868b;
+  margin-bottom: 82px;
+  line-height: 21px;
+}
+.content .offers .offers__description .offers__description-participate-button {
+  background: none;
+  width: 135px;
+  height: 37px;
+  border: 2px solid #292c3a;
+  outline: none;
+  text-transform: uppercase;
+  margin-left: 150px;
+}
+.content .offers .offers__appointment-button {
+  width: 287px;
+  height: 58px;
+  background: #b1e06f;
+  border: none;
+  outline: none;
+  color: #282a33;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 36px;
+  color: #ffffff;
+  margin: 32px 0 0 442px;
 }
 .sprite {
   background-image: url(../img/spritesheet.png);
