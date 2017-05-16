@@ -116,18 +116,20 @@
 // /Sprites
 
 
-@white: #ffffff;
-@medium-white: #fafafa;
-@dark-white: #f7f9f9;
-@light-green: #b1e06f;
-@super-light-grey: #bfbfc2;
-@light-grey: #9b9eac;
-@medium-grey: #84868b;
-@dark-grey: #7c7d83;
-@from-grey-to-blue: #50535b;
-@light-blue: #424554;
-@medium-blue: #292c3a;
-@dark-blue: #282a33;
+@white: rgb(255, 255, 255);
+@medium-white: rgb(250, 250, 250);
+@dark-white: rgb(247, 248, 248);
+@super-dark-white: rgb(243, 243, 243);
+@from-white-to-grey: rgb(220, 220, 221);
+@light-green: rgb(177, 224, 111);
+@super-light-grey: rgb(191, 191, 194);
+@light-grey: rgb(155, 158, 172);
+@medium-grey: rgb(132, 134, 139);
+@dark-grey: rgb(124, 125, 131);
+@from-grey-to-blue: rgb(80, 83, 91);
+@light-blue: rgb(66, 69, 84);
+@medium-blue: rgb(41, 44, 58);
+@dark-blue: rgb(40, 42, 51);
 
 body {
   font-family: "MyriadPro", sans-serif;
@@ -140,578 +142,697 @@ body {
   color: @white;
   text-transform: uppercase;
   padding-top: 64px;
+}
 
-  a {
-    color: @white;
-    //text-decoration: none;
-  }
+a {
+  color: @white;
+  //text-decoration: none;
+}
 
-  .header__logo-link {
-    display: inline-block;
-    //width: 133px;
-    //height: 50px;
-    //background: url(../img/sprites/logo.png) no-repeat;
-  }
+.header__logo-link {
+  display: inline-block;
+  //width: 133px;
+  //height: 50px;
+  //background: url(../img/sprites/logo.png) no-repeat;
+}
 
-  .menu {
-    padding-top: 18px;
+.menu {
+  padding-top: 18px;
+}
 
-    .menu__list {
-      font-size: 0;
-      //width: 100%;
-      //display: table;
-      text-align: center;
-    }
+.menu__list {
+  font-size: 0;
+  //width: 100%;
+  //display: table;
+  text-align: center;
+}
 
-    .menu__list-item {
-      display: inline-block;
-      //display: table-cell;
-      font-size: 12px;
-      padding: 0 15px;
-      transform: scaleX(0.87);
+.menu__list-item {
+  display: inline-block;
+  //display: table-cell;
+  font-size: 12px;
+  padding: 0 15px;
+  transform: scaleX(0.87);
+}
 
-      .menu__list-item-link {
-        //display: block;
-        //text-align: center;
-      }
+.menu__list-item-link {
+  //display: block;
+  //text-align: center;
+}
 
-    }
-  }
+.header__phone {
+  padding-top: 18px;
+}
 
-  .header__phone {
-    padding-top: 18px;
-  }
+.header__button {
+  width: 160px;
+  height: 35px;
+  margin-top: 7px;
+  background: none;
+  font-size: 11px;
+  font-weight: 700;
+  outline: 2px solid @light-green;
+  border: none;
+}
 
-  .header__button {
-    width: 160px;
-    height: 35px;
-    margin-top: 7px;
-    background: none;
-    font-size: 11px;
-    font-weight: 700;
-    outline: 2px solid @light-green;
-    border: none;
-  }
+.header__presentation {
+  padding-top: 246px;
+  padding-bottom: 263px;
+}
 
-  .header__presentation {
-    padding-top: 246px;
-    padding-bottom: 263px;
+.header__presentation-heading {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
-    .header__presentation-heading {
-      font-size: 55px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .header__presentation-text {
-      font-size: 21px;
-      color: @light-green;
-    }
-  }
+.header__presentation-text {
+  font-size: 21px;
+  color: @light-green;
 }
 
 .content {
-  .benefits {
-    background: @light-green;
-    padding-top: 139px;
-    padding-bottom: 126px;
 
-    .benefits__item {
-      color: @white;
-      text-transform: uppercase;
-      //padding-right: 28px;
+}
 
-      .benefits__item-text {
-        margin-top: 29px;
-        font-size: 17px;
-        text-align: center;
-      }
-    }
+.benefits {
+  background: @light-green;
+  padding-top: 139px;
+  padding-bottom: 126px;
+}
+
+.benefits__item {
+  color: @white;
+  text-transform: uppercase;
+  //padding-right: 28px;
+}
+
+.benefits__item-text {
+  margin-top: 29px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.about-clinic {
+  padding-top: 117px;
+  padding-bottom: 117px;
+  background: @medium-white;
+}
+
+.about-clinic__heading {
+  text-transform: uppercase;
+  color: @dark-blue;
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 2px solid @light-green;
+  padding-bottom: 29px;
+  margin-bottom: 54px;
+}
+
+.about-clinic__introduction-text {
+  font-size: 28px;
+  color: @dark-blue;
+  margin-bottom: 42px;
+}
+
+.carousel-control {
+  top: 314px;
+  bottom: 19px;
+  background-image: none;
+  width: 3.5%;
+  //opacity: 1;
+
+}
+
+.left {
+  margin-left: 21px;
+}
+
+.right {
+  //right: -44px;
+  margin-right: 22px;
+}
+
+.about-clinic__reason-text {
+  font-size: 27px;
+  color: @dark-blue;
+  margin-bottom: 43px;
+}
+
+.about-clinic__team-text {
+  font-size: 21px;
+  color: @dark-blue;
+  margin-bottom: 21px;
+}
+
+.about-clinic__equipment-text {
+  .about-clinic__team-text;
+}
+
+.about-clinic__space-text {
+  .about-clinic__team-text;
+}
+
+.about-clinic__time-text {
+  .about-clinic__team-text;
+}
+
+.about-clinic__wish-text {
+  .about-clinic__team-text;
+  margin: 35px 0 0 0;
+  margin-left: 232px;
+}
+
+.about-clinic__line {
+  border-top: 2px solid @light-green;
+  width: 47%;
+  margin-bottom: 10px;
+  position: relative;
+  left: -147px;
+}
+
+.search-for-services {
+  padding: 73px 0 65px 0;
+  background: @medium-blue;
+  text-align: center;
+}
+
+.search-for-services__heading {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: @white;
+  border-bottom: 2px solid @light-green;
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+}
+
+.search-for-services__search-form {
+
+}
+
+.wrap {
+  display: inline-block;
+  width: 500px;
+  height: 43px;
+  background: @light-blue;
+  padding: 8px 19px;
+}
+
+.search-for-services__search-form-item-text {
+  width: 429px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 21px;
+  color: @light-grey;
+
+  &::-webkit-input-placeholder {
+    color: @light-grey;
+  }
+  &::-moz-placeholder {
+    color: @light-grey;
+  }
+  &:-moz-placeholder {
+    color: @light-grey;
+  }
+  &:-ms-input-placeholder {
+    color: @light-grey;
+  }
+}
+
+.search-for-services__search-form-item-button {
+  //width: 20px;
+  //background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
+  border: none;
+  outline: none;
+  background: none;
+  position: relative;
+  top: 2px;
+  padding: 0;
+  //font-size: 21px;
+  //color: @light-grey;
+}
+
+.services {
+  padding: 115px 0 118px 0;
+}
+
+.services__heading {
+  .about-clinic__heading;
+}
+
+.padding-left {
+  padding-left: 100px;
+}
+
+.services__group {
+
+}
+
+.services__group-heading {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 700;
+  color: @dark-grey;
+  padding: 3px 0;
+  border: 2px solid @light-green;
+  margin-bottom: 29px;
+}
+
+.services__group-item {
+  font-size: 21px;
+  font-weight: 700;
+  color: @dark-grey;
+  display: block;
+  margin-bottom: 26px;
+}
+
+.feedback {
+  padding: 88px 0 104px 0;
+  background: @medium-blue;
+  text-align: center;
+}
+
+.feedback__review-button {
+  width: 287px;
+  height: 58px;
+  background: @light-green;
+  border: none;
+  outline: none;
+  color: @dark-blue;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+
+.feedback__logo {
+
+}
+
+.feedback__logo-text {
+  color: @dark-grey;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 11px;
+}
+
+.feedback__logo-line {
+  border-top: 2px solid @dark-grey;
+  width: 36%;
+  margin: 0 auto;
+  //margin-bottom: 10px;
+  //position: relative;
+  //left: -147px;
+}
+
+
+.feedback__question-button {
+  .feedback__review-button;
+}
+
+
+.experts {
+  padding: 147px 0 85px 0;
+  background: @light-green;
+  text-align: center;
+}
+
+.experts_heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: @white;
+  text-transform: uppercase;
+  border-bottom: 2px solid @white;
+  display: inline-block;
+  padding-bottom: 22px;
+  margin-bottom: 88px;
+}
+
+.owl-stage-outer {
+  margin-bottom: 68px;
+}
+
+.item__name {
+  color: @white;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 26px 0 29px 0;
+}
+
+.item__post {
+  color: @medium-blue;
+  font-size: 13px;
+}
+
+.owl-prev {
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -704px -5px;
+  width: 12px;
+  height: 20px;
+  display: inline-block;
+}
+
+.owl-next {
+  .owl-prev;
+  background-position: -726px -5px;
+  margin-left: 30px;
+}
+
+.offers {
+  padding: 82px 0 59px 0;
+  background: @white;
+}
+
+
+.offers__heading {
+  text-align: center;
+  color: @dark-blue;
+  font-size: 31px;
+  font-weight: 600;
+  padding-bottom: 23px;
+  //position:relative;
+
+  /*&::after {
+    position:absolute;
+    display: block;
+    //top:0;
+    //left:0;
+    width:50%;
+    border-bottom: 2px solid @light-green;
+    content:"";
+  }*/
+}
+
+.offers__heading-line {
+  border-top: 2px solid @light-green;
+  width: 36.5%;
+  //margin: 0 auto;
+  margin-bottom: 88px;
+}
+
+/*.flex {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.offers .nav-tabs {
+   margin: 0 15px 88px 15px;
+   border: none;
+   //font-size: 0;
+   //text-align: center;
+   display: flex;
+   justify-content: space-between;
+ }
+
+.offers .nav-tabs__list-item {
+  //display: inline-block;
+  //float: inherit;
+}
+
+.offers .nav-tabs__list-item_margins {
+  margin: 0 136px;
+}
+
+.offers .offers__item {
+  width: 287px;
+  height: 57px;
+  background: @medium-blue;
+  color: @white;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 17px;
+  //margin-bottom: 88px;
+  border-radius: 0;
+  border: none;
+
+  &:hover {
+    //border-bottom-color: #ddd;
   }
 
-  .about-clinic {
-    padding-top: 117px;
-    padding-bottom: 117px;
-    background: @medium-white;
-
-    .about-clinic__heading {
-      text-transform: uppercase;
-      color: @dark-blue;
-      font-size: 36px;
-      font-weight: 700;
-      border-bottom: 2px solid @light-green;
-      padding-bottom: 29px;
-      margin-bottom: 54px;
-    }
-
-    .about-clinic__introduction-text {
-      font-size: 28px;
-      color: @dark-blue;
-      margin-bottom: 42px;
-    }
-
-    .carousel-control {
-      top: 314px;
-      bottom: 19px;
-      background-image: none;
-      width: 3.5%;
-      //opacity: 1;
-
-    }
-
-    .left {
-      margin-left: 21px;
-    }
-
-    .right {
-      //right: -44px;
-      margin-right: 22px;
-    }
-
-    .about-clinic__reason-text {
-      font-size: 27px;
-      color: @dark-blue;
-      margin-bottom: 43px;
-    }
-
-    .about-clinic__team-text {
-      font-size: 21px;
-      color: @dark-blue;
-      margin-bottom: 21px;
-    }
-
-    .about-clinic__equipment-text {
-      .about-clinic__team-text;
-    }
-
-    .about-clinic__space-text {
-      .about-clinic__team-text;
-    }
-
-    .about-clinic__time-text {
-      .about-clinic__team-text;
-    }
-
-    .about-clinic__wish-text {
-      .about-clinic__team-text;
-      margin: 35px 0 0 0;
-      margin-left: 232px;
-    }
-
-    .about-clinic__line {
-      border-top: 2px solid @light-green;
-      width: 47%;
-      margin-bottom: 10px;
-      position: relative;
-      left: -147px;
-    }
+  &:focus {
+    //border: 1px solid #ddd;
   }
+}
 
-  .search-for-services {
-    padding: 73px 0 65px 0;
-    background: @medium-blue;
-    text-align: center;
+.offers .nav-tabs>li.active>a {
+  border-bottom-color: #ddd;
+}
 
-    .search-for-services__heading {
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 19px;
-      color: @white;
-      border-bottom: 2px solid @light-green;
-      padding-bottom: 24px;
-      margin-bottom: 25px;
-    }
+/*.offers__item_center {
+  .offers__item;
+  margin-left: 37px;
+}
 
-    .search-for-services__search-form {
-      .wrap {
-        display: inline-block;
-        width: 500px;
-        height: 43px;
-        background: @light-blue;
-        padding: 8px 19px;
-      }
+.offers__item_to-right {
+  .offers__item;
+  float: right;
+}*/
 
-      .search-for-services__search-form-item-text {
-        width: 429px;
-        background: none;
-        outline: none;
-        border: none;
-        font-size: 21px;
-        color: @light-grey;
+.offers .col-lg-7._shorter {
+  width: 63.6%;
+  margin-right: 10px;
+}
 
-        &::-webkit-input-placeholder {
-          color: @light-grey;
-        }
-        &::-moz-placeholder {
-          color: @light-grey;
-        }
-        &:-moz-placeholder {
-          color: @light-grey;
-        }
-        &:-ms-input-placeholder {
-          color: @light-grey;
-        }
-      }
+.offers .col-lg-4._longer {
+  width: 35.54%;
+}
 
-      .search-for-services__search-form-item-button {
-        //width: 20px;
-        //background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
-        border: none;
-        outline: none;
-        background: none;
-        position: relative;
-        top: 2px;
-        padding: 0;
-        //font-size: 21px;
-        //color: @light-grey;
-      }
-    }
+.offers__paragraphs {
+  background: @dark-white;
+  padding: 53px 33px;
+}
+
+.offers__paragraphs-item {
+  color: @dark-blue;
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 53px;
+  border-bottom: 2px solid @light-green;
+  margin-bottom: 53px;
+  line-height: 26px;
+}
+
+.offers__paragraphs-item_no-line {
+  .offers__paragraphs-item;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.offers__description {
+  background: @dark-white;
+  padding: 0 37px 31px 37px;
+}
+
+.offers__description-important {
+  width: 28px;
+  height: 29px;
+  background: @light-green;
+  color: @white;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 6px;
+  float: right;
+  margin-bottom: 38px;
+}
+
+.offers__description-heading {
+  clear: both;
+  color: @dark-blue;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 36px;
+}
+
+.offers__description-text {
+  .offers__description-heading;
+  color: @medium-grey;
+  margin-bottom: 82px;
+  line-height: 21px;
+}
+
+.offers__description-participate-button {
+  background: none;
+  width: 135px;
+  height: 37px;
+  border: 2px solid @medium-blue;
+  outline: none;
+  text-transform: uppercase;
+  margin-left: 176px;
+}
+
+.offers__appointment-button {
+  .feedback__review-button;
+  color: @white;
+  margin: 32px 0 0 442px;
+}
+
+.offers__program-table {
+  width: 100%;
+  //border-collapse: separate;
+  //border-spacing: 11px 0;
+}
+
+.offers__program-table-heading {
+  background: @light-green;
+  color: @white;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.offers__program-table-heading-row {
+
+}
+
+.offers__program-table-heading-cell_1 {
+  height: 60px;
+  width: 1036px;
+  padding: 0 31px;
+  vertical-align: middle;
+}
+
+.offers__program-table-heading-cell_empty {
+  background: @white;
+  width: 11px;
+}
+
+.offers__program-table-heading-cell_2 {
+  .offers__program-table-heading-cell_1;
+  width: 123px;
+  padding: 0 24px;
+}
+
+.offers__program-table-main {
+  font-size: 18px;
+  color: @dark-grey;
+}
+
+.offers__program-table-main-row {
+  &:nth-child(2n+3) {
+    background: @dark-white;
   }
+}
 
-  .services {
-    padding: 115px 0 118px 0;
+.offers__program-table-main-cell_1 {
+  .offers__program-table-heading-cell_1;
+  height: 41px;
+}
 
-    .services__heading {
-      .about-clinic.about-clinic__heading;
-    }
+.offers__program-table-main-cell_empty {
+  height: 34px;
+}
 
-    .padding-left {
-      padding-left: 100px;
-    }
+.offers__program-table-main-cell_2 {
+  .offers__program-table-heading-cell_2;
+  padding: 0 41px;
+}
 
-    .services__group {
+.blog {
+  padding: 88px 0 117px 0;
+  background: @from-white-to-grey;
+}
 
-      .services__group-heading {
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        font-size: 39px;
-        font-weight: 700;
-        color: @dark-grey;
-        padding: 3px 0;
-        border: 2px solid @light-green;
-        margin-bottom: 29px;
-      }
+.blog__heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: @dark-blue;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  border-bottom: 2px solid @white;
+  margin-bottom: 60px;
+}
 
-      .services__group-item {
-        font-size: 21px;
-        font-weight: 700;
-        color: @dark-grey;
-        display: block;
-        margin-bottom: 26px;
-      }
-    }
+.blog__subscription {
+  background: @white;
+  margin-top: 25px;
+  padding: 61px 0 30px 56px;
+}
+
+.blog__subscription-text {
+  color: @from-grey-to-blue;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 35px;
+  float: left;
+}
+
+.blog__subscription-email {
+  width: 321px;
+  height: 57px;
+  background: @super-dark-white;
+  padding: 22px 22px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: @super-light-grey;
+  float: left;
+
+  &::-webkit-input-placeholder {
+    color: @super-light-grey;
   }
-
-  .feedback {
-    padding: 88px 0 104px 0;
-    background: @medium-blue;
-    text-align: center;
-
-    .feedback__review-button {
-      width: 287px;
-      height: 58px;
-      background: @light-green;
-      border: none;
-      outline: none;
-      color: @dark-blue;
-      font-size: 18px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-top: 36px;
-    }
-
-    .feedback__logo {
-      .feedback__logo-text {
-        color: @dark-grey;
-        font-size: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-top: 15px;
-        margin-bottom: 11px;
-      }
-
-      .feedback__logo-line {
-        border-top: 2px solid @dark-grey;
-        width: 36%;
-        margin: 0 auto;
-        //margin-bottom: 10px;
-        //position: relative;
-        //left: -147px;
-      }
-    }
-
-    .feedback__question-button {
-      .feedback__review-button;
-    }
+  &::-moz-placeholder {
+    color: @super-light-grey;
   }
-
-  .experts {
-    padding: 147px 0 85px 0;
-    background: @light-green;
-    text-align: center;
-
-    .experts_heading {
-      font-size: 36px;
-      font-weight: 700;
-      color: @white;
-      text-transform: uppercase;
-      border-bottom: 2px solid @white;
-      display: inline-block;
-      padding-bottom: 22px;
-      margin-bottom: 88px;
-    }
-
-    .owl-stage-outer {
-      margin-bottom: 68px;
-    }
-
-    .item__name {
-      color: @white;
-      font-size: 19px;
-      font-weight: 700;
-      margin: 26px 0 29px 0;
-    }
-
-    .item__post {
-      color: @medium-blue;
-      font-size: 13px;
-    }
-
-    .owl-prev {
-      background: url(../img/spritesheet.png) no-repeat;
-      background-position: -704px -5px;
-      width: 12px;
-      height: 20px;
-      display: inline-block;
-    }
-
-    .owl-next {
-      .owl-prev;
-      background-position: -726px -5px;
-      margin-left: 30px;
-    }
+  &:-moz-placeholder {
+    color: @super-light-grey;
   }
-
-  .offers {
-    padding: 82px 0 59px 0;
-    background: @white;
-
-    .offers__heading {
-      text-align: center;
-      color: @dark-blue;
-      font-size: 31px;
-      font-weight: 600;
-      padding-bottom: 23px;
-      //position:relative;
-
-      /*&::after{
-        position:absolute;
-        display: block;
-        //top:0;
-        //left:0;
-        width:50%;
-        border-bottom: 2px solid @light-green;
-        content:"";*/
-      }
-
-    .offers__heading-line {
-      border-top: 2px solid @light-green;
-      width: 36.5%;
-      margin: 0 auto;
-      margin-bottom: 88px;
-    }
-
-    /*.flex {
-      display: flex;
-      justify-content: space-between;
-    }*/
-
-    .nav-tabs {
-      margin: 0 15px 88px 15px;
-      border: none;
-      //font-size: 0;
-      //text-align: center;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .nav-tabs__list-item {
-      //display: inline-block;
-      //float: inherit;
-    }
-
-    .nav-tabs__list-item_margins {
-      margin: 0 136px;
-    }
-
-    .offers__item {
-      width: 287px;
-      height: 57px;
-      background: @medium-blue;
-      color: @white;
-      font-size: 16px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: uppercase;
-      padding-top: 17px;
-      //margin-bottom: 88px;
-      border-radius: initial;
-
-
-      &:focus, &:hover {
-        //border: none;
-        border-bottom-color: #ddd;
-      }
-    }
-
-    /*.offers__item_center {
-      .offers__item;
-      margin-left: 37px;
-    }
-
-    .offers__item_to-right {
-      .offers__item;
-      float: right;
-    }*/
-
-    .col-lg-7._shorter {
-      width: 63.6%;
-      margin-right: 10px;
-    }
-
-    .col-lg-4._longer {
-      width: 35.54%;
-    }
-
-    .offers__paragraphs {
-      background: @dark-white;
-      padding: 53px 33px;
-
-      .offers__paragraphs-item {
-        color: @dark-blue;
-        font-size: 23px;
-        font-weight: 600;
-        padding-bottom: 53px;
-        border-bottom: 2px solid @light-green;
-        margin-bottom: 53px;
-        line-height: 26px;
-      }
-
-      .offers__paragraphs-item_no-line {
-        .offers__paragraphs-item;
-        border: none;
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-    }
-
-    .offers__description {
-      background: @dark-white;
-      padding: 0 37px 31px 37px;
-
-      .offers__description-important {
-        width: 28px;
-        height: 29px;
-        background: @light-green;
-        color: @white;
-        font-size: 15px;
-        text-align: center;
-        padding-top: 6px;
-        float: right;
-        margin-bottom: 38px;
-      }
-
-      .offers__description-heading {
-        clear: both;
-        color: @dark-blue;
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 36px;
-      }
-
-      .offers__description-text {
-        .offers__description-heading;
-        color: @medium-grey;
-        margin-bottom: 82px;
-        line-height: 21px;
-      }
-
-      .offers__description-participate-button {
-        background: none;
-        width: 135px;
-        height: 37px;
-        border: 2px solid @medium-blue;
-        outline: none;
-        text-transform: uppercase;
-        margin-left: 176px;
-      }
-    }
-
-    .offers__appointment-button {
-      .feedback.feedback__review-button;
-      color: @white;
-      margin: 32px 0 0 442px;
-    }
-
-    .offers__program-table {
-      width: 100%;
-      //border-collapse: separate;
-      //border-spacing: 11px 0;
-    }
-
-    .offers__program-table-heading {
-      background: @light-green;
-      color: @white;
-      font-size: 15px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    .offers__program-table-heading-row {
-
-    }
-
-    .offers__program-table-heading-cell_1 {
-      height: 60px;
-      width: 1036px;
-      padding: 0 31px;
-      vertical-align: middle;
-    }
-
-    .offers__program-table-heading-cell_empty {
-      background: @white;
-      width: 11px;
-    }
-
-    .offers__program-table-heading-cell_2 {
-      .offers__program-table-heading-cell_1;
-      width: 123px;
-      padding: 0 24px;
-    }
-
-    .offers__program-table-main {
-      font-size: 18px;
-      color: @dark-grey;
-    }
-
-    .offers__program-table-main-row {
-      &:nth-child(2n+3) {
-        background: @dark-white;
-      }
-    }
-
-    .offers__program-table-main-cell_1 {
-      .offers__program-table-heading-cell_1;
-      height: 41px;
-    }
-
-    .offers__program-table-main-cell_empty {
-      height: 34px;
-    }
-
-    .offers__program-table-main-cell_2 {
-      .offers__program-table-heading-cell_2;
-    }
+  &:-ms-input-placeholder {
+    color: @super-light-grey;
   }
+}
+
+.blog__subscription-button {
+  .offers__appointment-button;
+  width: 121px;
+  height: 37px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 29px 0 0 527px;
+}
+
+.blog__description {
+  background: @white;
+  padding: 53px 48px 30px 48px;
+}
+
+.blog__description-heading {
+  color: @medium-blue;
+  font-size: 29px;
+  border-bottom: 2px solid @light-green;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.blog__description-text {
+  color: @medium-grey;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.blog__description-subheading {
+  .blog__description-heading;
+}
+
+.blog__description-article-heading {
+  color: @from-grey-to-blue;
+  font-size: 23px;
+}
+
+.blog__description-article-text {
+  color: @medium-grey;
+  font-size: 16px;
+}
+
+.blog__description-button {
+  .blog__subscription-button;
+  margin: 215px 0 0 142px;
 }
