@@ -3,34 +3,118 @@
 @import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 
 @font-face {
-  font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-  url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-family: "MyriadPro";
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "MyriadProSemiBold";
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
-  url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-family: "MyriadPro";
+  src: url("../font/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../font/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+  url("../font/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+  url("../font/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
-  url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-family: "MyriadPro";
+  src: url("../font/MyriadProBold/MyriadProBold.eot");
+  src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+  url("../font/MyriadProBold/MyriadProBold.woff") format("woff"),
+  url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
 }
+
+
+// Sprites
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+
+  &.sprite-Bogdan {
+    .stitches-sprite(-5px, -5px, 204px, 205px);
+  }
+
+  &.sprite-Davalchenko {
+    .stitches-sprite(-219px, -5px, 205px, 205px);
+  }
+
+  &.sprite-Pashkina {
+    .stitches-sprite(-5px, -220px, 205px, 205px);
+  }
+
+  &.sprite-Vakulenchik {
+    .stitches-sprite(-220px, -220px, 204px, 205px);
+  }
+
+  &.sprite-Zolin {
+    .stitches-sprite(-434px, -5px, 204px, 205px);
+  }
+
+  &.sprite-about-clinic-left {
+    .stitches-sprite(-648px, -5px, 18px, 36px);
+  }
+
+  &.sprite-about-clinic-right {
+    .stitches-sprite(-676px, -5px, 18px, 36px);
+  }
+
+  &.sprite-doctor {
+    .stitches-sprite(-648px, -51px, 151px, 151px);
+  }
+
+  &.sprite-experts-left {
+    .stitches-sprite(-704px, -5px, 12px, 20px);
+  }
+
+  &.sprite-experts-right {
+    .stitches-sprite(-726px, -5px, 12px, 20px);
+  }
+
+  &.sprite-feedback-logo {
+    .stitches-sprite(-648px, -212px, 33px, 57px);
+  }
+
+  &.sprite-list {
+    .stitches-sprite(-434px, -279px, 151px, 150px);
+  }
+
+  &.sprite-logo {
+    .stitches-sprite(-595px, -279px, 133px, 50px);
+  }
+
+  &.sprite-loupe {
+    .stitches-sprite(-748px, -5px, 16px, 17px);
+  }
+
+  &.sprite-network {
+    .stitches-sprite(-595px, -339px, 150px, 150px);
+  }
+
+  &.sprite-placeholder {
+    .stitches-sprite(-5px, -499px, 151px, 150px);
+  }
+
+  &.sprite-time {
+    .stitches-sprite(-166px, -499px, 151px, 150px);
+  }
+}
+// /Sprites
+
 
 @white: #ffffff;
 @medium-white: #fafafa;
@@ -46,7 +130,7 @@
 @dark-blue: #282a33;
 
 body {
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadPro", sans-serif;
 }
 
 
@@ -443,6 +527,24 @@ body {
       justify-content: space-between;
     }*/
 
+    .nav-tabs {
+      margin: 0 15px 88px 15px;
+      border: none;
+      //font-size: 0;
+      //text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-tabs__list-item {
+      //display: inline-block;
+      //float: inherit;
+    }
+
+    .nav-tabs__list-item_margins {
+      margin: 0 136px;
+    }
+
     .offers__item {
       width: 287px;
       height: 57px;
@@ -452,12 +554,18 @@ body {
       font-weight: 700;
       text-align: center;
       text-transform: uppercase;
-      padding-top: 20px;
-      margin-bottom: 88px;
-      display: inline-block;
+      padding-top: 17px;
+      //margin-bottom: 88px;
+      border-radius: initial;
+
+
+      &:focus, &:hover {
+        //border: none;
+        border-bottom-color: #ddd;
+      }
     }
 
-    .offers__item_center {
+    /*.offers__item_center {
       .offers__item;
       margin-left: 37px;
     }
@@ -465,6 +573,15 @@ body {
     .offers__item_to-right {
       .offers__item;
       float: right;
+    }*/
+
+    .col-lg-7._shorter {
+      width: 63.6%;
+      margin-right: 10px;
+    }
+
+    .col-lg-4._longer {
+      width: 35.54%;
     }
 
     .offers__paragraphs {
@@ -527,7 +644,7 @@ body {
         border: 2px solid @medium-blue;
         outline: none;
         text-transform: uppercase;
-        margin-left: 150px;
+        margin-left: 176px;
       }
     }
 
@@ -536,92 +653,65 @@ body {
       color: @white;
       margin: 32px 0 0 442px;
     }
+
+    .offers__program-table {
+      width: 100%;
+      //border-collapse: separate;
+      //border-spacing: 11px 0;
+    }
+
+    .offers__program-table-heading {
+      background: @light-green;
+      color: @white;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .offers__program-table-heading-row {
+
+    }
+
+    .offers__program-table-heading-cell_1 {
+      height: 60px;
+      width: 1036px;
+      padding: 0 31px;
+      vertical-align: middle;
+    }
+
+    .offers__program-table-heading-cell_empty {
+      background: @white;
+      width: 11px;
+    }
+
+    .offers__program-table-heading-cell_2 {
+      .offers__program-table-heading-cell_1;
+      width: 123px;
+      padding: 0 24px;
+    }
+
+    .offers__program-table-main {
+      font-size: 18px;
+      color: @dark-grey;
+    }
+
+    .offers__program-table-main-row {
+      &:nth-child(2n+3) {
+        background: @dark-white;
+      }
+    }
+
+    .offers__program-table-main-cell_1 {
+      .offers__program-table-heading-cell_1;
+      height: 41px;
+    }
+
+    .offers__program-table-main-cell_empty {
+      height: 34px;
+    }
+
+    .offers__program-table-main-cell_2 {
+      .offers__program-table-heading-cell_2;
+    }
   }
 }
-
-
-
-
-
-
-// Sprites
-.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
-  background-position: @x @y;
-  width: @width;
-  height: @height;
-}
-
-.sprite {
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
-
-  &.sprite-Bogdan {
-    .stitches-sprite(-5px, -5px, 204px, 205px);
-  }
-
-  &.sprite-Davalchenko {
-    .stitches-sprite(-219px, -5px, 205px, 205px);
-  }
-
-  &.sprite-Pashkina {
-    .stitches-sprite(-5px, -220px, 205px, 205px);
-  }
-
-  &.sprite-Vakulenchik {
-    .stitches-sprite(-220px, -220px, 204px, 205px);
-  }
-
-  &.sprite-Zolin {
-    .stitches-sprite(-434px, -5px, 204px, 205px);
-  }
-
-  &.sprite-about-clinic-left {
-    .stitches-sprite(-648px, -5px, 18px, 36px);
-  }
-
-  &.sprite-about-clinic-right {
-    .stitches-sprite(-676px, -5px, 18px, 36px);
-  }
-
-  &.sprite-doctor {
-    .stitches-sprite(-648px, -51px, 151px, 151px);
-  }
-
-  &.sprite-experts-left {
-    .stitches-sprite(-704px, -5px, 12px, 20px);
-  }
-
-  &.sprite-experts-right {
-    .stitches-sprite(-726px, -5px, 12px, 20px);
-  }
-
-  &.sprite-feedback-logo {
-    .stitches-sprite(-648px, -212px, 33px, 57px);
-  }
-
-  &.sprite-list {
-    .stitches-sprite(-434px, -279px, 151px, 150px);
-  }
-
-  &.sprite-logo {
-    .stitches-sprite(-595px, -279px, 133px, 50px);
-  }
-
-  &.sprite-loupe {
-    .stitches-sprite(-748px, -5px, 16px, 17px);
-  }
-
-  &.sprite-network {
-    .stitches-sprite(-595px, -339px, 150px, 150px);
-  }
-
-  &.sprite-placeholder {
-    .stitches-sprite(-5px, -499px, 151px, 150px);
-  }
-
-  &.sprite-time {
-    .stitches-sprite(-166px, -499px, 151px, 150px);
-  }
-}
-// /Sprites

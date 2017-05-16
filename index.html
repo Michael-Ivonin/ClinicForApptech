@@ -20,22 +20,12 @@
         <div class="col-lg-6 col-md-5 col-sm-5">
           <nav class="menu">
             <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-item-link" href="#">О клинике</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-item-link" href="#">Услуги</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-item-link" href="#">Специалисты</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-item-link" href="#">Акции</a></li>
-              <li class="menu__list-item"><a class="menu__list-item-link" href="#">Блог</a>
-              </li>
-              <li class="menu__list-item">
-                <a class="menu__list-item-link" href="#">Контакты</a>
-              </li>
+              <li class="menu__list-item"><a class="menu__list-item-link" href="#">О клинике</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-link" href="#">Услуги</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-link" href="#">Специалисты</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-link" href="#">Акции</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-link" href="#">Блог</a></li>
+              <li class="menu__list-item"><a class="menu__list-item-link" href="#">Контакты</a></li>
             </ul> <!-- /menu__list -->
           </nav> <!-- /menu -->
         </div>
@@ -351,52 +341,143 @@
         <h1 class="offers__heading">Специальные предложения от Центральной Клинической Больницы</h1>
         <hr class="offers__heading-line">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="offers__item">Акции</div>
-          </div>
-          <div class="col-lg-4">
-            <div class="offers__item_center">Спецпредложения</div>
-          </div>
-          <div class="col-lg-4">
-            <div class="offers__item_to-right">Комплексные программы</div>
-          </div>
+          <ul class="nav nav-tabs">
+            <li class="nav-tabs__list-item">
+              <a href="#actions" class="offers__item" data-toggle="tab">Акции</a>
+            </li>
+            <li class="nav-tabs__list-item_margins">
+              <a href="#offers" class="offers__item" data-toggle="tab">Спецпредложения</a>
+            </li>
+            <li class="nav-tabs__list-item">
+              <a href="#programs" class="offers__item" data-toggle="tab">Комплексные программы</a>
+            </li>
+            <!-- <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+
+            </div> -->
+          </ul>
         </div>
         <div class="row">
-          <div class="col-lg-8">
-            <div class="offers__paragraphs">
-              <p class="offers__paragraphs-item">
-                Основной заголовок акции. Желательно, не превышающий
-                двух строк, помещающихся в этом блоке.
-              </p>
-              <p class="offers__paragraphs-item">
-                Основной заголовок акции. Желательно, не превышающий
-                двух строк, помещающихся в этом блоке.
-              </p>
-              <p class="offers__paragraphs-item_no-line">
-                Основной заголовок акции. Желательно, не превышающий
-                двух строк, помещающихся в этом блоке.
-              </p>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade" id="actions">
+              <div class="col-lg-7 _shorter">
+                <div class="offers__paragraphs">
+                  <p class="offers__paragraphs-item">
+                    Основной заголовок акции. Желательно, не превышающий
+                    двух строк, помещающихся в этом блоке.
+                  </p>
+                  <p class="offers__paragraphs-item">
+                    Основной заголовок акции. Желательно, не превышающий
+                    двух строк, помещающихся в этом блоке.
+                  </p>
+                  <p class="offers__paragraphs-item_no-line">
+                    Основной заголовок акции. Желательно, не превышающий
+                    двух строк, помещающихся в этом блоке.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 _longer">
+                <div class="offers__description">
+                  <div class="offers__description-important">!</div>
+                  <h1 class="offers__description-heading">
+                    Заголовок меняется, в&nbsp;зависимости
+                    от того, какая акция выбрана.<br>
+                    Описание ниже.
+                  </h1>
+                  <p class="offers__description-text">
+                    На данный момент это шаблонный
+                    текст, размещенный для того, чтобы
+                    понять, какое количество текста,
+                    может поместиться в данный блок.
+                    Если же текста будет больше, можно
+                    подумать над скроллом
+                    (возможностью прокрутки текста
+                    в пределах блока).
+                  </p>
+                  <button class="offers__description-participate-button" type="button">Участвовать</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="offers__description">
-              <div class="offers__description-important">!</div>
-              <h1 class="offers__description-heading">
-                Заголовок меняется, в&nbsp;зависимости
-                от того, какая акция выбрана.<br>
-                Описание ниже.
-              </h1>
-              <p class="offers__description-text">
-                На данный момент это шаблонный
-                текст, размещенный для того, чтобы
-                понять, какое количество текста,
-                может поместиться в данный блок.
-                Если же текста будет больше, можно
-                подумать над скроллом
-                (возможностью прокрутки текста
-                в пределах блока).
-              </p>
-              <button class="offers__description-participate-button" type="button">Участвовать</button>
+            <div class="tab-pane fade" id="offers"></div>
+            <div class="tab-pane fade" id="programs">
+              <div class="col-lg-12">
+                <table class="offers__program-table">
+                  <thead class="offers__program-table-heading">
+                  <tr class="offers__program-table-heading-row">
+                    <td class="offers__program-table-heading-cell_1">Наименование услуги</td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-heading-cell_2">Цена руб.</td>
+                  </tr>
+                  </thead>
+                  <tbody class="offers__program-table-main">
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_empty"></td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное гастроэнтерологическое обследование (Гастро Check-Up)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">9830</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное кардиологическое обследование базовое (Базовый кардио Check-Up)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">11340</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное кардиологическое обследование экспресс (Экспресс кардио Check-Up)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">7540</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное урологическое обследование (Урологический Check-Up)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">8980</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное обследование Онкоконтроль-базовый (Базовый онко-Check-Up) (мужчины)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">10890</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное обследование Онкоконтроль-базовый (Базовый онко-Check-Up) (женщины)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">12950</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное обследование Онкоконтроль-расширенный (Расширенный онко-Check-Up) (мужчины)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">18690</td>
+                  </tr>
+                  <tr class="offers__program-table-main-row">
+                    <td class="offers__program-table-main-cell_1">
+                      Комплексное обследование Онкоконтроль-расширенный (Расширенный онко-Check-Up) (женщины)
+                    </td>
+                    <td class="offers__program-table-heading-cell_empty"></td>
+                    <td class="offers__program-table-main-cell_2">20750</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- <div class="col-lg-1 _longer"></div> -->
             </div>
           </div>
         </div>

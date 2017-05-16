@@ -2,28 +2,118 @@
 @import "../vendor/bootstrap/css/bootstrap.min.css";
 @import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 @font-face {
-  font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-family: "MyriadPro";
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
-  font-family: "MyriadProSemiBold";
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-family: "MyriadPro";
+  src: url("../font/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../font/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../font/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
 }
 @font-face {
-  font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-family: "MyriadPro";
+  src: url("../font/MyriadProBold/MyriadProBold.eot");
+  src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../font/MyriadProBold/MyriadProBold.woff") format("woff"), url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
+}
+.sprite {
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite.sprite-Bogdan {
+  background-position: -5px -5px;
+  width: 204px;
+  height: 205px;
+}
+.sprite.sprite-Davalchenko {
+  background-position: -219px -5px;
+  width: 205px;
+  height: 205px;
+}
+.sprite.sprite-Pashkina {
+  background-position: -5px -220px;
+  width: 205px;
+  height: 205px;
+}
+.sprite.sprite-Vakulenchik {
+  background-position: -220px -220px;
+  width: 204px;
+  height: 205px;
+}
+.sprite.sprite-Zolin {
+  background-position: -434px -5px;
+  width: 204px;
+  height: 205px;
+}
+.sprite.sprite-about-clinic-left {
+  background-position: -648px -5px;
+  width: 18px;
+  height: 36px;
+}
+.sprite.sprite-about-clinic-right {
+  background-position: -676px -5px;
+  width: 18px;
+  height: 36px;
+}
+.sprite.sprite-doctor {
+  background-position: -648px -51px;
+  width: 151px;
+  height: 151px;
+}
+.sprite.sprite-experts-left {
+  background-position: -704px -5px;
+  width: 12px;
+  height: 20px;
+}
+.sprite.sprite-experts-right {
+  background-position: -726px -5px;
+  width: 12px;
+  height: 20px;
+}
+.sprite.sprite-feedback-logo {
+  background-position: -648px -212px;
+  width: 33px;
+  height: 57px;
+}
+.sprite.sprite-list {
+  background-position: -434px -279px;
+  width: 151px;
+  height: 150px;
+}
+.sprite.sprite-logo {
+  background-position: -595px -279px;
+  width: 133px;
+  height: 50px;
+}
+.sprite.sprite-loupe {
+  background-position: -748px -5px;
+  width: 16px;
+  height: 17px;
+}
+.sprite.sprite-network {
+  background-position: -595px -339px;
+  width: 150px;
+  height: 150px;
+}
+.sprite.sprite-placeholder {
+  background-position: -5px -499px;
+  width: 151px;
+  height: 150px;
+}
+.sprite.sprite-time {
+  background-position: -166px -499px;
+  width: 151px;
+  height: 150px;
 }
 body {
-  font-family: "MyriadProRegular", sans-serif;
+  font-family: "MyriadPro", sans-serif;
 }
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
@@ -336,6 +426,15 @@ body {
       display: flex;
       justify-content: space-between;
     }*/
+  /*.offers__item_center {
+      .offers__item;
+      margin-left: 37px;
+    }
+
+    .offers__item_to-right {
+      .offers__item;
+      float: right;
+    }*/
 }
 .content .offers .offers__heading {
   text-align: center;
@@ -358,6 +457,15 @@ body {
   margin: 0 auto;
   margin-bottom: 88px;
 }
+.content .offers .nav-tabs {
+  margin: 0 15px 88px 15px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+.content .offers .nav-tabs__list-item_margins {
+  margin: 0 136px;
+}
 .content .offers .offers__item {
   width: 287px;
   height: 57px;
@@ -367,37 +475,19 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 20px;
-  margin-bottom: 88px;
-  display: inline-block;
+  padding-top: 17px;
+  border-radius: initial;
 }
-.content .offers .offers__item_center {
-  width: 287px;
-  height: 57px;
-  background: #292c3a;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 20px;
-  margin-bottom: 88px;
-  display: inline-block;
-  margin-left: 37px;
+.content .offers .offers__item:focus,
+.content .offers .offers__item:hover {
+  border-bottom-color: #ddd;
 }
-.content .offers .offers__item_to-right {
-  width: 287px;
-  height: 57px;
-  background: #292c3a;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 20px;
-  margin-bottom: 88px;
-  display: inline-block;
-  float: right;
+.content .offers .col-lg-7._shorter {
+  width: 63.6%;
+  margin-right: 10px;
+}
+.content .offers .col-lg-4._longer {
+  width: 35.54%;
 }
 .content .offers .offers__paragraphs {
   background: #f7f9f9;
@@ -463,7 +553,7 @@ body {
   border: 2px solid #292c3a;
   outline: none;
   text-transform: uppercase;
-  margin-left: 150px;
+  margin-left: 176px;
 }
 .content .offers .offers__appointment-button {
   width: 287px;
@@ -479,93 +569,56 @@ body {
   color: #ffffff;
   margin: 32px 0 0 442px;
 }
-.sprite {
-  background-image: url(../img/spritesheet.png);
-  background-repeat: no-repeat;
-  display: block;
+.content .offers .offers__program-table {
+  width: 100%;
 }
-.sprite.sprite-Bogdan {
-  background-position: -5px -5px;
-  width: 204px;
-  height: 205px;
+.content .offers .offers__program-table-heading {
+  background: #b1e06f;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-.sprite.sprite-Davalchenko {
-  background-position: -219px -5px;
-  width: 205px;
-  height: 205px;
+.content .offers .offers__program-table-heading-cell_1 {
+  height: 60px;
+  width: 1036px;
+  padding: 0 31px;
+  vertical-align: middle;
 }
-.sprite.sprite-Pashkina {
-  background-position: -5px -220px;
-  width: 205px;
-  height: 205px;
+.content .offers .offers__program-table-heading-cell_empty {
+  background: #ffffff;
+  width: 11px;
 }
-.sprite.sprite-Vakulenchik {
-  background-position: -220px -220px;
-  width: 204px;
-  height: 205px;
+.content .offers .offers__program-table-heading-cell_2 {
+  height: 60px;
+  width: 1036px;
+  padding: 0 31px;
+  vertical-align: middle;
+  width: 123px;
+  padding: 0 24px;
 }
-.sprite.sprite-Zolin {
-  background-position: -434px -5px;
-  width: 204px;
-  height: 205px;
+.content .offers .offers__program-table-main {
+  font-size: 18px;
+  color: #7c7d83;
 }
-.sprite.sprite-about-clinic-left {
-  background-position: -648px -5px;
-  width: 18px;
-  height: 36px;
+.content .offers .offers__program-table-main-row:nth-child(2n+3) {
+  background: #f7f9f9;
 }
-.sprite.sprite-about-clinic-right {
-  background-position: -676px -5px;
-  width: 18px;
-  height: 36px;
+.content .offers .offers__program-table-main-cell_1 {
+  height: 60px;
+  width: 1036px;
+  padding: 0 31px;
+  vertical-align: middle;
+  height: 41px;
 }
-.sprite.sprite-doctor {
-  background-position: -648px -51px;
-  width: 151px;
-  height: 151px;
+.content .offers .offers__program-table-main-cell_empty {
+  height: 34px;
 }
-.sprite.sprite-experts-left {
-  background-position: -704px -5px;
-  width: 12px;
-  height: 20px;
-}
-.sprite.sprite-experts-right {
-  background-position: -726px -5px;
-  width: 12px;
-  height: 20px;
-}
-.sprite.sprite-feedback-logo {
-  background-position: -648px -212px;
-  width: 33px;
-  height: 57px;
-}
-.sprite.sprite-list {
-  background-position: -434px -279px;
-  width: 151px;
-  height: 150px;
-}
-.sprite.sprite-logo {
-  background-position: -595px -279px;
-  width: 133px;
-  height: 50px;
-}
-.sprite.sprite-loupe {
-  background-position: -748px -5px;
-  width: 16px;
-  height: 17px;
-}
-.sprite.sprite-network {
-  background-position: -595px -339px;
-  width: 150px;
-  height: 150px;
-}
-.sprite.sprite-placeholder {
-  background-position: -5px -499px;
-  width: 151px;
-  height: 150px;
-}
-.sprite.sprite-time {
-  background-position: -166px -499px;
-  width: 151px;
-  height: 150px;
+.content .offers .offers__program-table-main-cell_2 {
+  height: 60px;
+  width: 1036px;
+  padding: 0 31px;
+  vertical-align: middle;
+  width: 123px;
+  padding: 0 24px;
 }
