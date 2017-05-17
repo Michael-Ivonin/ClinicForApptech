@@ -34,23 +34,42 @@
           <p class="header__phone">+7&nbsp;(3812)&nbsp;39-44-44</p>
         </div>
         <div class="col-lg-2 col-md-3">
-          <button class="header__button text-uppercase" type="button">Записаться на прием</button>
+          <label class="header__button" for="modal-booking-open">Записаться на прием</label>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-offset-1 col-lg-8=10 col-md-offset-1 col-md-10">
-          <div class="header__presentation text-center">
-            <h1 class="header__presentation-heading">Центральная<br>клиническая&nbsp;больница</h1>
-            <span class="header__presentation-text">Передовая клиника в центре города</span>
-          </div> <!-- /header__presentation -->
-        </div>
+      <div class="header__presentation">
+        <h1 class="header__presentation-heading">Центральная<br>клиническая больница</h1>
+        <span class="header__presentation-text">Передовая клиника в центре города</span>
+      </div> <!-- /header__presentation -->
+      <input type="radio" id='modal-booking-open' name="modal-booking" class='modal-booking-radio'>
+      <div class="modal-booking">
+        <label class="modal-booking__button" for="modal-booking-close">Закрыть</label>
+        <input type="radio" id='modal-booking-close' name="modal-booking" class='modal-booking-radio'>
+        <h1 class="modal-booking__heading">Форма записи</h1>
+        <p class="modal-booking__text">Для записи на прием Вам перезвонит наш специалист в течение 10 минут.</p>
+        <form class="modal-booking__callback">
+          <label class="modal-booking__callback-text" for="modal-booking__name">Введите фамилию, имя и отчество:</label>
+          <input class="modal-booking__callback-input-name"  type="text" id="modal-booking__name"
+                 placeholder="Иванов Андрей Александрович">
+          <label class="modal-booking__callback-text" for="modal-booking__phone">Введите телефон:</label>
+          <input class="modal-booking__callback-input-phone"
+                 type="tel" id="modal-booking__phone" placeholder="+ 7 923 548-21-32">
+          <button class="modal-booking__callback-button" type="submit">Отправить заявку</button>
+        </form>
       </div>
+
+      <!-- <div class="row">
+        <div class="col-lg-offset-1 col-lg-8 col-md-offset-1 col-md-10">
+
+        </div>
+      </div> -->
+
     </div>
   </header> <!-- /header -->
   <main class="content">
     <div class="benefits">
       <div class="container">
-        <div class="row">
+        <div class="row _justify">
           <div class="col-lg-2 col-md-2">
             <div class="row">
               <div class="benefits__item">
@@ -486,7 +505,7 @@
             <form class="blog__subscription">
               <label for="email" class="blog__subscription-text">
                 Хочу знать больше о современных<br>
-                методиках лечения и профилактики.
+                методиках лечения и профилактики
               </label>
               <input class="blog__subscription-email" type="email" id="email" placeholder="vashapochta@gmail.com">
               <button class="blog__subscription-button" type="submit">Подписаться</button>
@@ -502,7 +521,7 @@
               </p>
               <h1 class="blog__description-subheading">Полезные статьи</h1>
               <article class="blog__description-article">
-                <h1 class="blog__description-article-heading">Заголовок статьи.</h1>
+                <h1 class="blog__description-article-heading">Заголовок статьи</h1>
                 <p class="blog__description-article-text">Отрывок статьи...</p>
               </article>
               <button class="blog__description-button" type="button">Перейти в блог</button>
@@ -546,11 +565,12 @@
           <div class="col-lg-5 _shorter">
             <form class="contacts__callback">
               <h1 class="contacts__callback-heading">Закажите обратный звонок</h1>
-              <label class="contacts__callback-text" for="name">Введите фамилию, имя и отчество:</label>
-              <input class="contacts__callback-input-name"  type="text" id="name"
+              <label class="contacts__callback-text" for="contacts__name">Введите фамилию, имя и отчество:</label>
+              <input class="contacts__callback-input-name"  type="text" id="contacts__name"
                      placeholder="Иванов Андрей Александрович">
-              <label class="contacts__callback-text" for="phone">Введите телефон:</label>
-              <input class="contacts__callback-input-phone"  type="tel" id="phone" placeholder="+ 7 923 548-21-32">
+              <label class="contacts__callback-text" for="contacts__phone">Введите телефон:</label>
+              <input class="contacts__callback-input-phone"
+                     type="tel" id="contacts__phone" placeholder="+ 7 923 548-21-32">
               <button class="contacts__callback-button" type="submit">Отправить заявку</button>
             </form>
           </div>
