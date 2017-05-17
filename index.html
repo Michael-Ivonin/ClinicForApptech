@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ЦКБ</title>
-  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/owlCarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-3">
@@ -154,7 +155,7 @@
       <div class="container">
         <h1 class="search-for-services__heading">Поиск по услугам</h1>
         <div class="row">
-          <form class="search-for-services__search-form" action="">
+          <form class="search-for-services__search-form">
             <div class="wrap">
               <input class="search-for-services__search-form-item-text" type="search" placeholder="Гастроэнтерология">
               <button class="search-for-services__search-form-item-button" type="submit">
@@ -323,16 +324,6 @@
             <p class="item__name">Давальченко Марина Анатольевна</p>
             <p class="item__post">Врач акушер-гинеколог</p>
           </div>
-          <div class="item">
-            <i class="sprite sprite-Davalchenko"></i>
-            <p class="item__name">Давальченко Марина Анатольевна</p>
-            <p class="item__post">Врач акушер-гинеколог</p>
-          </div>
-          <div class="item">
-            <i class="sprite sprite-Davalchenko"></i>
-            <p class="item__name">Давальченко Марина Анатольевна</p>
-            <p class="item__post">Врач акушер-гинеколог</p>
-          </div>
         </div>
       </div>
     </section> <!-- /experts -->
@@ -379,7 +370,7 @@
                     Основной заголовок акции. Желательно, не превышающий
                     двух строк, помещающихся в этом блоке.
                   </p>
-                </div>
+                </div> <!-- /offers__paragraphs -->
               </div>
               <div class="col-lg-4 _longer">
                 <div class="offers__description">
@@ -400,7 +391,7 @@
                     в пределах блока).
                   </p>
                   <button class="offers__description-participate-button" type="button">Участвовать</button>
-                </div>
+                </div> <!-- /offers__description -->
               </div>
             </div>
             <div class="tab-pane fade" id="offers"></div>
@@ -475,7 +466,7 @@
                     <td class="offers__program-table-main-cell_2">20750</td>
                   </tr>
                   </tbody>
-                </table>
+                </table> <!-- /offers__program-table -->
               </div>
               <!-- <div class="col-lg-1 _longer"></div> -->
             </div>
@@ -491,8 +482,8 @@
         <h1 class="blog__heading">Блог</h1>
         <div class="row">
           <div class="col-lg-8">
-            <iframe src="" frameborder="0"></iframe>
-            <form class="blog__subscription" action="">
+            <iframe class="blog__video" src="https://www.youtube.com/embed/OqJrQqSKYXk" allowfullscreen></iframe>
+            <form class="blog__subscription">
               <label for="email" class="blog__subscription-text">
                 Хочу знать больше о современных<br>
                 методиках лечения и профилактики.
@@ -500,7 +491,7 @@
               <input class="blog__subscription-email" type="email" id="email" placeholder="vashapochta@gmail.com">
               <button class="blog__subscription-button" type="submit">Подписаться</button>
               <div class="blog__subscription-networks"></div>
-            </form>
+            </form> <!-- /blog__subscription -->
           </div>
           <div class="col-lg-4">
             <div class="blog__description">
@@ -513,18 +504,74 @@
               <article class="blog__description-article">
                 <h1 class="blog__description-article-heading">Заголовок статьи.</h1>
                 <p class="blog__description-article-text">Отрывок статьи...</p>
-                <button class="blog__description-button" type="button">Перейти в блог</button>
               </article>
-            </div>
+              <button class="blog__description-button" type="button">Перейти в блог</button>
+            </div> <!-- /blog__description -->
           </div>
         </div>
       </div>
-    </section>
+    </section> <!-- /blog -->
+    <section class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 _shorter">
+            <div class="contacts__info">
+              <h1 class="contacts__info-heading">Контакты</h1>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="contacts__info-contact">
+                    <h1 class="contacts__info-contact-heading">Телефон:</h1>
+                    <p class="contacts__info-contact-text">+7 (3812) 39-44-44</p>
+                    <h1 class="contacts__info-contact-heading">Адрес:</h1>
+                    <p class="contacts__info-contact-text">644042, г. Омск,</p>
+                    <p class="contacts__info-contact-text">пр. Карла Маркса, 18/28</p>
+                    <h1 class="contacts__info-contact-heading">Почта:</h1>
+                    <p class="contacts__info-contact-text">info@ckb55.ru</p>
+                  </div> <!-- /contacts__info-contact -->
+                </div>
+                <div class="col-lg-6">
+                  <div class="contacts__info-time">
+                    <h1 class="contacts__info-time-heading">Время работы:</h1>
+                    <p class="contacts__info-time-text">Понедельник - пятница:</p>
+                    <p class="contacts__info-time-text_green">8.00 - 20.00</p>
+                    <p class="contacts__info-time-text">Воскресенье:</p>
+                    <p class="contacts__info-time-text_green">8.00 - 18.00</p>
+                    <p class="contacts__info-time-text">Суббота:</p>
+                    <p class="contacts__info-time-text_green">9.00 - 14.00</p>
+                  </div> <!-- /contacts__info-time -->
+                </div>
+              </div>
+            </div> <!-- /contacts__info -->
+          </div>
+          <div class="col-lg-5 _shorter">
+            <form class="contacts__callback">
+              <h1 class="contacts__callback-heading">Закажите обратный звонок</h1>
+              <label class="contacts__callback-text" for="name">Введите фамилию, имя и отчество:</label>
+              <input class="contacts__callback-input-name"  type="text" id="name"
+                     placeholder="Иванов Андрей Александрович">
+              <label class="contacts__callback-text" for="phone">Введите телефон:</label>
+              <input class="contacts__callback-input-phone"  type="tel" id="phone" placeholder="+ 7 923 548-21-32">
+              <button class="contacts__callback-button" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> <!-- /contacts -->
+    <div class="map">
+      <iframe class="map__google-maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5447.414248686331!2d73.38584499111604!3d54.96686362908196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafdf97b5bf51b%3A0x939744f5c1034cf9!2z0JrQsNGA0LvQsCDQnNCw0YDQutGB0LAg0L_RgNC-0YHQvy4sIDE40LpvcG55YyAyOCwg0J7QvNGB0LosINCe0LzRgdC60LDRjyDQvtCx0LsuLCA2NDQwNDI!5e0!3m2!1sru!2sru!4v1495007401555"
+              allowfullscreen></iframe>
+    </div> <!-- /map -->
   </main> <!-- /content -->
-
-
-
-
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer__logo"><i class="sprite sprite-footer-logo"></i></div>
+        <a href="#header" class="footer__up"><i class="sprite sprite-up"></i></a>
+        <p class="footer__copyright-text">ЦКБ Центральная Клиническая Больница © 2016</p>
+      </div>
+    </div>
+  </footer> <!-- /footer -->
   <script src="vendor/jQuery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="vendor/owlCarousel/owl.carousel.min.js"></script>
@@ -535,7 +582,7 @@
         nav: true,
         navText: ["", ""],
         dots: false,
-        //loop: true,
+        loop: true,
         responsiveClass: true,
         responsive: {
           0: {

@@ -1,6 +1,4 @@
 @import "reset.css";
-@import "../vendor/bootstrap/css/bootstrap.min.css";
-@import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 @font-face {
   font-family: "MyriadPro";
   src: url("../font/MyriadProRegular/MyriadProRegular.eot");
@@ -82,35 +80,45 @@
   width: 33px;
   height: 57px;
 }
+.sprite.sprite-footer-logo {
+  background-position: -748px -5px;
+  width: 65px;
+  height: 24px;
+}
 .sprite.sprite-list {
   background-position: -434px -279px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-logo {
-  background-position: -595px -279px;
+  background-position: -691px -212px;
   width: 133px;
   height: 50px;
 }
 .sprite.sprite-loupe {
-  background-position: -748px -5px;
+  background-position: -809px -39px;
   width: 16px;
   height: 17px;
 }
 .sprite.sprite-network {
-  background-position: -595px -339px;
+  background-position: -595px -279px;
   width: 150px;
   height: 150px;
 }
 .sprite.sprite-placeholder {
-  background-position: -5px -499px;
+  background-position: -5px -439px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-time {
-  background-position: -166px -499px;
+  background-position: -166px -439px;
   width: 151px;
   height: 150px;
+}
+.sprite.sprite-up {
+  background-position: -755px -272px;
+  width: 20px;
+  height: 20px;
 }
 body {
   font-family: "MyriadPro", sans-serif;
@@ -203,7 +211,9 @@ a {
 .carousel-control {
   top: 314px;
   bottom: 19px;
-  background-image: none;
+  background-image: linear-gradient(none);
+  background-image: -webkit-gradient(none);
+  background-image: -webkit-linear-gradient(none);
   width: 3.5%;
 }
 .left {
@@ -543,7 +553,7 @@ a {
   font-weight: 600;
   margin-bottom: 36px;
   color: #84868b;
-  margin-bottom: 82px;
+  margin-bottom: 85px;
   line-height: 21px;
 }
 .offers__description-participate-button {
@@ -636,9 +646,14 @@ a {
   border-bottom: 2px solid #ffffff;
   margin-bottom: 60px;
 }
+.blog__video {
+  width: 100%;
+  height: 432px;
+  border-width: 0;
+}
 .blog__subscription {
   background: #ffffff;
-  margin-top: 25px;
+  margin-top: 19px;
   padding: 61px 0 30px 56px;
 }
 .blog__subscription-text {
@@ -647,6 +662,8 @@ a {
   font-weight: 700;
   margin-right: 35px;
   float: left;
+  position: relative;
+  top: 10px;
 }
 .blog__subscription-email {
   width: 321px;
@@ -699,27 +716,30 @@ a {
   font-size: 29px;
   border-bottom: 2px solid #b1e06f;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 .blog__description-text {
   color: #84868b;
   font-size: 18px;
   margin-bottom: 50px;
+  line-height: 21px;
 }
 .blog__description-subheading {
   color: #292c3a;
   font-size: 29px;
   border-bottom: 2px solid #b1e06f;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 .blog__description-article-heading {
   color: #50535b;
   font-size: 23px;
+  margin-bottom: 12px;
 }
 .blog__description-article-text {
   color: #84868b;
   font-size: 16px;
+  height: 167px;
 }
 .blog__description-button {
   width: 287px;
@@ -739,5 +759,158 @@ a {
   font-size: 12px;
   font-weight: 600;
   margin: 29px 0 0 527px;
-  margin: 215px 0 0 142px;
+  margin-left: 142px;
+}
+.contacts {
+  padding: 88px 0 59px 0;
+  background: linear-gradient(to right, #292c3a 60%, #ffffff 60.1%, #ffffff);
+}
+.contacts .col-lg-7._shorter {
+  padding-right: 136px;
+}
+.contacts .col-lg-5._shorter {
+  padding-left: 121px;
+}
+.contacts__info-heading {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  border-bottom: 2px solid #b1e06f;
+  margin-bottom: 54px;
+}
+.contacts__info-contact-heading {
+  color: #b1e06f;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.contacts__info-contact-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+.contacts__info-time {
+  margin-left: 42px;
+}
+.contacts__info-time-heading {
+  color: #b1e06f;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.contacts__info-time-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 28px;
+  color: #7c7d83;
+  margin-bottom: 27px;
+}
+.contacts__info-time-text_green {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 28px;
+  color: #7c7d83;
+  margin-bottom: 27px;
+  color: #b1e06f;
+}
+.contacts__callback-heading {
+  color: #292c3a;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  border-bottom: 2px solid #b1e06f;
+  margin-bottom: 55px;
+}
+.contacts__callback-text {
+  color: #7c7d83;
+  font-size: 18px;
+  margin-bottom: 25px;
+  float: left;
+}
+.contacts__callback-input-name {
+  width: 321px;
+  height: 57px;
+  background: #f3f3f3;
+  padding: 22px 22px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #bfbfc2;
+  float: left;
+  width: 350px;
+  margin-bottom: 26px;
+}
+.contacts__callback-input-name::-webkit-input-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-name::-moz-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-name:-moz-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-name:-ms-input-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-phone {
+  width: 321px;
+  height: 57px;
+  background: #f3f3f3;
+  padding: 22px 22px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #bfbfc2;
+  float: left;
+  width: 350px;
+  margin-bottom: 26px;
+  margin-bottom: 29px;
+}
+.contacts__callback-input-phone::-webkit-input-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-phone::-moz-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-phone:-moz-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-input-phone:-ms-input-placeholder {
+  color: #bfbfc2;
+}
+.contacts__callback-button {
+  width: 199px;
+  height: 46px;
+  background: #292c3a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  float: right;
+  border: none;
+  outline: none;
+}
+.map__google-maps {
+  width: 100%;
+  height: 580px;
+  border-width: 0;
+}
+.footer {
+  background: #292c3a;
+  padding: 52px 0 22px 0;
+  text-align: center;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+.footer__copyright-text {
+  color: #424554;
+  font-size: 9px;
+}
+.footer__up {
+  display: block;
+  float: right;
+  position: relative;
+  top: 5px;
 }

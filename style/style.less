@@ -1,6 +1,4 @@
 @import "reset.css";
-@import "../vendor/bootstrap/css/bootstrap.min.css";
-@import "../vendor/owlCarousel/assets/owl.carousel.min.css";
 
 @font-face {
   font-family: "MyriadPro";
@@ -89,28 +87,36 @@
     .stitches-sprite(-648px, -212px, 33px, 57px);
   }
 
+  &.sprite-footer-logo {
+    .stitches-sprite(-748px, -5px, 65px, 24px);
+  }
+
   &.sprite-list {
     .stitches-sprite(-434px, -279px, 151px, 150px);
   }
 
   &.sprite-logo {
-    .stitches-sprite(-595px, -279px, 133px, 50px);
+    .stitches-sprite(-691px, -212px, 133px, 50px);
   }
 
   &.sprite-loupe {
-    .stitches-sprite(-748px, -5px, 16px, 17px);
+    .stitches-sprite(-809px, -39px, 16px, 17px);
   }
 
   &.sprite-network {
-    .stitches-sprite(-595px, -339px, 150px, 150px);
+    .stitches-sprite(-595px, -279px, 150px, 150px);
   }
 
   &.sprite-placeholder {
-    .stitches-sprite(-5px, -499px, 151px, 150px);
+    .stitches-sprite(-5px, -439px, 151px, 150px);
   }
 
   &.sprite-time {
-    .stitches-sprite(-166px, -499px, 151px, 150px);
+    .stitches-sprite(-166px, -439px, 151px, 150px);
+  }
+
+  &.sprite-up {
+    .stitches-sprite(-755px, -272px, 20px, 20px);
   }
 }
 // /Sprites
@@ -258,10 +264,11 @@ a {
 .carousel-control {
   top: 314px;
   bottom: 19px;
-  background-image: none;
+  background-image: linear-gradient(none);
+  background-image: -webkit-gradient(none);
+  background-image: -webkit-linear-gradient(none);
   width: 3.5%;
   //opacity: 1;
-
 }
 
 .left {
@@ -655,7 +662,7 @@ a {
 .offers__description-text {
   .offers__description-heading;
   color: @medium-grey;
-  margin-bottom: 82px;
+  margin-bottom: 85px;
   line-height: 21px;
 }
 
@@ -751,9 +758,15 @@ a {
   margin-bottom: 60px;
 }
 
+.blog__video {
+  width: 100%;
+  height: 432px;
+  border-width: 0;
+}
+
 .blog__subscription {
   background: @white;
-  margin-top: 25px;
+  margin-top: 19px;
   padding: 61px 0 30px 56px;
 }
 
@@ -763,6 +776,8 @@ a {
   font-weight: 700;
   margin-right: 35px;
   float: left;
+  position: relative;
+  top: 10px;
 }
 
 .blog__subscription-email {
@@ -809,13 +824,14 @@ a {
   font-size: 29px;
   border-bottom: 2px solid @light-green;
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin: 0 0 25px 0;
 }
 
 .blog__description-text {
   color: @medium-grey;
   font-size: 18px;
   margin-bottom: 50px;
+  line-height: 21px;
 }
 
 .blog__description-subheading {
@@ -825,14 +841,138 @@ a {
 .blog__description-article-heading {
   color: @from-grey-to-blue;
   font-size: 23px;
+  margin-bottom: 12px;
 }
 
 .blog__description-article-text {
   color: @medium-grey;
   font-size: 16px;
+  height: 167px;
 }
 
 .blog__description-button {
   .blog__subscription-button;
-  margin: 215px 0 0 142px;
+  margin-left: 142px;
+}
+
+.contacts {
+  padding: 88px 0 59px 0;
+  background: linear-gradient(to right, @medium-blue 60%, @white 60.1%, @white);
+}
+
+.contacts .col-lg-7._shorter {
+  padding-right: 136px;
+}
+
+.contacts .col-lg-5._shorter {
+  padding-left: 121px;
+}
+
+.contacts__info-heading {
+  color: @white;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  border-bottom: 2px solid @light-green;
+  margin-bottom: 54px;
+}
+
+.contacts__info-contact-heading {
+  color: @light-green;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.contacts__info-contact-text {
+  color: @white;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.contacts__info-time {
+  margin-left: 42px;
+}
+
+.contacts__info-time-heading {
+  .contacts__info-contact-heading;
+}
+
+.contacts__info-time-text {
+  .contacts__info-contact-text;
+  color: @dark-grey;
+  margin-bottom: 27px;
+}
+
+.contacts__info-time-text_green {
+  .contacts__info-time-text;
+  color: @light-green;
+}
+
+.contacts__callback-heading {
+  color: @medium-blue;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  border-bottom: 2px solid @light-green;
+  margin-bottom: 55px;
+}
+
+.contacts__callback-text {
+  color: @dark-grey;
+  font-size: 18px;
+  margin-bottom: 25px;
+  float: left;
+}
+
+.contacts__callback-input-name {
+  .blog__subscription-email;
+  width: 350px;
+  margin-bottom: 26px;
+}
+
+.contacts__callback-input-phone {
+  .contacts__callback-input-name;
+  margin-bottom: 29px;
+}
+
+.contacts__callback-button {
+  width: 199px;
+  height: 46px;
+  background: @medium-blue;
+  color: @white;
+  font-size: 15px;
+  font-weight: 700;
+  float: right;
+  border: none;
+  outline: none;
+}
+
+.map__google-maps {
+  width: 100%;
+  height: 580px;
+  border-width: 0;
+}
+
+.footer {
+  background: @medium-blue;
+  padding: 52px 0 22px 0;
+  text-align: center;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 17px;
+}
+
+.footer__copyright-text {
+  color: @light-blue;
+  font-size: 9px;
+}
+
+.footer__up {
+  display: block;
+  float: right;
+  position: relative;
+  top: 5px;
 }
