@@ -163,8 +163,9 @@ a {
   font-weight: 700;
   outline: 2px solid #b1e06f;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__button:hover {
   cursor: pointer;
@@ -186,19 +187,27 @@ a {
 .modal-booking-radio {
   display: none;
 }
-.modal-booking-radio:checked + .modal-booking {
-  display: block;
+.modal-booking-radio:checked + .modal-booking-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-booking-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
 }
 .modal-booking {
-  display: none;
   width: 437px;
   height: 506px;
   background: #ffffff;
   padding: 32px 42px 36px 42px;
-  position: fixed;
-  left: 33.3%;
-  top: 15%;
-  z-index: 2;
+  z-index: 3;
 }
 .modal-booking__button {
   color: #7c7d83;
@@ -307,18 +316,19 @@ a {
   padding-top: 139px;
   padding-bottom: 126px;
 }
-.benefits .row._justify {
+/*.benefits .row._justify {
   display: flex;
-  justify-content: space-between;
-}
+  //justify-content: space-between;
+}*/
 .benefits__item {
   color: #ffffff;
   text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
 }
 .benefits__item-text {
   margin-top: 29px;
   font-size: 17px;
-  text-align: center;
 }
 .about-clinic {
   padding-top: 117px;
@@ -339,19 +349,47 @@ a {
   color: #282a33;
   margin-bottom: 42px;
 }
-.carousel-control {
+/*.carousel-control {
   top: 314px;
   bottom: 19px;
   background-image: linear-gradient(none);
   background-image: -webkit-gradient(none);
   background-image: -webkit-linear-gradient(none);
   width: 3.5%;
+  //opacity: 1;
 }
+
 .left {
   margin-left: 21px;
 }
+
 .right {
+  //right: -44px;
   margin-right: 22px;
+}*/
+.about-clinic .owl-nav {
+  position: absolute;
+  top: 85%;
+  margin-left: 20px;
+  margin-bottom: -52px;
+}
+.about-clinic .owl-prev {
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -648px -5px;
+  width: 18px;
+  height: 36px;
+  display: inline-block;
+}
+.about-clinic .owl-next {
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -676px -5px;
+  width: 18px;
+  height: 36px;
+  display: inline-block;
+  margin-left: 478px;
+}
+.about-clinic .col-lg-6._shorter {
+  padding-left: 27px;
 }
 .about-clinic__reason-text {
   font-size: 27px;
@@ -466,6 +504,7 @@ a {
   padding: 3px 0;
   border: 2px solid #b1e06f;
   margin-bottom: 29px;
+  background: none;
 }
 .services__group-item {
   font-size: 21px;
@@ -490,6 +529,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 36px;
+  margin-left: -70px;
 }
 .feedback__logo-text {
   color: #7c7d83;
@@ -515,6 +555,9 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 36px;
+  margin-left: -70px;
+  margin-left: 0;
+  margin-right: -70px;
 }
 .experts {
   padding: 147px 0 85px 0;
@@ -531,7 +574,7 @@ a {
   padding-bottom: 22px;
   margin-bottom: 88px;
 }
-.owl-stage-outer {
+.experts .owl-stage-outer {
   margin-bottom: 68px;
 }
 .item__name {
@@ -544,20 +587,19 @@ a {
   color: #292c3a;
   font-size: 13px;
 }
-.owl-prev {
+.experts .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
   background-position: -704px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
 }
-.owl-next {
+.experts .owl-next {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -704px -5px;
+  background-position: -726px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
-  background-position: -726px -5px;
   margin-left: 30px;
 }
 .offers {
@@ -707,8 +749,15 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 36px;
+  margin-left: -70px;
   color: #ffffff;
   margin: 32px 0 0 442px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offers__appointment-button:hover {
+  cursor: pointer;
 }
 .offers__program-table {
   width: 100%;
@@ -820,20 +869,13 @@ a {
   color: #bfbfc2;
 }
 .blog__subscription-button {
-  width: 287px;
-  height: 58px;
-  background: #b1e06f;
-  border: none;
-  outline: none;
-  color: #282a33;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 36px;
-  color: #ffffff;
-  margin: 32px 0 0 442px;
   width: 121px;
   height: 37px;
+  background: #b1e06f;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   margin: 29px 0 0 527px;
@@ -873,20 +915,13 @@ a {
   height: 167px;
 }
 .blog__description-button {
-  width: 287px;
-  height: 58px;
-  background: #b1e06f;
-  border: none;
-  outline: none;
-  color: #282a33;
-  font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 36px;
-  color: #ffffff;
-  margin: 32px 0 0 442px;
   width: 121px;
   height: 37px;
+  background: #b1e06f;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   margin: 29px 0 0 527px;
@@ -1025,11 +1060,11 @@ a {
 .map {
   height: 580px;
 }
-.map__google-maps {
+/*.map__google-maps {
   width: 100%;
   height: 100%;
   border-width: 0;
-}
+}*/
 .footer {
   background: #292c3a;
   padding: 52px 0 22px 0;

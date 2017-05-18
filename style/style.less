@@ -197,9 +197,11 @@ a {
   font-weight: 700;
   outline: 2px solid @light-green;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 13px;
-  //border: none;
+  //text-align: center;
+  //padding-top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     cursor: pointer;
@@ -230,24 +232,29 @@ a {
   display: none;
 }
 
-.modal-booking-radio:checked + .modal-booking {
-  display: block;
+.modal-booking-radio:checked + .modal-booking-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-booking-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 2;
 }
 
 .modal-booking {
-  display: none;
   width: 437px;
   height: 506px;
   background: @white;
   padding: 32px 42px 36px 42px;
-  position: fixed;
-  left: 33.3%;
-  top: 15%;
-  z-index: 2;
-  //margin-top: -100px;
-  //margin-left: -100px;
-  //overflow: auto;
-  //box-sizing: border-box;
+  z-index: 3;
 
 }
 
@@ -296,21 +303,21 @@ a {
   padding-bottom: 126px;
 }
 
-.benefits .row._justify {
+/*.benefits .row._justify {
   display: flex;
-  justify-content: space-between;
-}
+  //justify-content: space-between;
+}*/
 
 .benefits__item {
   color: @white;
   text-transform: uppercase;
-  //padding-right: 28px;
+  display: inline-block;
+  text-align: center;
 }
 
 .benefits__item-text {
   margin-top: 29px;
   font-size: 17px;
-  text-align: center;
 }
 
 .about-clinic {
@@ -335,7 +342,7 @@ a {
   margin-bottom: 42px;
 }
 
-.carousel-control {
+/*.carousel-control {
   top: 314px;
   bottom: 19px;
   background-image: linear-gradient(none);
@@ -352,6 +359,34 @@ a {
 .right {
   //right: -44px;
   margin-right: 22px;
+}*/
+
+.about-clinic .owl-nav {
+  position: absolute;
+  top: 85%;
+  margin-left: 20px;
+  margin-bottom: -52px;
+}
+
+.about-clinic .owl-prev {
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -648px -5px;
+  width: 18px;
+  height: 36px;
+  display: inline-block;
+}
+
+.about-clinic .owl-next {
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -676px -5px;
+  width: 18px;
+  height: 36px;
+  display: inline-block;
+  margin-left: 478px;
+}
+
+.about-clinic .col-lg-6._shorter {
+  padding-left: 27px;
 }
 
 .about-clinic__reason-text {
@@ -481,6 +516,7 @@ a {
   padding: 3px 0;
   border: 2px solid @light-green;
   margin-bottom: 29px;
+  background: none;
 }
 
 .services__group-item {
@@ -508,6 +544,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 36px;
+  margin-left: -70px;
 }
 
 .feedback__logo {
@@ -535,6 +572,8 @@ a {
 
 .feedback__question-button {
   .feedback__review-button;
+  margin-left: 0;
+  margin-right: -70px;
 }
 
 
@@ -555,7 +594,7 @@ a {
   margin-bottom: 88px;
 }
 
-.owl-stage-outer {
+.experts .owl-stage-outer {
   margin-bottom: 68px;
 }
 
@@ -571,7 +610,7 @@ a {
   font-size: 13px;
 }
 
-.owl-prev {
+.experts .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
   background-position: -704px -5px;
   width: 12px;
@@ -579,9 +618,12 @@ a {
   display: inline-block;
 }
 
-.owl-next {
-  .owl-prev;
+.experts .owl-next {
+  background: url(../img/spritesheet.png) no-repeat;
   background-position: -726px -5px;
+  width: 12px;
+  height: 20px;
+  display: inline-block;
   margin-left: 30px;
 }
 
@@ -754,6 +796,13 @@ a {
   .feedback__review-button;
   color: @white;
   margin: 32px 0 0 442px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .offers__program-table {
@@ -880,9 +929,13 @@ a {
 }
 
 .blog__subscription-button {
-  .offers__appointment-button;
   width: 121px;
   height: 37px;
+  background: @light-green;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  color: @white;
   font-size: 12px;
   font-weight: 600;
   margin: 29px 0 0 527px;
@@ -1024,14 +1077,15 @@ a {
 }
 
 .map {
+  //width: 100%;
   height: 580px;
 }
 
-.map__google-maps {
+/*.map__google-maps {
   width: 100%;
   height: 100%;
   border-width: 0;
-}
+}*/
 
 .footer {
   background: @medium-blue;
