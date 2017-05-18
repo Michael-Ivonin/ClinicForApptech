@@ -151,11 +151,6 @@ body {
   padding-top: 64px;
 }
 
-a {
-  color: @white;
-  //text-decoration: none;
-}
-
 .header__logo-link {
   display: inline-block;
 }
@@ -174,14 +169,19 @@ a {
 .menu__list-item {
   display: inline-block;
   //display: table-cell;
-  font-size: 12px;
   padding: 0 15px;
-  transform: scaleX(0.87);
 }
 
 .menu__list-item-link {
   //display: block;
   //text-align: center;
+  font-size: 12px;
+  color: @white;
+  transform: scaleX(0.87);
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .header__phone {
@@ -415,8 +415,7 @@ a {
 
 .about-clinic__wish-text {
   .about-clinic__team-text;
-  margin: 35px 0 0 0;
-  margin-left: 232px;
+  margin: 35px 0 0 232px;
 }
 
 .about-clinic__line {
@@ -478,16 +477,12 @@ a {
 }
 
 .search-for-services__search-form-item-button {
-  //width: 20px;
-  //background: url(../img/sprites/loupe.png) no-repeat 50% 100%;
   border: none;
   outline: none;
   background: none;
   position: relative;
   top: 2px;
   padding: 0;
-  //font-size: 21px;
-  //color: @light-grey;
 }
 
 .services {
@@ -499,11 +494,11 @@ a {
 }
 
 .padding-left {
-  padding-left: 100px;
-}
+  padding-left: 54px;
 
-.services__group {
-
+  &:nth-child(3) {
+    padding-left: 74px;
+  }
 }
 
 .services__group-heading {
@@ -517,6 +512,10 @@ a {
   border: 2px solid @light-green;
   margin-bottom: 29px;
   background: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
 }
 
 .services__group-item {
@@ -525,6 +524,125 @@ a {
   color: @dark-grey;
   display: block;
   margin-bottom: 26px;
+
+  &:hover {
+    //text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal-services-radio {
+  display: none;
+}
+
+.modal-services-radio:checked + .modal-services-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-services-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+
+.modal-services {
+  //width: 437px;
+  //height: 506px;
+  background: @white;
+  padding: 32px 42px 36px 42px;
+  z-index: 3;
+}
+
+.modal-services__table {
+ .offers__program-table;
+}
+
+.modal-services__table-heading {
+  .offers__program-table-heading;
+}
+
+.modal-services__table-heading-cell_1 {
+  .offers__program-table-heading-cell_1;
+}
+
+.modal-services__table-heading-cell_empty {
+  .offers__program-table-heading-cell_empty;
+}
+
+.modal-services__table-heading-cell_2 {
+  .offers__program-table-heading-cell_2;
+}
+
+.modal-services__table-main {
+  .offers__program-table-main;
+}
+
+.modal-services__table-main-row {
+  .offers__program-table-main-row;
+}
+
+.modal-services__table-main-cell_1 {
+  .offers__program-table-main-cell_1;
+  height: 40px;
+}
+
+.modal-services__table-main-cell_empty {
+  .offers__program-table-main-cell_empty;
+}
+
+.modal-services__table-main-cell_2 {
+  .offers__program-table-main-cell_2;
+}
+
+.modal-services__button {
+  .modal-services__text;
+  float: right;
+  position: relative;
+  top: -15px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal-services__heading {
+  .contacts__callback-heading;
+  margin-bottom: 27px;
+}
+
+.modal-services__text {
+  .contacts__callback-text;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.modal-services__callback-text {
+  .contacts__callback-text;
+  text-transform: none;
+}
+
+.modal-services__callback-input-name {
+  .contacts__callback-input-name;
+}
+
+.modal-services__callback-input-phone {
+  .contacts__callback-input-phone;
+}
+
+.modal-services__callback-button {
+  .contacts__callback-button;
+}
+
+.modal-services__form {
+  width: 437px;
+  height: 506px;
 }
 
 .feedback {
@@ -807,8 +925,6 @@ a {
 
 .offers__program-table {
   width: 100%;
-  //border-collapse: separate;
-  //border-spacing: 11px 0;
 }
 
 .offers__program-table-heading {
@@ -817,10 +933,6 @@ a {
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.offers__program-table-heading-row {
-
 }
 
 .offers__program-table-heading-cell_1 {
@@ -853,8 +965,10 @@ a {
 }
 
 .offers__program-table-main-cell_1 {
-  .offers__program-table-heading-cell_1;
   height: 41px;
+  width: 1036px;
+  padding: 0 31px;
+  vertical-align: middle;
 }
 
 .offers__program-table-main-cell_empty {
@@ -862,7 +976,9 @@ a {
 }
 
 .offers__program-table-main-cell_2 {
-  .offers__program-table-heading-cell_2;
+  height: 41px;
+  width: 123px;
+  vertical-align: middle;
   padding: 0 41px;
 }
 
