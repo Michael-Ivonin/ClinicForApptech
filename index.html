@@ -7,6 +7,7 @@
   <title>ЦКБ</title>
   <link href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
   <link href='vendor/owlCarousel/assets/owl.carousel.min.css' rel='stylesheet'>
+  <link href='style/reset.css' rel='stylesheet'>
   <link href='style/style.css' rel='stylesheet'>
 </head>
 <body>
@@ -34,31 +35,13 @@
           <p class='header__phone'>+7&nbsp;(3812)&nbsp;39-44-44</p>
         </div>
         <div class='col-lg-2 col-md-3'>
-          <label class='header__button' for='modal-booking-open'>Записаться на прием</label>
+          <button class='header__button' type="button">Записаться на прием</button>
         </div>
       </div>
       <div class='header__presentation'>
         <h1 class='header__presentation-heading'>Центральная<br>клиническая больница</h1>
         <span class='header__presentation-text'>Передовая клиника в центре города</span>
       </div> <!-- /header__presentation -->
-      <input type='radio' id='modal-booking-open' name='modal-booking' class='modal-booking-radio'>
-      <div class='modal-booking-bg'>
-        <div class='modal-booking'>
-          <label class='modal-booking__button' for='modal-booking-close'><i class="sprite sprite-close"></i></label>
-          <input type='radio' id='modal-booking-close' name='modal-booking' class='modal-booking-radio'>
-          <h1 class='modal-booking__heading'>Форма записи</h1>
-          <p class='modal-booking__text'>Для записи на прием Вам перезвонит наш специалист в течение 10 минут.</p>
-          <form class='modal-booking__callback'>
-            <label class='modal-booking__callback-text' for='modal-booking__name'>Введите фамилию, имя и отчество:</label>
-            <input class='modal-booking__callback-input-name'  type='text' id='modal-booking__name'
-                   placeholder='Иванов Андрей Александрович'>
-            <label class='modal-booking__callback-text' for='modal-booking__phone'>Введите телефон:</label>
-            <input class='modal-booking__callback-input-phone'
-                   type='tel' id='modal-booking__phone' placeholder='+ 7 923 548-21-32'>
-            <button class='modal-booking__callback-button' type='submit'>Отправить заявку</button>
-          </form> <!-- /modal-booking__callback -->
-        </div> <!-- /modal-booking -->
-      </div> <!-- /modal-booking-bg -->
     </div>
   </header> <!-- /header -->
   <main class='content'>
@@ -163,229 +146,100 @@
         <div class='row'>
           <div class='col-lg-4'>
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#В'>В</button>
-              <div class='collapse' id='В'>
-                <label class='services__group-item'>Вакцинация</label>
-              </div>
+              <h1 class='services__group-heading'>В</h1>
+              <a class='services__group-item' href="#">Вакцинация</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Г'>Г</button>
-              <div class='collapse' id='Г'>
-                <label class='services__group-item'>Гастроэнтерология</label>
-                <label class='services__group-item'>Генетические исследование</label>
-                <label class='services__group-item'>Гинекология</label>
-              </div>
+              <h1 class='services__group-heading'>Г</h1>
+              <a class='services__group-item' href="#">Гастроэнтерология</a>
+              <a class='services__group-item' href="#">Генетические исследование</a>
+              <a class='services__group-item' href="#">Гинекология</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Д'>Д</button>
-              <div class='collapse' id='Д'>
-                <label class='services__group-item'>Дерматология</label>
-              </div>
+              <h1 class='services__group-heading'>Д</h1>
+              <a class='services__group-item' href="#">Дерматология</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#И'>И</button>
-              <div class='collapse' id='И'>
-                <label class='services__group-item'>Иглорефлексотерапия</label>
-                <label class='services__group-item'>Инфекционные заболевания</label>
-              </div>
+              <h1 class='services__group-heading'>И</h1>
+              <a class='services__group-item' href="#">Иглорефлексотерапия</a>
+              <a class='services__group-item' href="#">Инфекционные заболевания</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#К'>К</button>
-              <div class='collapse' id='К'>
-                <label class='services__group-item'>Кардиология</label>
-                <label class='services__group-item'>Комплексные программы</label>
-                <label class='services__group-item'>Косметология</label>
-              </div>
+              <h1 class='services__group-heading'>К</h1>
+              <a class='services__group-item' href="#">Кардиология</a>
+              <a class='services__group-item' href="#">Комплексные программы</a>
+              <a class='services__group-item' href="#">Косметология</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Л'>Л</button>
-              <div class='collapse' id='Л'>
-                <label class='services__group-item'>Лабораторные исследования</label>
-                <label class='services__group-item'>Лучевая диагностика</label>
-              </div>
+              <h1 class='services__group-heading'>Л</h1>
+              <a class='services__group-item' href="#">Лабораторные исследования</a>
+              <a class='services__group-item' href="#">Лучевая диагностика</a>
             </div> <!-- /services__group -->
           </div>
           <div class='col-lg-4 padding-left'>
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#М'>М</button>
-              <div class='collapse' id='М'>
-                <label class='services__group-item'>Маммология</label>
-                <label class='services__group-item'>Мануальная терапия</label>
-                <label class='services__group-item'>Массаж</label>
-              </div>
+              <h1 class='services__group-heading'>М</h1>
+              <a class='services__group-item' href="#">Маммология</a>
+              <a class='services__group-item' href="#">Мануальная терапия</a>
+              <a class='services__group-item' href="#">Массаж</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Н'>Н</button>
-              <div class='collapse' id='Н'>
-                <label class='services__group-item' href='#'>Наркология</label>
-                <label class='services__group-item' for='modal-services-open'>Неврология</label>
-                <label class='services__group-item'>Нейрофизиология и сомнология</label>
-                <label class='services__group-item'>Нейрохирургия</label>
-              </div>
+              <h1 class='services__group-heading'>Н</h1>
+              <a class='services__group-item' href='#'>Наркология</a>
+              <label class='services__group-item' for='modal-services-open'>Неврология</label>
+              <a class='services__group-item' href="#">Нейрофизиология и сомнология</a>
+              <a class='services__group-item' href="#">Нейрохирургия</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#О'>О</button>
-              <div class='collapse' id='О'>
-                <label class='services__group-item'>Остеопатия</label>
-                <label class='services__group-item'>Оториноларингология</label>
-                <label class='services__group-item'>Офтальмология</label>
-              </div>
+              <h1 class='services__group-heading'>О</h1>
+              <a class='services__group-item' href="#">Остеопатия</a>
+              <a class='services__group-item' href="#">Оториноларингология</a>
+              <a class='services__group-item' href="#">Офтальмология</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#П'>П</button>
-              <div class='collapse' id='П'>
-                <label class='services__group-item'>Проктология</label>
-                <label class='services__group-item'>Психиатрия</label>
-                <label class='services__group-item'>Профпатология</label>
-                <label class='services__group-item'>Психотерапия</label>
-                <label class='services__group-item'>Пульмонология</label>
-              </div>
+              <h1 class='services__group-heading'>П</h1>
+              <a class='services__group-item' href="#">Проктология</a>
+              <a class='services__group-item' href="#">Психиатрия</a>
+              <a class='services__group-item' href="#">Профпатология</a>
+              <a class='services__group-item' href="#">Психотерапия</a>
+              <a class='services__group-item' href="#">Пульмонология</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Р'>Р</button>
-              <div class='collapse' id='Р'>
-                <label class='services__group-item'>Ревматология</label>
-              </div>
+              <h1 class='services__group-heading'>Р</h1>
+              <a class='services__group-item' href="#">Ревматология</a>
             </div> <!-- /services__group -->
           </div>
           <div class='col-lg-4 padding-left'>
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#С'>С</button>
-              <div class='collapse' id='С'>
-                <label class='services__group-item'>Сосудистая хирургия</label>
-                <label class='services__group-item'>Стационар дневной</label>
-              </div>
+              <h1 class='services__group-heading'>С</h1>
+              <a class='services__group-item' href="#">Сосудистая хирургия</a>
+              <a class='services__group-item' href="#">Стационар дневной</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Т'>Т</button>
-              <div class='collapse' id='Т'>
-                <label class='services__group-item'>Терапия</label>
-                <label class='services__group-item'>Травматология и ортопедия</label>
-              </div>
+              <h1 class='services__group-heading'>Т</h1>
+              <a class='services__group-item' href="#">Терапия</a>
+              <a class='services__group-item' href="#">Травматология и ортопедия</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#У'>У</button>
-              <div class='collapse' id='У'>
-                <label class='services__group-item'>Ультразвуковая диагностика</label>
-                <label class='services__group-item'>Урология</label>
-                <label class='services__group-item'>Услуги на выезде</label>
-              </div>
+              <h1 class='services__group-heading'>У</h1>
+              <a class='services__group-item' href="#">Ультразвуковая диагностика</a>
+              <a class='services__group-item' href="#">Урология</a>
+              <a class='services__group-item' href="#">Услуги на выезде</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Ф'>Ф</button>
-              <div class='collapse' id='Ф'>
-                <label class='services__group-item'>Функциональная диагностика</label>
-              </div>
+              <h1 class='services__group-heading'>Ф</h1>
+              <a class='services__group-item' href="#">Функциональная диагностика</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Х'>Х</button>
-              <div class='collapse' id='Х'>
-                <label class='services__group-item'>Хирургия</label>
-              </div>
+              <h1 class='services__group-heading'>Х</h1>
+              <a class='services__group-item' href="#">Хирургия</a>
             </div> <!-- /services__group -->
             <div class='services__group'>
-              <button class='services__group-heading' data-toggle='collapse' data-target='#Э'>Э</button>
-              <div class='collapse' id='Э'>
-                <label class='services__group-item'>Экспертиза. Справки</label>
-                <label class='services__group-item'>Эндокринология</label>
-                <label class='services__group-item'>Эндоскопическая диагностика</label>
-              </div>
+              <h1 class='services__group-heading'>Э</h1>
+              <a class='services__group-item' href="#">Экспертиза. Справки</a>
+              <a class='services__group-item' href="#">Эндокринология</a>
+              <a class='services__group-item' href="#">Эндоскопическая диагностика</a>
             </div> <!-- /services__group -->
-            <input type='radio' id='modal-services-open' name='modal-services' class='modal-services-radio'>
-            <div class='modal-services-bg'>
-              <div class='container'>
-                <div class='modal-services'>
-                  <label class='modal-services__button' for='modal-services-close'>
-                    <i class="sprite sprite-close"></i>
-                  </label>
-                  <input type='radio' id='modal-services-close' name='modal-services' class='modal-services-radio'>
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <table class='modal-services__table'>
-                        <thead class='modal-services__table-heading'>
-                        <tr class='modal-services__table-heading-row'>
-                          <td class='modal-services__table-heading-cell_1'>Неврология</td>
-                          <td class='modal-services__table-heading-cell_empty'></td>
-                          <td class='modal-services__table-heading-cell_2'>Цена руб.</td>
-                        </tr>
-                        </thead>
-                        <tbody class='modal-services__table-main'>
-                        <tr class='modal-services__table-main-row'>
-                          <td class='modal-services__table-main-cell_empty'></td>
-                        </tr>
-                        <tr class='modal-services__table-main-row'>
-                          <td class='modal-services__table-main-cell_1'>Консультация невролога первичная</td>
-                          <td class='modal-services__table-heading-cell_empty'></td>
-                          <td class='modal-services__table-main-cell_2'>650</td>
-                        </tr>
-                        <tr class='modal-services__table-main-row'>
-                          <td class='modal-services__table-main-cell_1'>Консультация невролога повторная</td>
-                          <td class='modal-services__table-heading-cell_empty'></td>
-                          <td class='modal-services__table-main-cell_2'>550</td>
-                        </tr>
-                        <tr class='modal-services__table-main-row'>
-                          <td class='modal-services__table-main-cell_1'>
-                            Невролог. Неврологическая блокада при дорсопатиях (без стоимости препарата)
-                          </td>
-                          <td class='modal-services__table-heading-cell_empty'></td>
-                          <td class='modal-services__table-main-cell_2'>550</td>
-                        </tr>
-                        <tr class='modal-services__table-main-row'>
-                          <td class='modal-services__table-main-cell_1'>
-                            Невролог. Неврологическая блокада при дорсопатиях (с препаратом клиники)
-                          </td>
-                          <td class='modal-services__table-heading-cell_empty'></td>
-                          <td class='modal-services__table-main-cell_2'>950</td>
-                        </tr>
-                        </tbody>
-                      </table> <!-- /modal-services__table -->
-                      <div class="modal-services__total">
-                        <p class="modal-services__total-text">Общая сумма:</p>
-                        <div class="modal-services__total-output">0000</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="modal-services__form">
-                      <h1 class='modal-services__heading'>Форма записи</h1>
-                      <p class='modal-services__text'>
-                        Для записи на прием Вам перезвонит наш специалист в течение 10 минут.
-                      </p>
-                      <form class='modal-services__callback'>
-                        <label class='modal-services__callback-text' for='modal-services__name'>
-                          Введите фамилию, имя и отчество:
-                        </label>
-                        <input class='modal-services__callback-input-name'  type='text' id='modal-services__name'
-                               placeholder='Иванов Андрей Александрович'>
-                        <label class='modal-services__callback-text' for='modal-services__phone'>Введите телефон:</label>
-                        <input class='modal-services__callback-input-phone'
-                               type='tel' id='modal-services__phone' placeholder='+ 7 923 548-21-32'>
-                        <button class='modal-services__callback-button' type='submit'>Отправить заявку</button>
-                      </form> <!-- /modal-services__callback -->
-                    </div> <!-- /modal-services__form -->
-                  </div>
-                  <div class="col-lg-8">
-                    <div class='owl-carousel' id='owl-carousel_modal'>
-                      <div class='item'>
-                        <i class='sprite sprite-Pashkina'></i>
-                        <p class='item__name'>Пашкина Екатерина Мехайловна</p>
-                        <p class='item__post'>Главный врач - кардиолог</p>
-                      </div>
-                      <div class='item'>
-                        <i class='sprite sprite-Bogdan'></i>
-                        <p class='item__name'>Богдан Дарья Сергеевна</p>
-                        <p class='item__post'>Врач - гастроэнтеролог</p>
-                      </div>
-                      <div class='item'>
-                        <i class='sprite sprite-Vakulenchik'></i>
-                        <p class='item__name'>Вакуленчик Николай Сергеевич</p>
-                        <p class='item__post'>Врач уролог - андролог</p>
-                      </div>
-                    </div> <!-- /owl-carousel -->
-                  </div>
-                </div> <!-- /modal-booking -->
-              </div>
-            </div> <!-- /modal-booking-bg -->
           </div>
         </div>
       </div>
@@ -394,7 +248,7 @@
       <div class='container'>
         <div class='row'>
           <div class='col-lg-4'>
-            <button class='feedback__review-button' type='button'>Оставить отзыв</button>
+            <button class='feedback__review-button' type="button">Оставить отзыв</button>
           </div>
           <div class='col-lg-4'>
             <div class='feedback__logo'>
@@ -404,7 +258,7 @@
             </div>
           </div>
           <div class='col-lg-4'>
-            <button class='feedback__question-button' type='button'>Задать вопрос врачу</button>
+            <button class='feedback__question-button' type="button">Задать вопрос врачу</button>
           </div>
         </div>
       </div>
@@ -461,15 +315,6 @@
             <li class='nav-tabs__list-item'>
               <a href='#programs' class='offers__item' data-toggle='tab'>Комплексные программы</a>
             </li>
-            <!-- <div class='col-lg-4'>
-
-            </div>
-            <div class='col-lg-4'>
-
-            </div>
-            <div class='col-lg-4'>
-
-            </div> -->
           </ul>
         </div>
         <div class='row'>
@@ -692,6 +537,158 @@
       </div>
     </div>
   </footer> <!-- /footer -->
+
+  <input type='radio' id='modal-booking-open' name='modal-booking' class='modal-booking-radio'>
+  <div class='modal-booking-bg'>
+    <div class='modal-booking'>
+      <label class='modal-booking__button' for='modal-booking-close'><i class='sprite sprite-close'></i></label>
+      <input type='radio' id='modal-booking-close' name='modal-booking' class='modal-booking-radio'>
+      <h1 class='modal-booking__heading'>Форма записи</h1>
+      <p class='modal-booking__text'>Для записи на прием Вам перезвонит наш специалист в течение 10 минут.</p>
+      <form class='modal-booking__callback'>
+        <label class='modal-booking__callback-text' for='modal-booking__name'>Введите фамилию, имя и отчество:</label>
+        <input class='modal-booking__callback-input-name'  type='text' id='modal-booking__name'
+               placeholder='Иванов Андрей Александрович'>
+        <label class='modal-booking__callback-text' for='modal-booking__phone'>Введите телефон:</label>
+        <input class='modal-booking__callback-input-phone'
+               type='tel' id='modal-booking__phone' placeholder='+ 7 923 548-21-32'>
+        <button class='modal-booking__callback-button' type='submit'>Отправить заявку</button>
+      </form> <!-- /modal-booking__callback -->
+    </div> <!-- /modal-booking -->
+  </div> <!-- /modal-booking-bg -->
+
+  <input type='radio' id='modal-services-open' name='modal-services' class='modal-services-radio'>
+  <div class='modal-services-bg'>
+    <div class='container'>
+      <div class='modal-services'>
+        <label class='modal-services__button' for='modal-services-close'>
+          <i class='sprite sprite-close'></i>
+        </label>
+        <input type='radio' id='modal-services-close' name='modal-services' class='modal-services-radio'>
+        <div class='row'>
+          <div class='col-lg-12'>
+            <table class='modal-services__table'>
+              <thead class='modal-services__table-heading'>
+              <tr class='modal-services__table-heading-row'>
+                <td class='modal-services__table-heading-cell_1'>Неврология</td>
+                <td class='modal-services__table-heading-cell_empty'></td>
+                <td class='modal-services__table-heading-cell_2'>Цена руб.</td>
+              </tr>
+              </thead>
+              <tbody class='modal-services__table-main'>
+              <tr class='modal-services__table-main-row'>
+                <td class='modal-services__table-main-cell_empty'></td>
+              </tr>
+              <tr class='modal-services__table-main-row'>
+                <td class='modal-services__table-main-cell_1'>Консультация невролога первичная</td>
+                <td class='modal-services__table-heading-cell_empty'></td>
+                <td class='modal-services__table-main-cell_2'>650</td>
+              </tr>
+              <tr class='modal-services__table-main-row'>
+                <td class='modal-services__table-main-cell_1'>Консультация невролога повторная</td>
+                <td class='modal-services__table-heading-cell_empty'></td>
+                <td class='modal-services__table-main-cell_2'>550</td>
+              </tr>
+              <tr class='modal-services__table-main-row'>
+                <td class='modal-services__table-main-cell_1'>
+                  Невролог. Неврологическая блокада при дорсопатиях (без стоимости препарата)
+                </td>
+                <td class='modal-services__table-heading-cell_empty'></td>
+                <td class='modal-services__table-main-cell_2'>550</td>
+              </tr>
+              <tr class='modal-services__table-main-row'>
+                <td class='modal-services__table-main-cell_1'>
+                  Невролог. Неврологическая блокада при дорсопатиях (с препаратом клиники)
+                </td>
+                <td class='modal-services__table-heading-cell_empty'></td>
+                <td class='modal-services__table-main-cell_2'>950</td>
+              </tr>
+              </tbody>
+            </table> <!-- /modal-services__table -->
+            <div class='modal-services__total'>
+              <p class='modal-services__total-text'>Общая сумма:</p>
+              <div class='modal-services__total-output'>0000</div>
+            </div>
+          </div>
+          <div class='col-lg-4'>
+            <div class='modal-services__form'>
+              <h1 class='modal-services__heading'>Форма записи</h1>
+              <p class='modal-services__text'>
+                Для записи на прием Вам перезвонит наш специалист в течение 10 минут.
+              </p>
+              <form class='modal-services__callback'>
+                <label class='modal-services__callback-text' for='modal-services__name'>
+                  Введите фамилию, имя и отчество:
+                </label>
+                <input class='modal-services__callback-input-name'  type='text' id='modal-services__name'
+                       placeholder='Иванов Андрей Александрович'>
+                <label class='modal-services__callback-text' for='modal-services__phone'>Введите телефон:</label>
+                <input class='modal-services__callback-input-phone'
+                       type='tel' id='modal-services__phone' placeholder='+ 7 923 548-21-32'>
+                <button class='modal-services__callback-button' type='submit'>Отправить заявку</button>
+              </form> <!-- /modal-services__callback -->
+            </div> <!-- /modal-services__form -->
+          </div>
+          <div class='col-lg-8'>
+            <div class='owl-carousel' id='owl-carousel_modal'>
+              <div class='item'>
+                <i class='sprite sprite-Pashkina'></i>
+                <p class='item__name'>Пашкина Екатерина Мехайловна</p>
+                <p class='item__post'>Главный врач - кардиолог</p>
+              </div>
+              <div class='item'>
+                <i class='sprite sprite-Bogdan'></i>
+                <p class='item__name'>Богдан Дарья Сергеевна</p>
+                <p class='item__post'>Врач - гастроэнтеролог</p>
+              </div>
+              <div class='item'>
+                <i class='sprite sprite-Vakulenchik'></i>
+                <p class='item__name'>Вакуленчик Николай Сергеевич</p>
+                <p class='item__post'>Врач уролог - андролог</p>
+              </div>
+            </div> <!-- /owl-carousel -->
+          </div>
+        </div>
+      </div> <!-- /modal-services -->
+    </div>
+  </div> <!-- /modal-services-bg -->
+
+  <input type='radio' id='modal-feedback-open' name='modal-feedback' class='modal-feedback-radio'>
+  <div class='modal-feedback-bg'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-lg-12 _shorter'>
+          <div class='modal-feedback'>
+            <label class='modal-feedback__button' for='modal-feedback-close'>
+              <i class='sprite sprite-close'></i>
+            </label>
+            <input type='radio' id='modal-feedback-close' name='modal-feedback' class='modal-feedback-radio'>
+            <div class='modal-feedback__form'>
+              <h1 class='modal-feedback__heading'>Форма для отзыва</h1>
+              <form class='modal-feedback__callback'>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <label class='modal-feedback__callback-text' for='modal-feedback__name'>Введите имя:</label>
+                    <input class='modal-feedback__callback-input-name'  type='text' id='modal-feedback__name'
+                           placeholder='Андрей'>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <label class='modal-feedback__callback-text' for='modal-feedback__phone'>Введите телефон:</label>
+                  <input class='modal-feedback__callback-input-phone'
+                         type='tel' id='modal-feedback__phone' placeholder='+ 7 923 548-21-32'>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" class="modal-feedback__callback-text-area"></textarea>
+                <button class='modal-feedback__callback-button' type='submit'>Отправить</button>
+              </form> <!-- /modal-feedback__callback -->
+            </div> <!-- /modal-feedback__form -->
+          </div>
+        </div>
+      </div> <!-- /modal-feedback -->
+    </div>
+  </div> <!-- /modal-feedback-bg -->
+
+
   <script src='vendor/jQuery/jquery.min.js'></script>
   <script src='vendor/bootstrap/js/bootstrap.min.js'></script>
   <script src='vendor/owlCarousel/owl.carousel.min.js'></script>
