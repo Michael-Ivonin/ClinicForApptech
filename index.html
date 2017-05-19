@@ -44,7 +44,7 @@
       <input type='radio' id='modal-booking-open' name='modal-booking' class='modal-booking-radio'>
       <div class='modal-booking-bg'>
         <div class='modal-booking'>
-          <label class='modal-booking__button' for='modal-booking-close'>Закрыть</label>
+          <label class='modal-booking__button' for='modal-booking-close'><i class="sprite sprite-close"></i></label>
           <input type='radio' id='modal-booking-close' name='modal-booking' class='modal-booking-radio'>
           <h1 class='modal-booking__heading'>Форма записи</h1>
           <p class='modal-booking__text'>Для записи на прием Вам перезвонит наш специалист в течение 10 минут.</p>
@@ -64,50 +64,6 @@
   <main class='content'>
     <div class='benefits'>
       <div class='container'>
-
-        <!-- <div class='row _justify'>
-          <div class='col-lg-2 col-md-2'>
-            <div class='row'>
-              <div class='benefits__item'>
-                <i class='sprite sprite-doctor center-block'></i>
-                <p class='benefits__item-text'>Специалисты<br>высших&nbsp;категорий</p>
-              </div>
-            </div>
-          </div>
-          <div class='col-lg-2 col-md-2'>
-            <div class='row'>
-              <div class='benefits__item'>
-                <i class='sprite sprite-network'></i>
-                <p class='benefits__item-text'>Оборудование<br>экспертного&nbsp;класса</p>
-              </div>
-            </div>
-          </div>
-          <div class='col-lg-2 col-md-2'>
-            <div class='row'>
-              <div class='benefits__item'>
-                <i class='sprite sprite-list'></i>
-                <p class='benefits__item-text'>Широкий&nbsp;комплекс<br>медицинских&nbsp;услуг</p>
-              </div>
-            </div>
-          </div>
-          <div class='col-lg-2 col-md-2'>
-            <div class='row'>
-              <div class='benefits__item'>
-                <i class='sprite sprite-time'></i>
-                <p class='benefits__item-text'>Быстро&nbsp;и&nbsp;без<br>очередей</p>
-              </div>
-            </div>
-          </div>
-          <div class='col-lg-2 col-md-2'>
-            <div class='row'>
-              <div class='benefits__item'>
-                <i class='sprite sprite-placeholder center-block'></i>
-                <p class='benefits__item-text'>В&nbsp;центре<br>города</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
         <div class='owl-carousel' id='owl-carousel_1'>
           <div class='item benefits__item'>
             <i class='sprite sprite-doctor center-block'></i>
@@ -130,7 +86,6 @@
             <p class='benefits__item-text'>В&nbsp;центре<br>города</p>
           </div>
         </div>
-
       </div>
     </div> <!-- /benefits -->
     <section class='about-clinic'>
@@ -144,20 +99,6 @@
               точно знаем: здоровье - это самое дорогое<br>
               в жизни человека.
             </p>
-
-            <!-- <div id='myCarousel' class='carousel'>
-              <div class='carousel-inner'>
-                <div class='active item'><img src='img/our-team.jpg' alt='Our-team'></div>
-                <div class='item'><img src='img/our-team-2.jpg' alt='Our-team-2'></div>
-              </div>
-              <a class='carousel-control left' href='#myCarousel' data-slide='prev'>
-                <i class='sprite sprite-about-clinic-left'></i>
-              </a>
-              <a class='carousel-control right' href='#myCarousel' data-slide='next'>
-                <i class='sprite sprite-about-clinic-right'></i>
-              </a>
-            </div> -->
-
             <div class='owl-carousel' id='owl-carousel_2'>
               <div class='item'>
                 <img src='img/our-team.jpg' alt='Our-team'>
@@ -166,7 +107,6 @@
                 <img src='img/our-team-2.jpg' alt='Our-team-2'>
               </div>
             </div>
-
           </div>
           <div class='col-lg-6 col-md-6 _shorter'>
             <p class='about-clinic__reason-text'>
@@ -355,63 +295,93 @@
             <div class='modal-services-bg'>
               <div class='container'>
                 <div class='modal-services'>
-                  <label class='modal-services__button' for='modal-services-close'>Закрыть</label>
+                  <label class='modal-services__button' for='modal-services-close'>
+                    <i class="sprite sprite-close"></i>
+                  </label>
                   <input type='radio' id='modal-services-close' name='modal-services' class='modal-services-radio'>
-                  <table class='modal-services__table'>
-                    <thead class='modal-services__table-heading'>
-                    <tr class='modal-services__table-heading-row'>
-                      <td class='modal-services__table-heading-cell_1'>Неврология</td>
-                      <td class='modal-services__table-heading-cell_empty'></td>
-                      <td class='modal-services__table-heading-cell_2'>Цена руб.</td>
-                    </tr>
-                    </thead>
-                    <tbody class='modal-services__table-main'>
-                    <tr class='modal-services__table-main-row'>
-                      <td class='modal-services__table-main-cell_empty'></td>
-                    </tr>
-                    <tr class='modal-services__table-main-row'>
-                      <td class='modal-services__table-main-cell_1'>Консультация невролога первичная</td>
-                      <td class='modal-services__table-heading-cell_empty'></td>
-                      <td class='modal-services__table-main-cell_2'>650</td>
-                    </tr>
-                    <tr class='modal-services__table-main-row'>
-                      <td class='modal-services__table-main-cell_1'>Консультация невролога повторная</td>
-                      <td class='modal-services__table-heading-cell_empty'></td>
-                      <td class='modal-services__table-main-cell_2'>550</td>
-                    </tr>
-                    <tr class='modal-services__table-main-row'>
-                      <td class='modal-services__table-main-cell_1'>
-                        Невролог. Неврологическая блокада при дорсопатиях (без стоимости препарата)
-                      </td>
-                      <td class='modal-services__table-heading-cell_empty'></td>
-                      <td class='modal-services__table-main-cell_2'>550</td>
-                    </tr>
-                    <tr class='modal-services__table-main-row'>
-                      <td class='modal-services__table-main-cell_1'>
-                        Невролог. Неврологическая блокада при дорсопатиях (с препаратом клиники)
-                      </td>
-                      <td class='modal-services__table-heading-cell_empty'></td>
-                      <td class='modal-services__table-main-cell_2'>950</td>
-                    </tr>
-                    </tbody>
-                  </table> <!-- /modal-services__table -->
-
-                  <div class="modal-services__form">
-                    <h1 class='modal-services__heading'>Форма записи</h1>
-                    <p class='modal-services__text'>
-                      Для записи на прием Вам перезвонит наш специалист в течение 10 минут.
-                    </p>
-                    <form class='modal-services__callback'>
-                      <label class='modal-services__callback-text' for='modal-services__name'>
-                        Введите фамилию, имя и отчество:
-                      </label>
-                      <input class='modal-services__callback-input-name'  type='text' id='modal-services__name'
-                             placeholder='Иванов Андрей Александрович'>
-                      <label class='modal-services__callback-text' for='modal-services__phone'>Введите телефон:</label>
-                      <input class='modal-services__callback-input-phone'
-                             type='tel' id='modal-services__phone' placeholder='+ 7 923 548-21-32'>
-                      <button class='modal-services__callback-button' type='submit'>Отправить заявку</button>
-                    </form>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <table class='modal-services__table'>
+                        <thead class='modal-services__table-heading'>
+                        <tr class='modal-services__table-heading-row'>
+                          <td class='modal-services__table-heading-cell_1'>Неврология</td>
+                          <td class='modal-services__table-heading-cell_empty'></td>
+                          <td class='modal-services__table-heading-cell_2'>Цена руб.</td>
+                        </tr>
+                        </thead>
+                        <tbody class='modal-services__table-main'>
+                        <tr class='modal-services__table-main-row'>
+                          <td class='modal-services__table-main-cell_empty'></td>
+                        </tr>
+                        <tr class='modal-services__table-main-row'>
+                          <td class='modal-services__table-main-cell_1'>Консультация невролога первичная</td>
+                          <td class='modal-services__table-heading-cell_empty'></td>
+                          <td class='modal-services__table-main-cell_2'>650</td>
+                        </tr>
+                        <tr class='modal-services__table-main-row'>
+                          <td class='modal-services__table-main-cell_1'>Консультация невролога повторная</td>
+                          <td class='modal-services__table-heading-cell_empty'></td>
+                          <td class='modal-services__table-main-cell_2'>550</td>
+                        </tr>
+                        <tr class='modal-services__table-main-row'>
+                          <td class='modal-services__table-main-cell_1'>
+                            Невролог. Неврологическая блокада при дорсопатиях (без стоимости препарата)
+                          </td>
+                          <td class='modal-services__table-heading-cell_empty'></td>
+                          <td class='modal-services__table-main-cell_2'>550</td>
+                        </tr>
+                        <tr class='modal-services__table-main-row'>
+                          <td class='modal-services__table-main-cell_1'>
+                            Невролог. Неврологическая блокада при дорсопатиях (с препаратом клиники)
+                          </td>
+                          <td class='modal-services__table-heading-cell_empty'></td>
+                          <td class='modal-services__table-main-cell_2'>950</td>
+                        </tr>
+                        </tbody>
+                      </table> <!-- /modal-services__table -->
+                      <div class="modal-services__total">
+                        <p class="modal-services__total-text">Общая сумма:</p>
+                        <div class="modal-services__total-output">0000</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="modal-services__form">
+                      <h1 class='modal-services__heading'>Форма записи</h1>
+                      <p class='modal-services__text'>
+                        Для записи на прием Вам перезвонит наш специалист в течение 10 минут.
+                      </p>
+                      <form class='modal-services__callback'>
+                        <label class='modal-services__callback-text' for='modal-services__name'>
+                          Введите фамилию, имя и отчество:
+                        </label>
+                        <input class='modal-services__callback-input-name'  type='text' id='modal-services__name'
+                               placeholder='Иванов Андрей Александрович'>
+                        <label class='modal-services__callback-text' for='modal-services__phone'>Введите телефон:</label>
+                        <input class='modal-services__callback-input-phone'
+                               type='tel' id='modal-services__phone' placeholder='+ 7 923 548-21-32'>
+                        <button class='modal-services__callback-button' type='submit'>Отправить заявку</button>
+                      </form> <!-- /modal-services__callback -->
+                    </div> <!-- /modal-services__form -->
+                  </div>
+                  <div class="col-lg-8">
+                    <div class='owl-carousel' id='owl-carousel_modal'>
+                      <div class='item'>
+                        <i class='sprite sprite-Pashkina'></i>
+                        <p class='item__name'>Пашкина Екатерина Мехайловна</p>
+                        <p class='item__post'>Главный врач - кардиолог</p>
+                      </div>
+                      <div class='item'>
+                        <i class='sprite sprite-Bogdan'></i>
+                        <p class='item__name'>Богдан Дарья Сергеевна</p>
+                        <p class='item__post'>Врач - гастроэнтеролог</p>
+                      </div>
+                      <div class='item'>
+                        <i class='sprite sprite-Vakulenchik'></i>
+                        <p class='item__name'>Вакуленчик Николай Сергеевич</p>
+                        <p class='item__post'>Врач уролог - андролог</p>
+                      </div>
+                    </div> <!-- /owl-carousel -->
                   </div>
                 </div> <!-- /modal-booking -->
               </div>
@@ -729,8 +699,6 @@
   <script src='vendor/gmaps/gmaps.min.js'></script>
   <script>
     $(document).ready(function() {
-      $('.carousel').carousel();
-
       $('#owl-carousel_1').owlCarousel({
         //nav: true,
         navText: ['', ''],
@@ -788,6 +756,39 @@
         }
       });
 
+      $('#owl-carousel_modal').owlCarousel({
+        //nav: true,
+        navText: ['', ''],
+        dots: false,
+        //loop: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            //margin: 2,
+            nav: false
+          },
+          768: {
+            items: 3,
+            margin: 54,
+            nav: false
+          },
+          992: {
+            items: 3,
+            margin: 36
+
+          },
+          1200: {
+            items: 3,
+            margin: 13
+          }
+        }
+      });
+
       $('#owl-carousel_3').owlCarousel({
         nav: true,
         navText: ['', ''],
@@ -833,6 +834,14 @@
         lat: 54.966366,
         lng: 73.381755,
         title: 'Карла Маркса проспект, 18 кopпyc 28'
+      });
+
+      $('#modal-booking-open, #modal-services-open').click(function() {
+        if (this.checked) $('body').addClass('stop-scrolling');
+      });
+
+      $('#modal-booking-close, #modal-services-close').click(function() {
+        $('body').removeClass('stop-scrolling');
       });
     });
   </script>

@@ -60,20 +60,30 @@
   width: 18px;
   height: 36px;
 }
+.sprite.sprite-close {
+  background-position: -704px -5px;
+  width: 13px;
+  height: 13px;
+}
 .sprite.sprite-doctor {
   background-position: -648px -51px;
   width: 151px;
   height: 151px;
 }
 .sprite.sprite-experts-left {
-  background-position: -704px -5px;
+  background-position: -727px -5px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-experts-right {
-  background-position: -726px -5px;
+  background-position: -749px -5px;
   width: 12px;
   height: 20px;
+}
+.sprite.sprite-facebook {
+  background-position: -771px -5px;
+  width: 10px;
+  height: 18px;
 }
 .sprite.sprite-feedback-logo {
   background-position: -648px -212px;
@@ -81,47 +91,67 @@
   height: 57px;
 }
 .sprite.sprite-footer-logo {
-  background-position: -748px -5px;
+  background-position: -691px -212px;
   width: 65px;
   height: 24px;
 }
 .sprite.sprite-list {
-  background-position: -434px -279px;
+  background-position: -434px -246px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-logo {
-  background-position: -691px -212px;
+  background-position: -691px -246px;
   width: 133px;
   height: 50px;
 }
 .sprite.sprite-loupe {
-  background-position: -809px -39px;
+  background-position: -791px -5px;
   width: 16px;
   height: 17px;
 }
 .sprite.sprite-network {
-  background-position: -595px -279px;
+  background-position: -595px -306px;
   width: 150px;
   height: 150px;
 }
+.sprite.sprite-ok {
+  background-position: -809px -32px;
+  width: 12px;
+  height: 20px;
+}
 .sprite.sprite-placeholder {
-  background-position: -5px -439px;
+  background-position: -5px -466px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-time {
-  background-position: -166px -439px;
+  background-position: -166px -466px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-up {
-  background-position: -755px -272px;
+  background-position: -766px -212px;
   width: 20px;
   height: 20px;
 }
+.sprite.sprite-vk {
+  background-position: -809px -62px;
+  width: 16px;
+  height: 10px;
+}
+.sprite.sprite-youTube {
+  background-position: -809px -82px;
+  width: 14px;
+  height: 11px;
+}
 body {
   font-family: "MyriadPro", sans-serif;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+  padding-right: 17px;
 }
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
@@ -207,7 +237,6 @@ body {
 }
 .modal-booking {
   width: 437px;
-  height: 506px;
   background: #ffffff;
   padding: 32px 42px 36px 42px;
   z-index: 3;
@@ -351,6 +380,7 @@ body {
   font-size: 28px;
   color: #282a33;
   margin-bottom: 42px;
+  line-height: 30px;
 }
 /*.carousel-control {
   top: 314px;
@@ -398,31 +428,38 @@ body {
   font-size: 27px;
   color: #282a33;
   margin-bottom: 43px;
+  line-height: 29px;
 }
 .about-clinic__team-text {
   font-size: 21px;
   color: #282a33;
   margin-bottom: 21px;
+  line-height: 21px;
 }
 .about-clinic__equipment-text {
   font-size: 21px;
   color: #282a33;
   margin-bottom: 21px;
+  line-height: 21px;
 }
 .about-clinic__space-text {
   font-size: 21px;
   color: #282a33;
   margin-bottom: 21px;
+  line-height: 21px;
 }
 .about-clinic__time-text {
   font-size: 21px;
   color: #282a33;
   margin-bottom: 21px;
+  line-height: 21px;
+  line-height: 24px;
 }
 .about-clinic__wish-text {
   font-size: 21px;
   color: #282a33;
   margin-bottom: 21px;
+  line-height: 21px;
   margin: 35px 0 0 232px;
 }
 .about-clinic__line {
@@ -430,7 +467,7 @@ body {
   width: 47%;
   margin-bottom: 10px;
   position: relative;
-  left: -147px;
+  left: -144px;
 }
 .search-for-services {
   padding: 73px 0 65px 0;
@@ -502,11 +539,9 @@ body {
 .services__group-heading {
   width: 50px;
   height: 50px;
-  text-align: center;
   font-size: 39px;
   font-weight: 700;
   color: #7c7d83;
-  padding: 3px 0;
   border: 2px solid #b1e06f;
   margin-bottom: 29px;
   background: none;
@@ -538,18 +573,35 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
 .modal-services {
+  overflow: auto;
+  height: 100vh;
   background: #ffffff;
-  padding: 32px 42px 36px 42px;
+  padding: 22px 60px 14px 60px;
   z-index: 3;
+}
+.modal-services__button {
+  color: #7c7d83;
+  font-size: 18px;
+  margin-bottom: 25px;
+  float: left;
+  font-size: 15px;
+  text-transform: none;
+  float: right;
+  position: relative;
+  left: 30px;
+  margin-bottom: 36px;
+}
+.modal-services__button:hover {
+  cursor: pointer;
 }
 .modal-services__table {
   width: 100%;
+  margin-bottom: 33px;
 }
 .modal-services__table-heading {
   background: #b1e06f;
@@ -575,6 +627,8 @@ body {
   vertical-align: middle;
   width: 123px;
   padding: 0 24px;
+  width: 182px;
+  text-align: center;
 }
 .modal-services__table-main {
   font-size: 18px;
@@ -598,20 +652,36 @@ body {
   width: 123px;
   vertical-align: middle;
   padding: 0 41px;
+  text-align: center;
 }
-.modal-services__button {
-  color: #7c7d83;
-  font-size: 18px;
-  margin-bottom: 25px;
-  float: left;
-  font-size: 15px;
-  text-transform: none;
+.modal-services__total {
   float: right;
-  position: relative;
-  top: -15px;
 }
-.modal-services__button:hover {
-  cursor: pointer;
+.modal-services__total-text {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7c7d83;
+  float: left;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 27px;
+}
+.modal-services__total-output {
+  width: 165px;
+  height: 40px;
+  background: #b1e06f;
+  color: #ffffff;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-services__form {
+  position: relative;
+  top: -41px;
 }
 .modal-services__heading {
   color: #292c3a;
@@ -650,6 +720,7 @@ body {
   float: left;
   width: 350px;
   margin-bottom: 26px;
+  width: 100%;
 }
 .modal-services__callback-input-name::-webkit-input-placeholder {
   color: #bfbfc2;
@@ -676,6 +747,7 @@ body {
   width: 350px;
   margin-bottom: 26px;
   margin-bottom: 29px;
+  width: 100%;
 }
 .modal-services__callback-input-phone::-webkit-input-placeholder {
   color: #bfbfc2;
@@ -689,6 +761,16 @@ body {
 .modal-services__callback-input-phone:-ms-input-placeholder {
   color: #bfbfc2;
 }
+.modal-services .owl-carousel {
+  margin-top: 54px;
+  margin-left: 26px;
+}
+.modal-services .item {
+  text-align: center;
+}
+.modal-services .item__name {
+  color: #7c7d83;
+}
 .modal-services__callback-button {
   width: 199px;
   height: 46px;
@@ -700,10 +782,6 @@ body {
   float: right;
   border: none;
   outline: none;
-}
-.modal-services__form {
-  width: 437px;
-  height: 506px;
 }
 .feedback {
   padding: 88px 0 104px 0;
@@ -781,14 +859,14 @@ body {
 }
 .experts .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -704px -5px;
+  background-position: -727px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
 }
 .experts .owl-next {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -726px -5px;
+  background-position: -749px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
