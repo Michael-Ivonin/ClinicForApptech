@@ -65,12 +65,20 @@
     .stitches-sprite(-648px, -5px, 18px, 36px);
   }
 
-  &.sprite-about-clinic-right {
+  &.sprite-about-clinic-left_hover {
     .stitches-sprite(-676px, -5px, 18px, 36px);
   }
 
+  &.sprite-about-clinic-right {
+    .stitches-sprite(-704px, -5px, 18px, 36px);
+  }
+
+  &.sprite-about-clinic-right_hover {
+    .stitches-sprite(-732px, -5px, 18px, 36px);
+  }
+
   &.sprite-close {
-    .stitches-sprite(-704px, -5px, 13px, 13px);
+    .stitches-sprite(-760px, -5px, 13px, 13px);
   }
 
   &.sprite-doctor {
@@ -78,15 +86,27 @@
   }
 
   &.sprite-experts-left {
-    .stitches-sprite(-727px, -5px, 12px, 20px);
+    .stitches-sprite(-783px, -5px, 12px, 20px);
+  }
+
+  &.sprite-experts-left_hover {
+    .stitches-sprite(-805px, -5px, 12px, 20px);
   }
 
   &.sprite-experts-right {
-    .stitches-sprite(-749px, -5px, 12px, 20px);
+    .stitches-sprite(-809px, -35px, 12px, 20px);
+  }
+
+  &.sprite-experts-right_hover {
+    .stitches-sprite(-809px, -65px, 12px, 20px);
   }
 
   &.sprite-facebook {
-    .stitches-sprite(-771px, -5px, 10px, 18px);
+    .stitches-sprite(-809px, -95px, 10px, 18px);
+  }
+
+  &.sprite-facebook_hover {
+    .stitches-sprite(-809px, -123px, 10px, 18px);
   }
 
   &.sprite-feedback-logo {
@@ -106,7 +126,11 @@
   }
 
   &.sprite-loupe {
-    .stitches-sprite(-791px, -5px, 16px, 17px);
+    .stitches-sprite(-809px, -151px, 16px, 17px);
+  }
+
+  &.sprite-loupe_hover {
+    .stitches-sprite(-809px, -178px, 16px, 17px);
   }
 
   &.sprite-network {
@@ -114,7 +138,11 @@
   }
 
   &.sprite-ok {
-    .stitches-sprite(-809px, -32px, 12px, 20px);
+    .stitches-sprite(-809px, -205px, 12px, 20px);
+  }
+
+  &.sprite-ok_hover {
+    .stitches-sprite(-595px, -235px, 12px, 20px);
   }
 
   &.sprite-placeholder {
@@ -126,15 +154,27 @@
   }
 
   &.sprite-up {
-    .stitches-sprite(-766px, -212px, 20px, 20px);
+    .stitches-sprite(-617px, -235px, 20px, 20px);
+  }
+
+  &.sprite-up_hover {
+    .stitches-sprite(-755px, -306px, 20px, 20px);
   }
 
   &.sprite-vk {
-    .stitches-sprite(-809px, -62px, 16px, 10px);
+    .stitches-sprite(-785px, -306px, 16px, 10px);
+  }
+
+  &.sprite-vk_hover {
+    .stitches-sprite(-811px, -306px, 16px, 10px);
   }
 
   &.sprite-youTube {
-    .stitches-sprite(-809px, -82px, 14px, 11px);
+    .stitches-sprite(-785px, -326px, 14px, 11px);
+  }
+
+  &.sprite-youTube_hover {
+    .stitches-sprite(-809px, -326px, 14px, 11px);
   }
 }
 // /Sprites
@@ -321,20 +361,20 @@ body {
   display: inline-block;
 
   &:hover {
-    color: @light-green;
+    background-position: -676px -5px;
   }
 }
 
 .about-clinic .owl-next {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -676px -5px;
+  background-position: -704px -5px;
   width: 18px;
   height: 36px;
   display: inline-block;
   margin-left: 478px;
 
   &:hover {
-    color: @light-green;
+    background-position: -732px -5px;
   }
 }
 
@@ -439,6 +479,20 @@ body {
   position: relative;
   top: 2px;
   padding: 0;
+
+  &:hover {
+    .sprite-loupe {
+      display: none;
+    }
+
+    .sprite-loupe_hover {
+      display: block;
+    }
+  }
+}
+
+.sprite-loupe_hover {
+  display: none;
 }
 
 .services {
@@ -558,6 +612,48 @@ body {
   margin-bottom: 68px;
 }
 
+.item {
+
+}
+
+.item .sprite {
+  display: inline-block;
+
+  &:hover {
+    .item-bg {
+      visibility: visible;
+    }
+  }
+}
+
+.item-bg {
+  visibility: hidden;
+  height: 100%;
+  border-radius: 100%;
+  background: rgba(41, 44, 58, .7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-bg__button {
+  width: 115px;
+  height: 33px;
+  background: none;
+  color: @white;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 2px solid @white;
+  outline: none;
+
+  &:hover {
+    background: @white;
+    color: @medium-blue;
+  }
+
+  .button-animation;
+}
+
 .item__name {
   color: @white;
   font-size: 19px;
@@ -572,19 +668,27 @@ body {
 
 .experts .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -727px -5px;
+  background-position: -783px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
+
+  &:hover {
+    background-position: -805px -5px;
+  }
 }
 
 .experts .owl-next {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -749px -5px;
+  background-position: -809px -35px;
   width: 12px;
   height: 20px;
   display: inline-block;
   margin-left: 30px;
+
+  &:hover {
+    background-position: -809px -65px;
+  }
 }
 
 .offers {
@@ -691,6 +795,7 @@ body {
 }
 
 .offers__paragraphs-item {
+  display: block;
   color: @dark-blue;
   font-size: 23px;
   font-weight: 600;
@@ -698,6 +803,11 @@ body {
   border-bottom: 2px solid @light-green;
   margin-bottom: 53px;
   line-height: 26px;
+
+  &:hover {
+    text-decoration: none;
+    color: @medium-grey;
+  }
 }
 
 .offers__paragraphs-item_no-line {
@@ -735,7 +845,7 @@ body {
 .offers__description-text {
   .offers__description-heading;
   color: @medium-grey;
-  margin-bottom: 85px;
+  margin-bottom: 79px;
   line-height: 21px;
 }
 
@@ -743,22 +853,28 @@ body {
   background: none;
   width: 135px;
   height: 37px;
+  box-sizing: content-box;
   border: 2px solid @medium-blue;
   outline: none;
   text-transform: uppercase;
-  margin-left: 176px;
+  margin-left: 159px;
+
+  &:hover {
+    background: @medium-blue;
+    color: @white;
+  }
+
+  .button-animation;
 }
 
 .offers__appointment-button {
   .feedback__review-button;
   color: @white;
   margin: 32px 0 0 442px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   &:hover {
-    cursor: pointer;
+    background: @medium-blue;
+    color: @white;
   }
 }
 
@@ -845,7 +961,8 @@ body {
 .blog__subscription {
   background: @white;
   margin-top: 19px;
-  padding: 61px 0 30px 56px;
+  padding: 61px 49px 30px 56px;
+  float: left;
 }
 
 .blog__subscription-text {
@@ -868,6 +985,7 @@ body {
   font-size: 18px;
   color: @super-light-grey;
   float: left;
+  margin-bottom: 29px;
 
   &::-webkit-input-placeholder {
     color: @super-light-grey;
@@ -883,6 +1001,31 @@ body {
   }
 }
 
+.blog__subscription-networks {
+  width: 144px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  bottom: -20px;
+}
+
+.blog__subscription-networks-link {
+  &:hover {
+    .secrete {
+      display: none;
+    }
+
+    .display-none {
+      display: block;
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}
+
 .blog__subscription-button {
   width: 121px;
   height: 37px;
@@ -893,12 +1036,21 @@ body {
   color: @white;
   font-size: 12px;
   font-weight: 600;
-  margin: 29px 0 0 527px;
+  float: right;
+
+  &:hover {
+    background: none;
+    color: @medium-blue;
+    outline: 2px solid @medium-blue;
+  }
+
+  .button-animation;
 }
 
 .blog__description {
   background: @white;
   padding: 53px 48px 30px 48px;
+  float: left;
 }
 
 .blog__description-heading {
@@ -929,12 +1081,12 @@ body {
 .blog__description-article-text {
   color: @medium-grey;
   font-size: 16px;
-  height: 167px;
+  height: 196px;
 }
 
 .blog__description-button {
   .blog__subscription-button;
-  margin-left: 142px;
+  width: 135px;
 }
 
 .contacts {
@@ -1029,6 +1181,12 @@ body {
   float: right;
   border: none;
   outline: none;
+
+  &:hover {
+    background: @light-green;
+  }
+
+  .button-animation;
 }
 
 .map {
@@ -1063,6 +1221,20 @@ body {
   float: right;
   position: relative;
   top: 5px;
+
+  &:hover {
+    .sprite-up {
+      display: none;
+    }
+
+    .sprite-up_hover {
+      display: block;
+    }
+  }
+}
+
+.sprite-up_hover {
+  display: none;
 }
 
 
