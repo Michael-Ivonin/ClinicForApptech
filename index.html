@@ -35,7 +35,9 @@
           <p class='header__phone'>+7&nbsp;(3812)&nbsp;39-44-44</p>
         </div>
         <div class='col-lg-2 col-md-3'>
-          <button class='header__button' type="button">Записаться на прием</button>
+          <button class='header__button' type="button" data-toggle="modal" data-target="#header-modal">
+            Записаться на прием
+          </button>
         </div>
       </div>
       <div class='header__presentation'>
@@ -249,7 +251,9 @@
       <div class='container'>
         <div class='row'>
           <div class='col-lg-4'>
-            <button class='feedback__review-button' type="button">Оставить отзыв</button>
+            <button class='feedback__review-button' type="button" data-toggle="modal" data-target="#feedback-modal-1">
+              Оставить отзыв
+            </button>
           </div>
           <div class='col-lg-4'>
             <div class='feedback__logo'>
@@ -259,7 +263,9 @@
             </div>
           </div>
           <div class='col-lg-4'>
-            <button class='feedback__question-button' type="button">Задать вопрос врачу</button>
+            <button class='feedback__question-button' type="button" data-toggle="modal" data-target="#feedback-modal-2">
+              Задать вопрос врачу
+            </button>
           </div>
         </div>
       </div>
@@ -462,7 +468,9 @@
           </div>
         </div>
         <div class='row'>
-          <button class='offers__appointment-button' type="button">Записаться на прием</button>
+          <button class='offers__appointment-button' type="button" data-toggle="modal" data-target="#header-modal">
+            Записаться на прием
+          </button>
         </div>
       </div>
     </section> <!-- /offers -->
@@ -579,25 +587,28 @@
     </div>
   </footer> <!-- /footer -->
 
-  <input type='radio' id='modal-booking-open' name='modal-booking' class='modal-booking-radio'>
-  <div class='modal-booking-bg'>
-    <div class='modal-booking'>
-      <label class='modal-booking__button' for='modal-booking-close'><i class='sprite sprite-close'></i></label>
-      <input type='radio' id='modal-booking-close' name='modal-booking' class='modal-booking-radio'>
-      <h1 class='modal-booking__heading'>Форма записи</h1>
-      <p class='modal-booking__text'>Для записи на прием Вам перезвонит наш специалист в течение 10 минут.</p>
-      <form class='modal-booking__callback'>
-        <label class='modal-booking__callback-text' for='modal-booking__name'>Введите фамилию, имя и отчество:</label>
-        <input class='modal-booking__callback-input-name'  type='text' id='modal-booking__name'
-               placeholder='Иванов Андрей Александрович'>
-        <label class='modal-booking__callback-text' for='modal-booking__phone'>Введите телефон:</label>
-        <input class='modal-booking__callback-input-phone'
-               type='tel' id='modal-booking__phone' placeholder='+ 7 923 548-21-32'>
-        <button class='modal-booking__callback-button' type='submit'>Отправить заявку</button>
-      </form> <!-- /modal-booking__callback -->
-    </div> <!-- /modal-booking -->
-  </div> <!-- /modal-booking-bg -->
+  <!-- header-modal -->
+  <div class="modal fade header-modal" tabindex="-1" role="dialog" id="header-modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content header-modal__content">
+        <div class="header-modal__wrap">
+          <h1 class='header-modal__heading'>Форма записи</h1>
+          <p class='header-modal__text'>Для записи на прием Вам перезвонит наш специалист в течение 10 минут.</p>
+          <form class='header-modal__callback'>
+            <label class='header-modal__callback-text' for='header-modal__name'>Введите фамилию, имя и отчество:</label>
+            <input class='header-modal__callback-input-name'  type='text' id='header-modal__name'
+                   placeholder='Иванов Андрей Александрович'>
+            <label class='header-modal__callback-text' for='header-modal__phone'>Введите телефон:</label>
+            <input class='header-modal__callback-input-phone'
+                   type='tel' id='header-modal__phone' placeholder='+ 7 923 548-21-32'>
+            <button class='header-modal__callback-button' type='submit'>Отправить заявку</button>
+          </form> <!-- /modal-booking__callback -->
+        </div> <!-- /header-modal__wrap -->
+      </div> <!-- /modal-content -->
+    </div> <!-- /modal-dialog -->
+  </div> <!-- /modal -->
 
+  <!-- modal-services -->
   <input type='radio' id='modal-services-open' name='modal-services' class='modal-services-radio'>
   <div class='modal-services-bg'>
     <div class='container'>
@@ -706,8 +717,35 @@
     </div>
   </div> <!-- /modal-services-bg -->
 
-  <input type='radio' id='modal-feedback-open' name='modal-feedback' class='modal-feedback-radio'>
-  <div class='modal-feedback-bg'>
+  <!-- feedback-modal-1 -->
+  <div class="modal fade feedback-modal-1" tabindex="-1" role="dialog" id="feedback-modal-1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content feedback-modal-1__content">
+        <div class="feedback-modal-1__wrap">
+          <h1 class='feedback-modal-1__heading'>Форма для отзыва</h1>
+          <form class='feedback-modal-1__callback'>
+            <div class="col-lg-6">
+              <div class="row">
+                <label class='feedback-modal-1__callback-text' for='feedback-modal-1__name'>Введите имя:</label>
+                <input class='feedback-modal-1__callback-input-name'  type='text' id='feedback-modal-1__name'
+                       placeholder='Андрей'>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <label class='feedback-modal-1__callback-text' for='feedback-modal-1__phone'>Введите телефон:</label>
+              <input class='feedback-modal-1__callback-input-phone'
+                     type='tel' id='feedback-modal-1__phone' placeholder='+ 7 923 548-21-32'>
+            </div>
+            <textarea id="feedback-modal-1__text-area" class="feedback-modal-1__callback-text-area"></textarea>
+            <button class='feedback-modal-1__callback-button' type='submit'>Отправить</button>
+          </form> <!-- /modal-feedback__callback -->
+        </div>
+      </div> <!-- /modal-content -->
+    </div> <!-- /modal-dialog -->
+  </div> <!-- /modal -->
+
+
+  <!-- <div class='modal-feedback-bg'>
     <div class='container'>
       <div class='row'>
         <div class='col-lg-12 _shorter'>
@@ -733,13 +771,43 @@
                 </div>
                 <textarea name="" id="" cols="30" rows="10" class="modal-feedback__callback-text-area"></textarea>
                 <button class='modal-feedback__callback-button' type='submit'>Отправить</button>
-              </form> <!-- /modal-feedback__callback -->
-            </div> <!-- /modal-feedback__form -->
+              </form>
+            </div>
           </div>
         </div>
-      </div> <!-- /modal-feedback -->
+      </div>
     </div>
-  </div> <!-- /modal-feedback-bg -->
+  </div> -->
+
+  <!-- feedback-modal-2 -->
+  <div class="modal fade feedback-modal-2" tabindex="-1" role="dialog" id="feedback-modal-2">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content feedback-modal-2__content">
+        <div class="feedback-modal-2__wrap">
+          <h1 class='feedback-modal-2__heading'>Задайте вопрос врачу</h1>
+          <form class='feedback-modal-2__callback'>
+            <div class="col-lg-6">
+              <div class="row">
+                <label class='feedback-modal-2__callback-text' for='feedback-modal-2__name'>Введите имя:</label>
+                <input class='feedback-modal-2__callback-input-name'  type='text' id='feedback-modal-2__name'
+                       placeholder='Андрей'>
+                <label class='feedback-modal-2__callback-text' for='feedback-modal-2__phone'>Введите телефон:</label>
+                <input class='feedback-modal-2__callback-input-phone'
+                       type='tel' id='feedback-modal-2__phone' placeholder='+ 7 923 548-21-32'>
+                <label class='feedback-modal-2__callback-text' for='feedback-modal-2__email'>Введите почту:</label>
+                <input class='feedback-modal-2__callback-input-email'
+                       type='email' id='feedback-modal-2__email' placeholder='vashapochta@gmail.com'>
+              </div>
+            </div>
+            <div class="col-lg-6 _longer">
+              <textarea id="feedback-modal-2__text-area" class="feedback-modal-2__callback-text-area"></textarea>
+            </div>
+            <button class='feedback-modal-2__callback-button' type='submit'>Отправить</button>
+          </form> <!-- /modal-feedback__callback -->
+        </div>
+      </div> <!-- /modal-content -->
+    </div> <!-- /modal-dialog -->
+  </div> <!-- /modal -->
 
 
   <script src='vendor/jQuery/jquery.min.js'></script>
@@ -884,14 +952,6 @@
         lat: 54.966366,
         lng: 73.381755,
         title: 'Карла Маркса проспект, 18 кopпyc 28'
-      });
-
-      $('#modal-booking-open, #modal-services-open').click(function() {
-        if (this.checked) $('body').addClass('stop-scrolling');
-      });
-
-      $('#modal-booking-close, #modal-services-close').click(function() {
-        $('body').removeClass('stop-scrolling');
       });
     });
   </script>

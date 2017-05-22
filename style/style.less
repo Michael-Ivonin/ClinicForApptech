@@ -387,6 +387,7 @@ body {
   color: @dark-blue;
   margin-bottom: 43px;
   //line-height: 29px;
+  float: left;
 }
 
 .about-clinic__team-text {
@@ -394,6 +395,7 @@ body {
   color: @dark-blue;
   margin-bottom: 21px;
   //line-height: 21px;
+  float: left;
 }
 
 .about-clinic__equipment-text {
@@ -417,9 +419,10 @@ body {
 .about-clinic__line {
   border-top: 2px solid @light-green;
   width: 47%;
-  margin-bottom: 10px;
-  position: relative;
-  left: -144px;
+  margin: 0 0 10px 0;
+  //position: relative;
+  //left: -144px;
+  float: left;
 }
 
 .search-for-services {
@@ -1239,72 +1242,46 @@ body {
 
 
 
-.modal-booking-radio {
-  display: none;
+.header-modal__content {
+  background: none;
+  border-radius: 0;
+  padding: 0 81px;
+  border: none;
 }
 
-.modal-booking-radio:checked + .modal-booking-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-booking-bg {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 2;
-}
-
-.modal-booking {
-  width: 437px;
+.header-modal__wrap {
+  float: left;
   background: @white;
-  padding: 32px 42px 36px 42px;
-  z-index: 3;
-
+  padding: 42px 42px 36px 41px;
 }
 
-.modal-booking__button {
-  .modal-booking__text;
-  float: right;
-  position: relative;
-  top: -15px;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.modal-booking__heading {
+.header-modal__heading {
   .contacts__callback-heading;
   margin-bottom: 27px;
 }
 
-.modal-booking__text {
+.header-modal__text {
   .contacts__callback-text;
   font-size: 15px;
   text-transform: none;
 }
 
-.modal-booking__callback-text {
+.header-modal__callback-text {
   .contacts__callback-text;
   text-transform: none;
 }
 
-.modal-booking__callback-input-name {
+.header-modal__callback-input-name {
   .contacts__callback-input-name;
 }
 
-.modal-booking__callback-input-phone {
+.header-modal__callback-input-phone {
   .contacts__callback-input-phone;
 }
 
-.modal-booking__callback-button {
+.header-modal__callback-button {
   .contacts__callback-button;
+  margin-right: 3px;
 }
 
 
@@ -1474,61 +1451,105 @@ body {
 
 
 
-.modal-feedback-radio {
-  .modal-booking-radio;
-}
-
-.modal-feedback-radio:checked + .modal-feedback-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-feedback-bg {
-  .modal-booking-bg;
-}
-
-.modal-feedback-bg .col-lg-12._shorter {
+/*.modal-feedback-bg .col-lg-12._shorter {
   padding: 0 170px;
 }
 
 .modal-feedback {
-  .modal-booking;
   width: 100%;
   padding: 38px 53px 43px 53px;
+}*/
+
+.feedback-modal-1__content {
+  background: none;
+  border-radius: 0;
+  margin: 0 36px;
+  border: none;
 }
 
-.modal-feedback__button {
-  .modal-booking__text;
-  float: right;
-  //position: relative;
-  //top: -15px;
-
-  &:hover {
-    cursor: pointer;
-  }
+.feedback-modal-1__wrap {
+  background: @white;
+  padding: 38px 53px 43px 45px;
+  float: left;
 }
 
-.modal-feedback__heading {
+.feedback-modal-1__heading {
   .contacts__callback-heading;
   padding-bottom: 15px;
   margin-bottom: 21px;
   text-align: left;
 }
 
-.modal-feedback__callback-text {
+.feedback-modal-1__callback-text {
   .contacts__callback-text;
   text-transform: none;
 }
 
-.modal-feedback__callback-input-name {
+.feedback-modal-1__callback-input-name {
   .contacts__callback-input-name;
 }
 
-.modal-feedback__callback-input-phone {
+.feedback-modal-1__callback-input-phone {
   .contacts__callback-input-phone;
 }
 
-.modal-feedback__callback-button {
+.feedback-modal-1__callback-text-area {
+  width: 100%;
+  height: 208px;
+  resize: none;
+  border: 2px solid @super-dark-white;
+  margin-bottom: 12px;
+}
+
+.feedback-modal-1__callback-button {
   .contacts__callback-button;
+}
+
+
+
+.feedback-modal-2__content {
+  .feedback-modal-1__content;
+}
+
+.feedback-modal-2__wrap {
+  .feedback-modal-1__wrap;
+  padding: 41px 50px 38px 51px;
+}
+
+.feedback-modal-2__heading {
+  .feedback-modal-1__heading;
+}
+
+.feedback-modal-2__callback-text {
+  .feedback-modal-1__callback-text;
+  margin-bottom: 11px;
+}
+
+.feedback-modal-2__callback-input-name {
+  .feedback-modal-1__callback-input-name;
+  margin-bottom: 16px;
+}
+
+.feedback-modal-2__callback-input-phone {
+  .feedback-modal-2__callback-input-name;
+}
+
+.feedback-modal-2__callback-input-email {
+  .feedback-modal-2__callback-input-phone;
+  margin-bottom: 0;
+}
+
+.feedback-modal-2__callback .col-lg-6._longer {
+  padding: 0 0;
+}
+
+.feedback-modal-2__callback-text-area {
+  .feedback-modal-1__callback-text-area;
+  width: 100%;
+  height: 261px;
+  margin-top: 29px;
+}
+
+.feedback-modal-2__callback-button {
+  .feedback-modal-1__callback-button;
 }
