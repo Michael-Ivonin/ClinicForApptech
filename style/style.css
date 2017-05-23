@@ -484,6 +484,10 @@ body {
   text-decoration: none;
   color: #282a33;
 }
+.services__group-item:focus {
+  text-decoration: none;
+  outline: none;
+}
 .feedback {
   padding: 88px 0 104px 0;
   background: #292c3a;
@@ -1294,67 +1298,47 @@ body {
   position: relative;
   top: 2px;
 }
-.modal-services-radio {
-  display: none;
+.services-modal .modal-lg {
+  width: 88%;
 }
-.modal-services-radio:checked + .modal-services-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.services-modal__content {
+  background: none;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
-.modal-services-bg {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-}
-.modal-services {
-  overflow: auto;
-  height: 100vh;
+.services-modal__wrap {
+  float: left;
   background: #ffffff;
   padding: 22px 60px 14px 60px;
-  z-index: 3;
 }
-.modal-services__button {
-  color: #7c7d83;
-  font-size: 18px;
-  margin-bottom: 25px;
-  float: left;
-  font-size: 15px;
-  text-transform: none;
-  float: right;
+.services-modal__button-close {
   position: relative;
-  left: 30px;
-  margin-bottom: 36px;
+  top: -15px;
+  right: -43px;
 }
-.modal-services__button:hover {
-  cursor: pointer;
-}
-.modal-services__table {
+.services-modal__table {
   width: 100%;
   margin-bottom: 33px;
 }
-.modal-services__table-heading {
+.services-modal__table-heading {
   background: #b1e06f;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.modal-services__table-heading-cell_1 {
+.services-modal__table-heading-cell_1 {
   height: 60px;
   width: 1036px;
   padding: 0 31px;
   vertical-align: middle;
 }
-.modal-services__table-heading-cell_empty {
+.services-modal__table-heading-cell_empty {
   background: #ffffff;
   width: 11px;
 }
-.modal-services__table-heading-cell_2 {
+.services-modal__table-heading-cell_2 {
   height: 60px;
   width: 1036px;
   padding: 0 31px;
@@ -1364,34 +1348,40 @@ body {
   width: 182px;
   text-align: center;
 }
-.modal-services__table-main {
+.services-modal__table-main {
   font-size: 18px;
   color: #7c7d83;
 }
-.modal-services__table-main-row:nth-child(2n+3) {
+.services-modal__table-main-row:nth-child(2n+3) {
   background: #f7f8f8;
 }
-.modal-services__table-main-cell_1 {
+.services-modal__table-main-cell_1 {
   height: 41px;
   width: 1036px;
   padding: 0 31px;
   vertical-align: middle;
   height: 40px;
 }
-.modal-services__table-main-cell_empty {
+.services-modal__table-main-cell_empty {
   height: 34px;
 }
-.modal-services__table-main-cell_2 {
+.services-modal__table-main-cell_2 {
   height: 41px;
   width: 123px;
   vertical-align: middle;
   padding: 0 41px;
   text-align: center;
 }
-.modal-services__total {
+.services-modal__table-service-price:hover {
+  cursor: pointer;
+}
+.services-modal__table-checkbox {
+  display: none;
+}
+.services-modal__total {
   float: right;
 }
-.modal-services__total-text {
+.services-modal__total-text {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1403,7 +1393,7 @@ body {
   justify-content: center;
   margin-right: 27px;
 }
-.modal-services__total-output {
+.services-modal__total-output {
   width: 165px;
   height: 40px;
   background: #b1e06f;
@@ -1413,11 +1403,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.modal-services__form {
+.services-modal__form {
   position: relative;
   top: -41px;
 }
-.modal-services__heading {
+.services-modal__heading {
   color: #292c3a;
   font-size: 24px;
   font-weight: 700;
@@ -1427,7 +1417,7 @@ body {
   margin-bottom: 55px;
   margin-bottom: 27px;
 }
-.modal-services__text {
+.services-modal__text {
   color: #7c7d83;
   font-size: 18px;
   margin-bottom: 25px;
@@ -1435,14 +1425,14 @@ body {
   font-size: 15px;
   text-transform: none;
 }
-.modal-services__callback-text {
+.services-modal__callback-text {
   color: #7c7d83;
   font-size: 18px;
   margin-bottom: 25px;
   float: left;
   text-transform: none;
 }
-.modal-services__callback-input-name {
+.services-modal__callback-input-name {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
@@ -1457,19 +1447,19 @@ body {
   margin-bottom: 26px;
   width: 100%;
 }
-.modal-services__callback-input-name::-webkit-input-placeholder {
+.services-modal__callback-input-name::-webkit-input-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-name::-moz-placeholder {
+.services-modal__callback-input-name::-moz-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-name:-moz-placeholder {
+.services-modal__callback-input-name:-moz-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-name:-ms-input-placeholder {
+.services-modal__callback-input-name:-ms-input-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-phone {
+.services-modal__callback-input-phone {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
@@ -1484,29 +1474,29 @@ body {
   margin-bottom: 29px;
   width: 100%;
 }
-.modal-services__callback-input-phone::-webkit-input-placeholder {
+.services-modal__callback-input-phone::-webkit-input-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-phone::-moz-placeholder {
+.services-modal__callback-input-phone::-moz-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-phone:-moz-placeholder {
+.services-modal__callback-input-phone:-moz-placeholder {
   color: #bfbfc2;
 }
-.modal-services__callback-input-phone:-ms-input-placeholder {
+.services-modal__callback-input-phone:-ms-input-placeholder {
   color: #bfbfc2;
 }
-.modal-services .owl-carousel {
+.services-modal .owl-carousel {
   margin-top: 54px;
   margin-left: 26px;
 }
-.modal-services .item {
+.services-modal .item {
   text-align: center;
 }
-.modal-services .item__name {
+.services-modal .item__name {
   color: #7c7d83;
 }
-.modal-services__callback-button {
+.services-modal__callback-button {
   width: 199px;
   height: 46px;
   background: #292c3a;
@@ -1518,10 +1508,10 @@ body {
   border: none;
   outline: none;
 }
-.modal-services__callback-button:hover {
+.services-modal__callback-button:hover {
   background: #b1e06f;
 }
-.modal-services__callback-button:active {
+.services-modal__callback-button:active {
   position: relative;
   top: 2px;
 }

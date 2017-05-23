@@ -184,6 +184,7 @@
 @medium-white: rgb(250, 250, 250);
 @dark-white: rgb(247, 248, 248);
 @super-dark-white: rgb(243, 243, 243);
+@ultra-dark-white: rgb(232, 233, 233);
 @from-white-to-grey: rgb(220, 220, 221);
 @light-green: rgb(177, 224, 111);
 @super-light-grey: rgb(191, 191, 194);
@@ -536,6 +537,11 @@ body {
   &:hover {
     text-decoration: none;
     color: @dark-blue;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: none;
   }
 }
 
@@ -1286,96 +1292,89 @@ body {
 
 
 
-.modal-services-radio {
-  display: none;
+.services-modal .modal-lg {
+  width: 88%;
 }
 
-.modal-services-radio:checked + .modal-services-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.services-modal__content {
+  background: none;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
-.modal-services-bg {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 2;
-}
-
-.modal-services {
-  overflow: auto;
-  height: 100vh;
+.services-modal__wrap {
+  float: left;
   background: @white;
   padding: 22px 60px 14px 60px;
-  z-index: 3;
 }
 
-.modal-services__button {
-  .modal-services__text;
-  float: right;
+.services-modal__button-close {
   position: relative;
-  left: 30px;
-  margin-bottom: 36px;
-
-  &:hover {
-    cursor: pointer;
-  }
+  top: -15px;
+  right: -43px;
 }
 
-.modal-services__table {
+.services-modal__table {
   .offers__program-table;
   margin-bottom: 33px;
 }
 
-.modal-services__table-heading {
+.services-modal__table-heading {
   .offers__program-table-heading;
 }
 
-.modal-services__table-heading-cell_1 {
+.services-modal__table-heading-cell_1 {
   .offers__program-table-heading-cell_1;
 }
 
-.modal-services__table-heading-cell_empty {
+.services-modal__table-heading-cell_empty {
   .offers__program-table-heading-cell_empty;
 }
 
-.modal-services__table-heading-cell_2 {
+.services-modal__table-heading-cell_2 {
   .offers__program-table-heading-cell_2;
   width: 182px;
   text-align: center;
 }
 
-.modal-services__table-main {
+.services-modal__table-main {
   .offers__program-table-main;
 }
 
-.modal-services__table-main-row {
+.services-modal__table-main-row {
   .offers__program-table-main-row;
 }
 
-.modal-services__table-main-cell_1 {
+.services-modal__table-main-cell_1 {
   .offers__program-table-main-cell_1;
   height: 40px;
 }
 
-.modal-services__table-main-cell_empty {
+.services-modal__table-main-cell_empty {
   .offers__program-table-main-cell_empty;
 }
 
-.modal-services__table-main-cell_2 {
+.services-modal__table-main-cell_2 {
   .offers__program-table-main-cell_2;
   text-align: center;
 }
 
-.modal-services__total {
+.services-modal__table-service-price {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.services-modal__table-checkbox {
+  display: none;
+}
+
+.services-modal__total {
   float: right;
 }
 
-.modal-services__total-text {
+.services-modal__total-text {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1388,7 +1387,7 @@ body {
   margin-right: 27px;
 }
 
-.modal-services__total-output {
+.services-modal__total-output {
   width: 165px;
   height: 40px;
   background: @light-green;
@@ -1399,53 +1398,53 @@ body {
   justify-content: center;
 }
 
-.modal-services__form {
+.services-modal__form {
   //width: 314px;
   //margin-right: 57px;
   position: relative;
   top: -41px;
 }
 
-.modal-services__heading {
+.services-modal__heading {
   .contacts__callback-heading;
   margin-bottom: 27px;
 }
 
-.modal-services__text {
+.services-modal__text {
   .contacts__callback-text;
   font-size: 15px;
   text-transform: none;
 }
 
-.modal-services__callback-text {
+.services-modal__callback-text {
   .contacts__callback-text;
   text-transform: none;
 }
 
-.modal-services__callback-input-name {
+.services-modal__callback-input-name {
   .contacts__callback-input-name;
   width: 100%;
 }
 
-.modal-services__callback-input-phone {
+.services-modal__callback-input-phone {
   .contacts__callback-input-phone;
   width: 100%;
 }
 
-.modal-services .owl-carousel {
+.services-modal .owl-carousel {
   margin-top: 54px;
   margin-left: 26px;
 }
 
-.modal-services .item {
+.services-modal .item {
   text-align: center;
 }
 
-.modal-services .item__name {
+.services-modal .item__name {
   color: @dark-grey;
 }
 
-.modal-services__callback-button {
+.services-modal__callback-button {
   .contacts__callback-button;
 }
 
