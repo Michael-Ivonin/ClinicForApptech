@@ -198,7 +198,7 @@ body {
   font-family: "MyriadPro", sans-serif;
 }
 .container {
-  padding: 0 1px;
+  padding: 0 0.1px;
 }
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
@@ -234,13 +234,13 @@ body {
 }
 .header__phone {
   padding-top: 18px;
-  margin-left: 7px;
+  margin-left: 6px;
   font-size: 19px;
 }
 .header__button {
-  width: 155px;
-  height: 32px;
-  margin-top: 11px;
+  width: 156px;
+  height: 31px;
+  margin-top: 12px;
   margin-left: 11px;
   background: none;
   font-size: 11px;
@@ -296,8 +296,8 @@ body {
   font-size: 17px;
 }
 .about-clinic {
-  padding-top: 110px;
-  padding-bottom: 112px;
+  padding-top: 111px;
+  padding-bottom: 114px;
   background: #fafafa;
 }
 .about-clinic__heading {
@@ -309,6 +309,9 @@ body {
   padding-bottom: 24px;
   margin-bottom: 47px;
 }
+.about-clinic .row {
+  margin: 0 -7px;
+}
 .about-clinic__introduction-text {
   font-size: 28px;
   color: #282a33;
@@ -317,16 +320,16 @@ body {
 }
 .about-clinic .owl-nav {
   position: absolute;
-  top: 84%;
-  margin-left: 20px;
-  margin-bottom: -52px;
+  top: 85%;
+  width: 100%;
 }
 .about-clinic .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
   background-position: -648px -5px;
   width: 18px;
   height: 36px;
-  display: inline-block;
+  float: left;
+  margin-left: 4%;
 }
 .about-clinic .owl-prev:hover {
   background-position: -676px -5px;
@@ -336,14 +339,14 @@ body {
   background-position: -704px -5px;
   width: 18px;
   height: 36px;
-  display: inline-block;
-  margin-left: 480px;
+  float: right;
+  margin-right: 4%;
 }
 .about-clinic .owl-next:hover {
   background-position: -732px -5px;
 }
 .about-clinic .col-lg-6._shorter {
-  padding-left: 42px;
+  padding-left: 34px;
 }
 .about-clinic__reason-text {
   font-size: 27px;
@@ -393,7 +396,8 @@ body {
   margin-bottom: 15px;
   line-height: 26px;
   float: left;
-  margin: 13px 0 0 232px;
+  margin-top: 13px;
+  float: right;
   line-height: 24px;
 }
 .about-clinic__line {
@@ -403,7 +407,7 @@ body {
   float: left;
 }
 .search-for-services {
-  padding: 73px 0 65px 0;
+  padding: 70px 0 65px 0;
   background: #292c3a;
   text-align: center;
 }
@@ -413,7 +417,7 @@ body {
   font-size: 19px;
   color: #ffffff;
   border-bottom: 2px solid #b1e06f;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   margin-bottom: 25px;
 }
 .wrap {
@@ -421,10 +425,10 @@ body {
   width: 500px;
   height: 43px;
   background: #424554;
-  padding: 8px 19px;
+  padding: 8px 11px 8px 16px;
 }
 .search-for-services__search-form-item-text {
-  width: 429px;
+  width: 95%;
   background: none;
   outline: none;
   border: none;
@@ -1794,7 +1798,7 @@ body {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .header .row {
-    margin: 0 -12px;
+    margin: 0 -11px;
   }
   .header .col-md-2 {
     width: 19%;
@@ -1806,7 +1810,7 @@ body {
     margin-left: 0;
   }
   .menu__list-item {
-    padding: 0px 6px;
+    padding: 0 6px;
   }
   .header__phone {
     margin-left: 0;
@@ -1818,13 +1822,155 @@ body {
   .header__button {
     margin-left: 7px;
   }
+  .benefits {
+    padding: 70px 0;
+  }
+  .about-clinic {
+    padding: 56px 0;
+  }
+  .about-clinic .row {
+    margin: 0 -3px;
+  }
+  .about-clinic .col-lg-6._shorter {
+    padding-left: 33px;
+  }
+  .about-clinic__introduction-text {
+    font-size: 23px;
+    line-height: 26px;
+  }
+  .about-clinic__reason-text {
+    font-size: 23px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+  .about-clinic__team-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .about-clinic__equipment-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .about-clinic__space-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .about-clinic__time-text {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .about-clinic__wish-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .search-for-services .row {
+    margin: 0 -11px;
+  }
+}
+@media (min-width: 758px) and (max-width: 991px) {
+  .about-clinic {
+    padding: 56px 0;
+  }
+  .about-clinic .row {
+    margin: 0;
+  }
+  .about-clinic__introduction-text {
+    font-size: 25px;
+    line-height: normal;
+  }
+  .about-clinic .col-lg-6._shorter {
+    padding-left: 15px;
+  }
+  .about-clinic__reason-text {
+    font-size: 25px;
+    line-height: normal;
+    margin-top: 37px;
+  }
+  .about-clinic__team-text {
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__equipment-text {
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__space-text {
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__time-text {
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__wish-text {
+    line-height: normal;
+  }
+  .search-for-services .row {
+    margin: 0;
+  }
+}
+@media (max-width: 757px) {
+  .about-clinic {
+    padding: 56px 0;
+  }
+  .about-clinic .row {
+    margin: 0;
+  }
+  .about-clinic__introduction-text {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .about-clinic .col-lg-6._shorter {
+    padding-left: 15px;
+  }
+  .about-clinic__reason-text {
+    font-size: 18px;
+    line-height: normal;
+    margin-top: 37px;
+  }
+  .about-clinic__team-text {
+    font-size: 17px;
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__equipment-text {
+    font-size: 17px;
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__space-text {
+    font-size: 17px;
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__time-text {
+    font-size: 17px;
+    margin-top: 0;
+    line-height: normal;
+  }
+  .about-clinic__wish-text {
+    line-height: normal;
+    font-size: 17px;
+  }
+  .search-for-services {
+    padding: 50px 0;
+  }
+  .search-for-services .row {
+    margin: 0;
+  }
+  .search-for-services .wrap {
+    width: 320px;
+  }
+  .search-for-services__search-form-item-text {
+    width: 93%;
+  }
 }
 /*
-.header, .benefits {
+.header, .benefits, .about-clinic {
   display: none;
 }
 
-.search-for-services, .services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
+.services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
   display: none;
 }
 */
