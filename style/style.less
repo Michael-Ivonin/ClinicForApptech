@@ -514,23 +514,29 @@ body {
 }
 
 .services {
-  padding: 115px 0 118px 0;
+  padding: 109px 0 118px 0;
+}
+
+.services .row {
+  margin: 0 -7px 0 -8px;
 }
 
 .services__heading {
   .about-clinic__heading;
+  padding-bottom: 25px;
+  margin-bottom: 88px;
 }
 
-.padding-left {
-  padding-left: 54px;
+.services .padding-left {
+  padding-left: 80px;
 
   &:nth-child(3) {
-    padding-left: 74px;
+    padding-left: 60px;
   }
 }
 
 .services__group-heading {
-  width: 50px;
+  width: 51px;
   height: 50px;
   text-align: center;
   font-size: 39px;
@@ -572,11 +578,11 @@ body {
   border: none;
   outline: none;
   color: @dark-blue;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 36px;
-  margin-left: -70px;
+  margin-left: -85px;
 
   &:hover {
     background: @white;
@@ -585,22 +591,18 @@ body {
   .button-animation;
 }
 
-.feedback__logo {
-
-}
-
 .feedback__logo-text {
   color: @dark-grey;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 11px;
+  margin-top: 13px;
+  margin-bottom: 12px;
 }
 
 .feedback__logo-line {
   border-top: 2px solid @dark-grey;
-  width: 36%;
+  width: 129px;
   margin: 0 auto;
   //margin-bottom: 10px;
   //position: relative;
@@ -610,12 +612,13 @@ body {
 
 .feedback__question-button {
   .feedback__review-button;
+  width: 304px;
   margin-left: 0;
-  margin-right: -70px;
+  margin-right: -63px;
 }
 
 .experts {
-  padding: 147px 0 85px 0;
+  padding: 141px 0 83px 0;
   background: @light-green;
   text-align: center;
 }
@@ -627,7 +630,7 @@ body {
   text-transform: uppercase;
   border-bottom: 2px solid @white;
   display: inline-block;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
   margin-bottom: 88px;
 }
 
@@ -681,7 +684,8 @@ body {
   color: @white;
   font-size: 19px;
   font-weight: 700;
-  margin: 26px 0 29px 0;
+  margin: 22px 0 24px 0;
+  line-height: 21px;
 }
 
 .item__post {
@@ -695,6 +699,7 @@ body {
   width: 12px;
   height: 20px;
   display: inline-block;
+  margin-left: 21px;
 
   &:hover {
     background-position: -805px -5px;
@@ -715,7 +720,7 @@ body {
 }
 
 .offers {
-  padding: 82px 0 59px 0;
+  padding: 78px 0 59px 0;
   background: @white;
 }
 
@@ -725,7 +730,7 @@ body {
   color: @dark-blue;
   font-size: 31px;
   font-weight: 600;
-  padding-bottom: 23px;
+  padding-bottom: 4px;
   //position:relative;
 
   /*&::after {
@@ -752,7 +757,7 @@ body {
 }*/
 
 .offers .nav-tabs {
-   margin: 0 15px 88px 15px;
+   margin-bottom: 88px;
    border: none;
    //font-size: 0;
    //text-align: center;
@@ -778,7 +783,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 17px;
+  padding-top: 19px;
   border-radius: 0;
   border: none;
 
@@ -814,7 +819,7 @@ body {
 
 .offers__paragraphs {
   background: @dark-white;
-  padding: 53px 33px;
+  padding: 47px 33px;
 }
 
 .offers__paragraphs-item {
@@ -822,10 +827,10 @@ body {
   color: @dark-blue;
   font-size: 23px;
   font-weight: 600;
-  padding-bottom: 53px;
+  padding-bottom: 55px;
   border-bottom: 2px solid @light-green;
-  margin-bottom: 53px;
-  line-height: 26px;
+  margin-bottom: 49px;
+  line-height: 28px;
 
   &:hover {
     text-decoration: none;
@@ -838,11 +843,13 @@ body {
   border: none;
   padding-bottom: 0;
   margin-bottom: 0;
+  line-height: normal;
 }
 
 .offers__description {
   background: @dark-white;
-  padding: 0 37px 31px 37px;
+  padding: 0 37px 28px 37px;
+  float: left;
 }
 
 .offers__description-important {
@@ -868,19 +875,21 @@ body {
 .offers__description-text {
   .offers__description-heading;
   color: @medium-grey;
-  margin-bottom: 79px;
+  margin-bottom: 84px;
   line-height: 21px;
 }
 
 .offers__description-participate-button {
   background: none;
-  width: 135px;
-  height: 37px;
+  width: 119px;
+  height: 31px;
   box-sizing: content-box;
   border: 2px solid @medium-blue;
   outline: none;
   text-transform: uppercase;
-  margin-left: 159px;
+  float: right;
+  margin-right: -8px;
+  font-size: 13px;
 
   &:hover {
     background: @medium-blue;
@@ -1572,9 +1581,13 @@ body {
 
 // Media queries
 @media (min-width: 992px) and (max-width: 1199px) {
-  .header .row {
-    margin: 0 -11px;
+  .content .row {
+    margin: 0;
   }
+
+  /*.header .row {
+    margin: 0 -11px;
+  }*/
 
   .header .col-md-2 {
     width: 19%;
@@ -1614,9 +1627,9 @@ body {
     padding: 56px 0;
   }
 
-  .about-clinic .row {
+  /*.about-clinic .row {
     margin: 0 -3px;
-  }
+  }*/
 
   .about-clinic .col-lg-6._shorter {
     padding-left: 33px;
@@ -1655,21 +1668,57 @@ body {
     .about-clinic__team-text;
   }
 
-  .search-for-services .row {
+  /*.search-for-services .row {
     margin: 0 -11px;
+  }*/
+
+  .services {
+    padding: 60px 0;
+  }
+
+  /*.services .row {
+    margin: 0;
+  }*/
+
+  .services__heading {
+    margin-bottom: 60px;
+  }
+
+  .services__group-item {
+    font-size: 15px;
+  }
+
+  .services .padding-left {
+    padding-left: 93px;
+
+    &:nth-child(3) {
+      padding-left: 77px;
+    }
+  }
+
+  .feedback__review-button {
+    margin-left: 0;
+  }
+
+  .feedback__question-button {
+    margin-right: 0;
   }
 }
 
 
 
-@media (min-width: 758px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .content .row {
+    margin: 0;
+  }
+
   .about-clinic {
     padding: 56px 0;
   }
 
-  .about-clinic .row {
+  /*.about-clinic .row {
     margin: 0;
-  }
+  }*/
 
   .about-clinic__introduction-text {
     font-size: 25px;
@@ -1706,21 +1755,66 @@ body {
     line-height: normal;
   }
 
-  .search-for-services .row {
+  /*.search-for-services .row {
     margin: 0;
+  }*/
+
+  .services {
+    padding: 60px 0;
+  }
+
+  /*.services .row {
+    margin: 0;
+  }*/
+
+  .services__heading {
+    margin-bottom: 60px;
+  }
+
+  .services__group-item {
+    font-size: 15px;
+  }
+
+  .services .padding-left {
+    padding-left: 20px;
+
+    &:nth-child(3) {
+      padding-left: 40px;
+    }
+  }
+
+  .feedback {
+    padding: 52px 0;
+  }
+
+  .feedback__review-button {
+    margin: 0 0 36px 0;
+  }
+
+  .feedback__question-button {
+    width: 287px;
+    margin-right: 0;
+  }
+
+  .experts {
+    padding: 70px 0 10px 0;
   }
 }
 
 
 
-@media (max-width: 757px) {
+@media (max-width: 767px) {
+  .content .row {
+    margin: 0;
+  }
+
   .about-clinic {
     padding: 56px 0;
   }
 
-  .about-clinic .row {
+  /*.about-clinic .row {
     margin: 0;
-  }
+  }*/
 
   .about-clinic__introduction-text {
     font-size: 18px;
@@ -1763,9 +1857,9 @@ body {
     padding: 50px 0;
   }
 
-  .search-for-services .row {
+  /*.search-for-services .row {
     margin: 0;
-  }
+  }*/
 
   .search-for-services .wrap {
     width: 320px;
@@ -1774,17 +1868,61 @@ body {
   .search-for-services__search-form-item-text {
     width: 93%;
   }
+
+  .services {
+    padding: 40px 0;
+  }
+
+  .services__heading {
+    margin-bottom: 50px;
+  }
+
+  .services__group-heading {
+    //float: left;
+  }
+
+  .services__group-item {
+    font-size: 15px;
+  }
+
+  .services .padding-left {
+    padding-left: 15px;
+
+    &:nth-child(3) {
+      padding-left: 15px;
+    }
+  }
+
+  .feedback {
+    padding: 52px 0;
+  }
+
+  .feedback__review-button {
+    margin: 0 0 36px 0;
+  }
+
+  .feedback__logo-text {
+    font-size: 14px;
+  }
+
+  .feedback__question-button {
+    width: 287px;
+    margin-right: 0;
+  }
+
+  .experts {
+    padding: 70px 0 10px 0;
+  }
 }
 
 
 
 
-/*
-.header, .benefits, .about-clinic {
+
+.header, .benefits, .about-clinic, .search-for-services, .services, .feedback, .experts {
   display: none;
 }
 
-.services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
+.blog, .contacts, .map, .footer {
   display: none;
 }
-*/
