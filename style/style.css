@@ -662,6 +662,9 @@ body {
   padding: 78px 0 59px 0;
   background: #ffffff;
 }
+.offers .row {
+  margin: 0 -7px;
+}
 .offers__heading {
   text-align: center;
   color: #282a33;
@@ -716,10 +719,14 @@ body {
 }
 .offers .offers__item:focus {
   outline: 2px solid #292c3a;
+  padding-top: 18px;
+  color: #292c3a;
 }
 .offers .nav-tabs > li.active > a {
   border: none;
   outline: none;
+  padding-top: 18px;
+  color: #292c3a;
 }
 .offers .nav-tabs > li.active > a:focus {
   outline: 2px solid #292c3a;
@@ -833,7 +840,8 @@ body {
   margin-top: 36px;
   margin-left: -85px;
   color: #ffffff;
-  margin: 32px 0 0 442px;
+  display: block;
+  margin: 32px auto 0 auto;
 }
 .offers__appointment-button:hover {
   background: #ffffff;
@@ -897,15 +905,18 @@ body {
   padding: 0 41px;
 }
 .blog {
-  padding: 88px 0 117px 0;
+  padding: 82px 0 117px 0;
   background: #dcdcdd;
+}
+.blog .row {
+  margin: 0 -7px;
 }
 .blog__heading {
   font-size: 36px;
   font-weight: 700;
   color: #282a33;
   text-transform: uppercase;
-  padding-bottom: 29px;
+  padding-bottom: 24px;
   border-bottom: 2px solid #ffffff;
   margin-bottom: 60px;
 }
@@ -916,15 +927,15 @@ body {
 }
 .blog__subscription {
   background: #ffffff;
-  margin-top: 19px;
-  padding: 61px 49px 30px 56px;
+  margin-top: 22px;
+  padding: 61px 59px 30px 53px;
   float: left;
 }
 .blog__subscription-text {
   color: #50535b;
   font-size: 17px;
   font-weight: 700;
-  margin-right: 35px;
+  margin-right: 37px;
   float: left;
   position: relative;
   top: 10px;
@@ -993,38 +1004,39 @@ body {
 }
 .blog__description {
   background: #ffffff;
-  padding: 53px 48px 30px 48px;
+  padding: 48px 54px 30px 48px;
   float: left;
 }
 .blog__description-heading {
   color: #292c3a;
   font-size: 29px;
   border-bottom: 2px solid #b1e06f;
-  padding-bottom: 25px;
-  margin: 0 0 25px 0;
+  padding-bottom: 26px;
+  margin: 0 0 23px 0;
 }
 .blog__description-text {
   color: #84868b;
   font-size: 18px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   line-height: 21px;
 }
 .blog__description-subheading {
   color: #292c3a;
   font-size: 29px;
   border-bottom: 2px solid #b1e06f;
-  padding-bottom: 25px;
-  margin: 0 0 25px 0;
+  padding-bottom: 26px;
+  margin: 0 0 23px 0;
+  margin-bottom: 21px;
 }
 .blog__description-article-heading {
   color: #50535b;
   font-size: 23px;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
 }
 .blog__description-article-text {
   color: #84868b;
   font-size: 16px;
-  height: 196px;
+  height: 218px;
 }
 .blog__description-button {
   width: 121px;
@@ -1038,6 +1050,7 @@ body {
   font-weight: 600;
   float: right;
   width: 135px;
+  margin-right: -5px;
 }
 .blog__description-button:hover {
   background: none;
@@ -1905,6 +1918,33 @@ body {
   .feedback__question-button {
     margin-right: 0;
   }
+  .offers .nav-tabs__list-item_margins {
+    margin: 0;
+  }
+  .offers .col-lg-7._shorter {
+    margin-right: 8px;
+  }
+  .offers__description-text {
+    margin-bottom: 87px;
+  }
+  .blog .col-md-4 {
+    padding-left: 0;
+  }
+  .blog__subscription {
+    padding: 20px 19px 20px 19px;
+  }
+  .blog__subscription-email {
+    width: 253px;
+  }
+  .blog__description {
+    padding: 20px 19px 20px 19px;
+  }
+  .blog__description-article-text {
+    height: 205px;
+  }
+  .blog__description-button {
+    margin-right: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content .row {
@@ -1980,6 +2020,43 @@ body {
   }
   .experts {
     padding: 70px 0 10px 0;
+  }
+  .offers {
+    padding: 50px 0;
+  }
+  .offers__heading-line {
+    margin-bottom: 50px;
+  }
+  .offers .nav-tabs {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .offers .nav-tabs > li {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .offers .nav-tabs__list-item_margins {
+    margin: 20px 0;
+  }
+  .offers .col-sm-12._shorter {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .offers .col-sm-12._longer {
+    width: 100%;
+  }
+  .blog {
+    padding: 60px 0;
+  }
+  .blog__subscription {
+    margin-bottom: 22px;
+  }
+  .blog__subscription-email {
+    width: 282px;
+  }
+  .blog__description-button {
+    margin-right: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2071,19 +2148,83 @@ body {
   .experts {
     padding: 70px 0 10px 0;
   }
+  .offers {
+    padding: 50px 0;
+  }
+  .offers__heading-line {
+    margin-bottom: 50px;
+  }
+  .offers .nav-tabs {
+    display: block;
+    margin-bottom: 60px;
+  }
+  .offers .nav-tabs > li {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+  .offers .nav-tabs__list-item_margins {
+    margin: 20px 0;
+  }
+  .offers .col-sm-12._shorter {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .offers .col-sm-12._longer {
+    width: 100%;
+  }
+  .offers__program-table-heading-cell_1 {
+    padding: 0 4px;
+  }
+  .offers__program-table-heading-cell_2 {
+    padding: 0 4px;
+  }
+  .offers__program-table-main-cell_1 {
+    padding: 0 4px;
+  }
+  .offers__program-table-main-cell_2 {
+    padding: 0 4px;
+  }
+  .blog {
+    padding: 60px 0;
+  }
+  .blog__video {
+    height: 200px;
+  }
+  .blog__subscription {
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    margin-bottom: 22px;
+  }
+  .blog__subscription-text {
+    font-size: 15px;
+    margin-right: 0;
+    position: static;
+    display: block;
+    float: none;
+    margin-bottom: 29px;
+  }
+  .blog__subscription-email {
+    width: 270px;
+    display: block;
+    float: none;
+  }
+  .blog__subscription-networks {
+    width: 120px;
+  }
+  .blog__description {
+    padding: 15px 10px 15px 10px;
+  }
+  .blog__description-button {
+    margin-right: 0;
+  }
 }
-.header,
-.benefits,
-.about-clinic,
-.search-for-services,
-.services,
-.feedback,
-.experts {
+/*
+.header, .benefits, .about-clinic, .search-for-services, .services, .feedback, .experts, .offers {
   display: none;
 }
-.blog,
-.contacts,
-.map,
-.footer {
+
+.contacts, .map, .footer {
   display: none;
 }
+*/
