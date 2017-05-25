@@ -276,15 +276,14 @@ body {
   font-size: 21px;
   color: #b1e06f;
 }
+.content .row {
+  margin: 0 -7px;
+}
 .benefits {
   background: #b1e06f;
   padding-top: 139px;
   padding-bottom: 124px;
 }
-/*.benefits .row._justify {
-  display: flex;
-  //justify-content: space-between;
-}*/
 .benefits__item {
   color: #ffffff;
   text-transform: uppercase;
@@ -308,9 +307,6 @@ body {
   border-bottom: 2px solid #b1e06f;
   padding-bottom: 24px;
   margin-bottom: 47px;
-}
-.about-clinic .row {
-  margin: 0 -7px;
 }
 .about-clinic__introduction-text {
   font-size: 28px;
@@ -466,9 +462,6 @@ body {
 }
 .services {
   padding: 109px 0 118px 0;
-}
-.services .row {
-  margin: 0 -7px 0 -8px;
 }
 .services__heading {
   text-transform: uppercase;
@@ -662,34 +655,18 @@ body {
   padding: 78px 0 59px 0;
   background: #ffffff;
 }
-.offers .row {
-  margin: 0 -7px;
-}
 .offers__heading {
   text-align: center;
   color: #282a33;
   font-size: 31px;
   font-weight: 600;
   padding-bottom: 4px;
-  /*&::after {
-    position:absolute;
-    display: block;
-    //top:0;
-    //left:0;
-    width:50%;
-    border-bottom: 2px solid @light-green;
-    content:"";
-  }*/
 }
 .offers__heading-line {
   border-top: 2px solid #b1e06f;
   width: 36.5%;
   margin-bottom: 88px;
 }
-/*.flex {
-  display: flex;
-  justify-content: space-between;
-}*/
 .offers .nav-tabs {
   margin-bottom: 88px;
   border: none;
@@ -908,9 +885,6 @@ body {
   padding: 82px 0 117px 0;
   background: #dcdcdd;
 }
-.blog .row {
-  margin: 0 -7px;
-}
 .blog__heading {
   font-size: 36px;
   font-weight: 700;
@@ -1062,33 +1036,33 @@ body {
   top: 2px;
 }
 .contacts {
-  padding: 88px 0 59px 0;
-  background: linear-gradient(to right, #292c3a 60%, #ffffff 60.1%, #ffffff);
+  padding: 82px 0 49px 0;
+  background: linear-gradient(to right, #292c3a 59.2%, #ffffff 59.3%, #ffffff);
 }
 .contacts .col-lg-7._shorter {
-  padding-right: 136px;
+  padding-right: 128px;
 }
 .contacts .col-lg-5._shorter {
-  padding-left: 121px;
+  padding-left: 127px;
 }
 .contacts__info-heading {
   color: #ffffff;
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 29px;
+  padding-bottom: 24px;
   border-bottom: 2px solid #b1e06f;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
 }
 .contacts__info-contact-heading {
   color: #b1e06f;
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 .contacts__info-contact-text {
   color: #ffffff;
   font-size: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 .contacts__info-time {
   margin-left: 42px;
@@ -1096,22 +1070,23 @@ body {
 .contacts__info-time-heading {
   color: #b1e06f;
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 .contacts__info-time-text {
   color: #ffffff;
   font-size: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   color: #7c7d83;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 .contacts__info-time-text_green {
   color: #ffffff;
   font-size: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   color: #7c7d83;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
   color: #b1e06f;
+  margin-bottom: 27px;
 }
 .contacts__callback-heading {
   color: #292c3a;
@@ -1120,7 +1095,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 29px;
   border-bottom: 2px solid #b1e06f;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
 }
 .contacts__callback-text {
   color: #7c7d83;
@@ -1191,6 +1166,7 @@ body {
   float: right;
   border: none;
   outline: none;
+  margin-right: -6px;
 }
 .contacts__callback-button:hover {
   background: #b1e06f;
@@ -1202,19 +1178,17 @@ body {
 .map {
   height: 580px;
 }
-/*.map__google-maps {
-  width: 100%;
-  height: 100%;
-  border-width: 0;
-}*/
 .footer {
   background: #292c3a;
   padding: 52px 0 22px 0;
   text-align: center;
 }
+.footer .row {
+  margin: 0;
+}
 .footer__logo {
   display: inline-block;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 }
 .footer__copyright-text {
   color: #424554;
@@ -1224,7 +1198,7 @@ body {
   display: block;
   float: right;
   position: relative;
-  top: 5px;
+  top: 2px;
 }
 .footer__up:hover .sprite-up {
   display: none;
@@ -1253,7 +1227,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 29px;
   border-bottom: 2px solid #b1e06f;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   margin-bottom: 27px;
 }
 .header-modal__text {
@@ -1334,6 +1308,7 @@ body {
   float: right;
   border: none;
   outline: none;
+  margin-right: -6px;
   margin-right: 3px;
 }
 .header-modal__callback-button:hover {
@@ -1459,7 +1434,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 29px;
   border-bottom: 2px solid #b1e06f;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   margin-bottom: 27px;
 }
 .services-modal__text {
@@ -1552,6 +1527,8 @@ body {
   float: right;
   border: none;
   outline: none;
+  margin-right: -6px;
+  margin-right: 0;
 }
 .services-modal__callback-button:hover {
   background: #b1e06f;
@@ -1586,7 +1563,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 29px;
   border-bottom: 2px solid #b1e06f;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   padding-bottom: 15px;
   margin-bottom: 21px;
   text-align: left;
@@ -1668,6 +1645,8 @@ body {
   float: right;
   border: none;
   outline: none;
+  margin-right: -6px;
+  margin-right: 0;
 }
 .feedback-modal-1__callback-button:hover {
   background: #b1e06f;
@@ -1695,7 +1674,7 @@ body {
   text-transform: uppercase;
   padding-bottom: 29px;
   border-bottom: 2px solid #b1e06f;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   padding-bottom: 15px;
   margin-bottom: 21px;
   text-align: left;
@@ -1813,6 +1792,8 @@ body {
   float: right;
   border: none;
   outline: none;
+  margin-right: -6px;
+  margin-right: 0;
 }
 .feedback-modal-2__callback-button:hover {
   background: #b1e06f;
@@ -1821,13 +1802,18 @@ body {
   position: relative;
   top: 2px;
 }
+/*@media (min-width: 1200px) and (max-width: 1215px) {
+  .content .row {
+    margin: 0 -7px;
+  }
+}*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  .header .row {
+    margin: 0;
+  }
   .content .row {
     margin: 0;
   }
-  /*.header .row {
-    margin: 0 -11px;
-  }*/
   .header .col-md-2 {
     width: 19%;
   }
@@ -1850,15 +1836,9 @@ body {
   .header__button {
     margin-left: 7px;
   }
-  .benefits {
-    padding: 70px 0;
-  }
   .about-clinic {
     padding: 56px 0;
   }
-  /*.about-clinic .row {
-    margin: 0 -3px;
-  }*/
   .about-clinic .col-lg-6._shorter {
     padding-left: 33px;
   }
@@ -1891,15 +1871,9 @@ body {
     font-size: 18px;
     line-height: 20px;
   }
-  /*.search-for-services .row {
-    margin: 0 -11px;
-  }*/
   .services {
     padding: 60px 0;
   }
-  /*.services .row {
-    margin: 0;
-  }*/
   .services__heading {
     margin-bottom: 60px;
   }
@@ -1930,6 +1904,9 @@ body {
   .blog .col-md-4 {
     padding-left: 0;
   }
+  .blog__video {
+    height: 351px;
+  }
   .blog__subscription {
     padding: 20px 19px 20px 19px;
   }
@@ -1939,23 +1916,44 @@ body {
   .blog__description {
     padding: 20px 19px 20px 19px;
   }
+  .blog__description-text {
+    line-height: 18px;
+  }
   .blog__description-article-text {
-    height: 205px;
+    height: 139px;
   }
   .blog__description-button {
     margin-right: 0;
   }
+  .contacts {
+    background: linear-gradient(to right, #292c3a 57%, #ffffff 57.1%, #ffffff);
+  }
+  .contacts .col-md-5._shorter {
+    padding-left: 38px;
+  }
+  .contacts__callback-input-name {
+    width: 100%;
+  }
+  .contacts__callback-input-phone {
+    width: 100%;
+  }
+  .contacts__callback-button {
+    margin-right: 15px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .header .row {
+    margin: 0;
+  }
   .content .row {
     margin: 0;
+  }
+  .benefits {
+    padding: 70px 0;
   }
   .about-clinic {
     padding: 56px 0;
   }
-  /*.about-clinic .row {
-    margin: 0;
-  }*/
   .about-clinic__introduction-text {
     font-size: 25px;
     line-height: normal;
@@ -1987,15 +1985,9 @@ body {
   .about-clinic__wish-text {
     line-height: normal;
   }
-  /*.search-for-services .row {
-    margin: 0;
-  }*/
   .services {
     padding: 60px 0;
   }
-  /*.services .row {
-    margin: 0;
-  }*/
   .services__heading {
     margin-bottom: 60px;
   }
@@ -2058,17 +2050,46 @@ body {
   .blog__description-button {
     margin-right: 0;
   }
+  .contacts {
+    background: linear-gradient(to bottom, #292c3a 58%, #ffffff 58.1%, #ffffff);
+    padding: 41px 0;
+  }
+  .contacts .col-sm-12._shorter {
+    padding: 0 15px;
+  }
+  .contacts__callback {
+    margin-top: 40px;
+  }
+  .contacts__callback-text {
+    display: block;
+    float: none;
+  }
+  .contacts__callback-input-name {
+    width: 100%;
+  }
+  .contacts__callback-input-phone {
+    width: 100%;
+  }
+  .contacts__callback-button {
+    margin-right: 15px;
+  }
 }
 @media (max-width: 767px) {
+  .header .row {
+    margin: 0;
+  }
   .content .row {
     margin: 0;
+  }
+  .benefits {
+    padding: 70px 0;
+  }
+  .benefits__item {
+    display: block;
   }
   .about-clinic {
     padding: 56px 0;
   }
-  /*.about-clinic .row {
-    margin: 0;
-  }*/
   .about-clinic__introduction-text {
     font-size: 18px;
     line-height: normal;
@@ -2108,9 +2129,6 @@ body {
   .search-for-services {
     padding: 50px 0;
   }
-  /*.search-for-services .row {
-    margin: 0;
-  }*/
   .search-for-services .wrap {
     width: 320px;
   }
@@ -2188,8 +2206,18 @@ body {
   .blog {
     padding: 60px 0;
   }
+  .video-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+  }
   .blog__video {
-    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .blog__subscription {
     width: 100%;
@@ -2218,13 +2246,46 @@ body {
   .blog__description-button {
     margin-right: 0;
   }
+  .contacts {
+    background: linear-gradient(to bottom, #292c3a 61%, #ffffff 61.1%, #ffffff);
+    padding: 41px 0;
+  }
+  .contacts .col-sm-12._shorter {
+    padding: 0 15px;
+  }
+  .contacts__info-time {
+    margin-left: 0;
+  }
+  .contacts__callback {
+    margin-top: 40px;
+  }
+  .contacts__callback-text {
+    display: block;
+    float: none;
+  }
+  .contacts__callback-input-name {
+    width: 100%;
+  }
+  .contacts__callback-input-phone {
+    width: 100%;
+  }
+  .contacts__callback-button {
+    margin-right: 15px;
+  }
+  .footer__up {
+    margin-right: 7px;
+  }
 }
-/*
-.header, .benefits, .about-clinic, .search-for-services, .services, .feedback, .experts, .offers {
+.benefits,
+.about-clinic,
+.search-for-services,
+.services,
+.feedback,
+.experts,
+.offers,
+.blog,
+.contacts,
+.map,
+.footer {
   display: none;
 }
-
-.contacts, .map, .footer {
-  display: none;
-}
-*/

@@ -15,7 +15,7 @@
   <header class='header' id="header">
     <div class='container'>
       <div class='row'>
-        <div class='col-lg-2 col-md-2 col-sm-9 col-xs-8'>
+        <div class='col-lg-2 col-md-2 col-sm-6 col-xs-6'>
           <a href='#' class='header__logo-link'>
             <i class='sprite sprite-logo'></i>
           </a>
@@ -35,11 +35,22 @@
         <div class='col-lg-2 col-md-2 hidden-sm hidden-xs'>
           <p class='header__phone'>+7 (3812) 39-44-44</p>
         </div>
-        <div class='col-lg-2 col-md-3 col-sm-3 col-xs-4'>
+        <div class='col-lg-2 col-md-3 hidden-sm hidden-xs'>
           <button class='header__button' type='button' data-toggle='modal' data-target='#header-modal'>
             Записаться на&nbsp;прием
           </button>
         </div>
+        <div class="hidden-lg hidden-md col-sm-6 col-xs-6">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        </div><!-- /.navbar-collapse -->
       </div>
       <div class='header__presentation'>
         <h1 class='header__presentation-heading'>Центральная<br>клиническая больница</h1>
@@ -478,7 +489,9 @@
             <h1 class='blog__heading'>Блог</h1>
           </div>
           <div class='col-lg-8 col-md-8 col-sm-12 col-xs-12'>
-            <iframe class='blog__video' src='https://www.youtube.com/embed/OqJrQqSKYXk' allowfullscreen></iframe>
+            <div class="video-container">
+              <iframe class='blog__video' src='https://www.youtube.com/embed/OqJrQqSKYXk' allowfullscreen></iframe>
+            </div>
             <form class='blog__subscription'>
               <label for='email' class='blog__subscription-text'>
                 Хочу знать больше о&nbsp;современных<br>методиках лечения и&nbsp;профилактики
@@ -526,25 +539,25 @@
     <section class='contacts' id="contacts">
       <div class='container'>
         <div class='row'>
-          <div class='col-lg-7 _shorter'>
+          <div class='col-lg-7 _shorter col-md-7 col-sm-12 col-xs-12'>
             <div class='contacts__info'>
               <h1 class='contacts__info-heading'>Контакты</h1>
               <div class='row'>
-                <div class='col-lg-6'>
+                <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
                   <div class='contacts__info-contact'>
                     <h1 class='contacts__info-contact-heading'>Телефон:</h1>
                     <p class='contacts__info-contact-text'>+7 (3812) 39-44-44</p>
                     <h1 class='contacts__info-contact-heading'>Адрес:</h1>
                     <p class='contacts__info-contact-text'>644042, г. Омск,</p>
-                    <p class='contacts__info-contact-text'>пр. Карла Маркса, 18/28</p>
+                    <p class='contacts__info-contact-text'>пр.&nbsp;Карла&nbsp;Маркса,&nbsp;18/28</p>
                     <h1 class='contacts__info-contact-heading'>Почта:</h1>
                     <p class='contacts__info-contact-text'>info@ckb55.ru</p>
                   </div> <!-- /contacts__info-contact -->
                 </div>
-                <div class='col-lg-6'>
+                <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12'>
                   <div class='contacts__info-time'>
                     <h1 class='contacts__info-time-heading'>Время работы:</h1>
-                    <p class='contacts__info-time-text'>Понедельник&nbsp;&mdash; пятница:</p>
+                    <p class='contacts__info-time-text'>Понедельник&nbsp;&mdash;&nbsp;пятница:</p>
                     <p class='contacts__info-time-text_green'>8.00&nbsp;&mdash; 20.00</p>
                     <p class='contacts__info-time-text'>Воскресенье:</p>
                     <p class='contacts__info-time-text_green'>8.00&nbsp;&mdash; 18.00</p>
@@ -555,17 +568,25 @@
               </div>
             </div> <!-- /contacts__info -->
           </div>
-          <div class='col-lg-5 _shorter'>
+          <div class='col-lg-5 _shorter col-md-5 col-sm-12 col-xs-12'>
             <form class='contacts__callback'>
               <h1 class='contacts__callback-heading'>Закажите обратный звонок</h1>
-              <label class='contacts__callback-text' for='contacts__name'>Введите фамилию, имя и&nbsp;отчество:</label>
-              <input class='contacts__callback-input-name'  type='text' id='contacts__name'
-                     placeholder='Иванов Андрей Александрович'>
-              <label class='contacts__callback-text' for='contacts__phone'>Введите телефон:</label>
-              <input class='contacts__callback-input-phone'
-                     type='tel' id='contacts__phone' placeholder='+ 7 923 548-21-32'>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                  <label class='contacts__callback-text' for='contacts__name'>
+                    Введите фамилию, имя и&nbsp;отчество:
+                  </label>
+                  <input class='contacts__callback-input-name'  type='text' id='contacts__name'
+                         placeholder='Иванов Андрей Александрович'>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                  <label class='contacts__callback-text' for='contacts__phone'>Введите телефон:</label>
+                  <input class='contacts__callback-input-phone'
+                         type='tel' id='contacts__phone' placeholder='+ 7 923 548-21-32'>
+                </div>
+              </div>
               <button class='contacts__callback-button' type='submit'>Отправить заявку</button>
-            </form>
+            </form> <!-- /contacts__callback -->
           </div>
         </div>
       </div>
@@ -838,10 +859,8 @@
   <script>
     $(document).ready(function() {
       $('#owl-carousel_1').owlCarousel({
-        //nav: true,
         navText: ['', ''],
         dots: false,
-        //loop: true,
         responsiveClass: true,
         responsive: {
           0: {
@@ -850,7 +869,6 @@
           },
           480: {
             items: 1,
-            //margin: 2,
             nav: false
           },
           768: {
@@ -898,10 +916,8 @@
       });
 
       $('#owl-carousel_modal').owlCarousel({
-        //nav: true,
         navText: ['', ''],
         dots: false,
-        //loop: true,
         responsiveClass: true,
         responsive: {
           0: {
@@ -910,7 +926,6 @@
           },
           480: {
             items: 1,
-            //margin: 2,
             nav: false
           },
           768: {
@@ -943,7 +958,6 @@
           },
           480: {
             items: 1,
-            //margin: 2,
             nav: false
           },
           768: {
