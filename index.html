@@ -14,7 +14,7 @@
 <body>
   <header class='header' id="header">
     <div class='container'>
-      <div class='row'>
+      <!-- <div class='row'>
         <div class='col-lg-2 col-md-2 col-sm-6 col-xs-6'>
           <a href='#' class='header__logo-link'>
             <i class='sprite sprite-logo'></i>
@@ -30,8 +30,8 @@
               <li class='menu__list-item'><a class='menu__list-item-link' href='#blog'>Блог</a></li>
               <li class='menu__list-item'><a class='menu__list-item-link' href='#contacts'>Контакты</a></li>
             </ul> <!-- /menu__list -->
-          </nav> <!-- /menu -->
-        </div>
+          <!-- </nav> <!-- /menu -->
+        <!-- </div>
         <div class='col-lg-2 col-md-2 hidden-sm hidden-xs'>
           <p class='header__phone'>+7 (3812) 39-44-44</p>
         </div>
@@ -39,19 +39,49 @@
           <button class='header__button' type='button' data-toggle='modal' data-target='#header-modal'>
             Записаться на&nbsp;прием
           </button>
-        </div>
-        <div class="hidden-lg hidden-md col-sm-6 col-xs-6">
+        </div> -->
+        <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="header__logo-link" href="#"><i class='sprite sprite-logo'></i></a>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class='menu__list-item'>
+                  <a class='menu__list-item-link' href='#about-clinic'>О&nbsp;клинике</a>
+                </li>
+                <li class='menu__list-item'>
+                  <a class='menu__list-item-link' href='#services'>Услуги</a>
+                </li>
+                <li class='menu__list-item'>
+                  <a class='menu__list-item-link' href='#experts'>Специалисты</a>
+                </li>
+                <li class='menu__list-item'>
+                  <a class='menu__list-item-link' href='#offers-section'>Акции</a>
+                </li>
+                <li class='menu__list-item'>
+                  <a class='menu__list-item-link' href='#blog'>Блог</a>
+                </li>
+                <li class='menu__list-item'>
+                  <a class='menu__list-item-link' href='#contacts'>Контакты</a>
+                </li>
+                <li class='menu__list-item_no-padding hidden-xs'>
+                  <p class='header__phone'>+7&nbsp;(3812)&nbsp;39-44-44</p>
+                </li>
+                <li class='menu__list-item_no-padding hidden-xs'>
+                  <button class='header__button' type='button' data-toggle='modal' data-target='#header-modal'>
+                    Записаться на&nbsp;прием
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div> <!-- /.navbar-collapse -->
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-        </div><!-- /.navbar-collapse -->
-      </div>
+      <!-- </div> -->
       <div class='header__presentation'>
         <h1 class='header__presentation-heading'>Центральная<br>клиническая больница</h1>
         <span class='header__presentation-text'>Передовая клиника в&nbsp;центре города</span>
@@ -494,7 +524,7 @@
             </div>
             <form class='blog__subscription'>
               <label for='email' class='blog__subscription-text'>
-                Хочу знать больше о&nbsp;современных<br>методиках лечения и&nbsp;профилактики
+                Хочу знать больше о&nbsp;современных<br class="hidden-xs">методиках лечения и&nbsp;профилактики
               </label>
               <input class='blog__subscription-email' type='email' id='email' placeholder='vashapochta@gmail.com'>
               <div class='blog__subscription-networks'>
@@ -768,16 +798,18 @@
         <div class='feedback-modal-1__wrap'>
           <h1 class='feedback-modal-1__heading'>Форма для отзыва</h1>
           <form class='feedback-modal-1__callback'>
-            <div class='col-lg-6'>
+            <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12'>
               <div class='row'>
                 <label class='feedback-modal-1__callback-text' for='feedback-modal-1__name'>Введите имя:</label>
                 <input class='feedback-modal-1__callback-input-name'  type='text' id='feedback-modal-1__name'
                        placeholder='Андрей'>
               </div>
             </div>
-            <div class='col-lg-6'>
-              <label class='feedback-modal-1__callback-text' for='feedback-modal-1__phone'>Введите телефон:</label>
-              <input class='feedback-modal-1__callback-input-phone'
+            <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12'>
+              <label class='feedback-modal-1__callback-text no-margin' for='feedback-modal-1__phone'>
+                Введите телефон:
+              </label>
+              <input class='feedback-modal-1__callback-input-phone no-margin'
                      type='tel' id='feedback-modal-1__phone' placeholder='+ 7 923 548-21-32'>
             </div>
             <textarea id='feedback-modal-1__text-area' class='feedback-modal-1__callback-text-area'></textarea>
@@ -980,8 +1012,10 @@
       var map = new GMaps({
         div: '#map',
         zoom: 16,
-        lat: 54.966481,
-        lng: 73.393569,
+        /*lat: 54.966481,
+        lng: 73.393569,*/
+        lat: 54.966366,
+        lng: 73.381755,
         scrollwheel: false
       });
 

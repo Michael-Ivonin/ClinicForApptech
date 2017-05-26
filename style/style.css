@@ -209,19 +209,32 @@ body {
   text-transform: uppercase;
   padding-top: 64px;
 }
+.navbar-header {
+  float: none;
+}
 .header__logo-link {
   display: inline-block;
+  float: left;
+}
+.collapse {
+  padding: 0;
 }
 .menu {
-  padding-top: 22px;
+  overflow: hidden;
 }
 .menu__list {
   font-size: 0;
-  text-align: center;
+  margin-left: 81px;
 }
 .menu__list-item {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 42px;
+}
+.menu__list-item_no-padding {
+  display: inline-block;
+  padding-right: 42px;
+  padding-right: 0;
+  height: 31px;
 }
 .menu__list-item-link {
   font-size: 12px;
@@ -233,15 +246,16 @@ body {
   color: #b1e06f;
 }
 .header__phone {
-  padding-top: 18px;
-  margin-left: 6px;
+  position: relative;
+  top: 3px;
+  margin-left: 36px;
   font-size: 19px;
 }
 .header__button {
   width: 156px;
   height: 31px;
   margin-top: 12px;
-  margin-left: 11px;
+  margin-left: 56px;
   background: none;
   font-size: 11px;
   font-weight: 700;
@@ -1258,6 +1272,7 @@ body {
   margin-bottom: 29px;
   width: 350px;
   margin-bottom: 26px;
+  width: 100%;
 }
 .header-modal__callback-input-name::-webkit-input-placeholder {
   color: #bfbfc2;
@@ -1284,6 +1299,7 @@ body {
   width: 350px;
   margin-bottom: 26px;
   margin-bottom: 29px;
+  width: 100%;
 }
 .header-modal__callback-input-phone::-webkit-input-placeholder {
   color: #bfbfc2;
@@ -1309,7 +1325,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
-  margin-right: 3px;
+  margin-right: 0;
 }
 .header-modal__callback-button:hover {
   background: #b1e06f;
@@ -1814,27 +1830,18 @@ body {
   .content .row {
     margin: 0;
   }
-  .header .col-md-2 {
-    width: 19%;
-  }
-  .header .col-md-5 {
-    width: 42.666667%;
-  }
-  .menu {
-    margin-left: 0;
+  .menu__list {
+    margin-left: 50px;
   }
   .menu__list-item {
-    padding: 0 6px;
+    padding: 0 10px;
   }
   .header__phone {
-    margin-left: 0;
+    margin-left: 35px;
     font-size: 17px;
   }
-  .header .col-md-3 {
-    width: 19%;
-  }
   .header__button {
-    margin-left: 7px;
+    margin-left: 37px;
   }
   .about-clinic {
     padding: 56px 0;
@@ -1940,10 +1947,54 @@ body {
   .contacts__callback-button {
     margin-right: 15px;
   }
+  .feedback-modal-1__callback-text {
+    display: block;
+    float: none;
+  }
+  .no-margin {
+    margin-left: -15px;
+  }
+  .feedback-modal-1__callback-input-name {
+    width: 100%;
+  }
+  .feedback-modal-1__callback-input-phone {
+    width: 104%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header .row {
     margin: 0;
+  }
+  .navbar-toggle {
+    display: block;
+    border: 2px solid #b1e06f;
+    margin-right: 0;
+  }
+  .navbar-toggle .icon-bar {
+    background: #b1e06f;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .menu__list {
+    float: none!important;
+    margin-top: 7.5px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .menu__list-item {
+    display: block;
+    float: none;
+    margin: 20px 0;
+  }
+  .menu__list-item-link {
+    font-size: 14px;
+  }
+  .header__phone {
+    margin-left: 0;
+  }
+  .collapse.in {
+    display: block !important;
   }
   .content .row {
     margin: 0;
@@ -2073,10 +2124,70 @@ body {
   .contacts__callback-button {
     margin-right: 15px;
   }
+  .feedback-modal-1__callback-text {
+    display: block;
+    float: none;
+  }
+  .no-margin {
+    margin-left: -15px;
+  }
+  .feedback-modal-1__callback-input-name {
+    width: 100%;
+  }
+  .feedback-modal-1__callback-input-phone {
+    width: 107.5%;
+  }
 }
 @media (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
   .header .row {
     margin: 0;
+  }
+  .container > .navbar-header {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .navbar-toggle {
+    display: block;
+    border: 2px solid #b1e06f;
+    margin-right: 0;
+  }
+  .navbar-toggle .icon-bar {
+    background: #b1e06f;
+  }
+  .navbar-collapse {
+    box-shadow: none;
+  }
+  .menu__list {
+    float: none!important;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 0;
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+  }
+  .menu__list-item {
+    display: block;
+    float: none;
+    margin: 15px 0;
+  }
+  .menu__list-item-link {
+    font-size: 14px;
+  }
+  .header__phone {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .header__button {
+    margin-left: 0;
+  }
+  .header__presentation-heading {
+    font-size: 38px;
   }
   .content .row {
     margin: 0;
@@ -2221,7 +2332,7 @@ body {
   }
   .blog__subscription {
     width: 100%;
-    padding: 15px 10px 15px 10px;
+    padding: 30px 30px;
     margin-bottom: 22px;
   }
   .blog__subscription-text {
@@ -2233,15 +2344,18 @@ body {
     margin-bottom: 29px;
   }
   .blog__subscription-email {
-    width: 270px;
+    width: 100%;
     display: block;
     float: none;
   }
   .blog__subscription-networks {
-    width: 120px;
+    width: 90px;
   }
   .blog__description {
-    padding: 15px 10px 15px 10px;
+    padding: 30px 30px;
+  }
+  .blog__description-text {
+    font-size: 15px;
   }
   .blog__description-button {
     margin-right: 0;
@@ -2272,20 +2386,32 @@ body {
   .contacts__callback-button {
     margin-right: 15px;
   }
+  .map {
+    height: 300px;
+  }
   .footer__up {
     margin-right: 7px;
   }
+  .feedback-modal-1__callback-text {
+    display: block;
+    float: none;
+  }
+  .no-margin {
+    margin-left: -15px;
+  }
+  .feedback-modal-1__callback-input-name {
+    width: 100%;
+  }
+  .feedback-modal-1__callback-input-phone {
+    width: 106%;
+  }
 }
-.benefits,
-.about-clinic,
-.search-for-services,
-.services,
-.feedback,
-.experts,
-.offers,
-.blog,
-.contacts,
-.map,
-.footer {
+/*
+.header {
   display: none;
 }
+
+.benefits, .about-clinic, .search-for-services, .services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
+  display: none;
+}
+*/
