@@ -1553,14 +1553,6 @@ body {
   position: relative;
   top: 2px;
 }
-/*.modal-feedback-bg .col-lg-12._shorter {
-  padding: 0 170px;
-}
-
-.modal-feedback {
-  width: 100%;
-  padding: 38px 53px 43px 53px;
-}*/
 .feedback-modal-1__content {
   background: none;
   border-radius: 0;
@@ -1642,6 +1634,9 @@ body {
 }
 .feedback-modal-1__callback-input-phone:-ms-input-placeholder {
   color: #bfbfc2;
+}
+.margin-left {
+  margin-left: 15px;
 }
 .feedback-modal-1__callback-text-area {
   width: 100%;
@@ -1785,9 +1780,6 @@ body {
 .feedback-modal-2__callback-input-email:-ms-input-placeholder {
   color: #bfbfc2;
 }
-.feedback-modal-2__callback .col-lg-6._longer {
-  padding: 0 0;
-}
 .feedback-modal-2__callback-text-area {
   height: 208px;
   resize: none;
@@ -1818,11 +1810,6 @@ body {
   position: relative;
   top: 2px;
 }
-/*@media (min-width: 1200px) and (max-width: 1215px) {
-  .content .row {
-    margin: 0 -7px;
-  }
-}*/
 @media (min-width: 992px) and (max-width: 1199px) {
   .header .row {
     margin: 0;
@@ -1951,14 +1938,35 @@ body {
     display: block;
     float: none;
   }
-  .no-margin {
-    margin-left: -15px;
+  .margin-left {
+    margin-left: 0;
+  }
+  .services-modal__wrap {
+    float: none;
+  }
+  .services-modal__form {
+    position: static;
+  }
+  .services-modal__text {
+    float: none;
   }
   .feedback-modal-1__callback-input-name {
     width: 100%;
   }
   .feedback-modal-1__callback-input-phone {
-    width: 104%;
+    width: 100%;
+  }
+  .feedback-modal-2__callback-text {
+    display: block;
+  }
+  .feedback-modal-2__callback-input-name {
+    width: 100%;
+  }
+  .feedback-modal-2__callback-input-phone {
+    width: 100%;
+  }
+  .feedback-modal-2__callback-input-email {
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2128,14 +2136,35 @@ body {
     display: block;
     float: none;
   }
-  .no-margin {
-    margin-left: -15px;
+  .margin-left {
+    margin-left: 0;
+  }
+  .services-modal__wrap {
+    float: none;
+  }
+  .services-modal__form {
+    position: static;
+  }
+  .services-modal__text {
+    float: none;
   }
   .feedback-modal-1__callback-input-name {
     width: 100%;
   }
   .feedback-modal-1__callback-input-phone {
-    width: 107.5%;
+    width: 100%;
+  }
+  .feedback-modal-2__callback-text {
+    display: block;
+  }
+  .feedback-modal-2__callback-input-name {
+    width: 100%;
+  }
+  .feedback-modal-2__callback-input-phone {
+    width: 100%;
+  }
+  .feedback-modal-2__callback-input-email {
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -2165,11 +2194,6 @@ body {
     margin-top: 60px;
     text-align: center;
     margin-left: 0;
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;*/
   }
   .menu__list-item {
     display: block;
@@ -2392,26 +2416,45 @@ body {
   .footer__up {
     margin-right: 7px;
   }
+  .services-modal .modal-lg {
+    width: 97.35%;
+  }
+  .services-modal__wrap {
+    float: none;
+  }
+  .services-modal__form {
+    position: static;
+  }
+  .services-modal__text {
+    float: none;
+  }
   .feedback-modal-1__callback-text {
     display: block;
     float: none;
   }
-  .no-margin {
-    margin-left: -15px;
+  .margin-left {
+    margin-left: 0;
   }
   .feedback-modal-1__callback-input-name {
     width: 100%;
   }
   .feedback-modal-1__callback-input-phone {
-    width: 106%;
+    width: 100%;
+  }
+  .feedback-modal-2__callback-text {
+    display: block;
+  }
+  .feedback-modal-2__callback-input-name {
+    width: 100%;
+  }
+  .feedback-modal-2__callback-input-phone {
+    width: 100%;
+  }
+  .feedback-modal-2__callback-input-email {
+    width: 100%;
   }
 }
 /*
-.header {
+.header, .benefits, .about-clinic, .search-for-services, .services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
   display: none;
-}
-
-.benefits, .about-clinic, .search-for-services, .services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
-  display: none;
-}
-*/
+}*/
