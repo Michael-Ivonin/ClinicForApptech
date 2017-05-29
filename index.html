@@ -5,7 +5,7 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>ЦКБ</title>
-  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.ico">
   <link href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet'>
   <link href='vendor/owlCarousel/assets/owl.carousel.min.css' rel='stylesheet'>
   <link href='style/reset.css' rel='stylesheet'>
@@ -15,7 +15,8 @@
   <header class='header' id="header">
     <div class='container'>
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -51,13 +52,13 @@
                     Записаться на&nbsp;прием
                   </button>
                 </li>
-              </ul>
-            </nav>
-          </div> <!-- /.navbar-collapse -->
-        </div>
+              </ul> <!-- /menu__list -->
+            </nav> <!-- /menu -->
+          </div> <!-- /navbar-collapse -->
+        </div> <!-- /navbar-header -->
       <div class='header__presentation'>
         <h1 class='header__presentation-heading'>Центральная<br>клиническая больница</h1>
-        <span class='header__presentation-text'>Передовая клиника в&nbsp;центре города</span>
+        <p class='header__presentation-text'>Передовая клиника в&nbsp;центре города</p>
       </div> <!-- /header__presentation -->
     </div>
   </header> <!-- /header -->
@@ -143,7 +144,8 @@
         <div class='row'>
           <form class='search-for-services__search-form'>
             <div class='wrap'>
-              <input class='search-for-services__search-form-item-text' type='search' placeholder='Гастроэнтерология'>
+              <input class='search-for-services__search-form-item-text' type='search'
+                     placeholder='Гастроэнтерология' required>
               <button class='search-for-services__search-form-item-button' type='submit'>
                 <i class='sprite sprite-loupe'></i>
                 <i class='sprite sprite-loupe_hover'></i>
@@ -332,14 +334,14 @@
             <p class='item__post'>Врач акушер-гинеколог</p>
           </div>
           <div class='item'>
-            <i class='sprite sprite-Davalchenko'>
-              <div class='item-bg'>
-                <button class='item-bg__button' type='button'>Подробнее</button>
-              </div>
-            </i>
-            <p class='item__name'>Давальченко Марина Анатольевна</p>
-            <p class='item__post'>Врач акушер-гинеколог</p>
-          </div>
+          <i class='sprite sprite-Davalchenko'>
+            <div class='item-bg'>
+              <button class='item-bg__button' type='button'>Подробнее</button>
+            </div>
+          </i>
+          <p class='item__name'>Давальченко Марина Анатольевна</p>
+          <p class='item__post'>Врач акушер-гинеколог</p>
+        </div>
         </div>
       </div>
     </section> <!-- /experts -->
@@ -353,7 +355,7 @@
         </div>
         <div class='row'>
           <ul class='nav nav-tabs'>
-            <li class='nav-tabs__list-item'>
+            <li class='nav-tabs__list-item active'>
               <a href='#actions' class='offers__item' data-toggle='tab'>Акции</a>
             </li>
             <li class='nav-tabs__list-item_margins'>
@@ -366,7 +368,7 @@
         </div>
         <div class='row'>
           <div id='myTabContent' class='tab-content'>
-            <div class='tab-pane fade' id='actions'>
+            <div class='tab-pane active' id='actions'>
               <div class='col-lg-7 _shorter col-md-7 col-sm-12'>
                 <div class='offers__paragraphs'>
                   <a class='offers__paragraphs-item' href='#'>
@@ -499,7 +501,8 @@
               <label for='email' class='blog__subscription-text'>
                 Хочу знать больше о&nbsp;современных<br class="hidden-xs">методиках лечения и&nbsp;профилактики
               </label>
-              <input class='blog__subscription-email' type='email' id='email' placeholder='vashapochta@gmail.com'>
+              <input class='blog__subscription-email' type='email' id='email'
+                     placeholder='vashapochta@gmail.com' required>
               <div class='blog__subscription-networks'>
                 <a href='#' class='blog__subscription-networks-link'>
                   <i class='sprite sprite-vk secrete'></i>
@@ -580,12 +583,14 @@
                     Введите фамилию, имя и&nbsp;отчество:
                   </label>
                   <input class='contacts__callback-input-name'  type='text' id='contacts__name'
-                         placeholder='Иванов Андрей Александрович'>
+                         placeholder='Иванов Андрей Александрович'
+                         required pattern='([А-ЯЁ][а-яё]+[\-\s]?){3,}'>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
                   <label class='contacts__callback-text' for='contacts__phone'>Введите телефон:</label>
                   <input class='contacts__callback-input-phone'
-                         type='tel' id='contacts__phone' placeholder='+ 7 923 548-21-32'>
+                         type='tel' id='contacts__phone' placeholder='+ 7 923 548-21-32'
+                         required pattern='^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'>
                 </div>
               </div>
               <button class='contacts__callback-button' type='submit'>Отправить заявку</button>
@@ -613,6 +618,9 @@
     <div class='modal-dialog' role='document'>
       <div class='modal-content header-modal__content'>
         <div class='header-modal__wrap'>
+          <button type='button' class='close header-modal__button-close' data-dismiss='modal' aria-label='Close'>
+            <span aria-hidden='true'>&times;</span>
+          </button>
           <h1 class='header-modal__heading'>Форма записи</h1>
           <p class='header-modal__text'>
             Для записи на&nbsp;прием Вам перезвонит наш специалист в&nbsp;течение 10&nbsp;минут.
@@ -622,10 +630,12 @@
               Введите фамилию, имя и&nbsp;отчество:
             </label>
             <input class='header-modal__callback-input-name'  type='text' id='header-modal__name'
-                   placeholder='Иванов Андрей Александрович'>
+                   placeholder='Иванов Андрей Александрович'
+                   autofocus required pattern='([А-ЯЁ][а-яё]+[\-\s]?){3,}'>
             <label class='header-modal__callback-text' for='header-modal__phone'>Введите телефон:</label>
             <input class='header-modal__callback-input-phone'
-                   type='tel' id='header-modal__phone' placeholder='+ 7 923 548-21-32'>
+                   type='tel' id='header-modal__phone' placeholder='+ 7 923 548-21-32'
+                   required pattern='^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'>
             <button class='header-modal__callback-button' type='submit'>Отправить заявку</button>
           </form> <!-- /modal-booking__callback -->
         </div> <!-- /header-modal__wrap -->
@@ -704,7 +714,7 @@
               </table> <!-- /modal-services__table -->
               <div class='services-modal__total'>
                 <p class='services-modal__total-text'>Общая сумма:</p>
-                <div class='services-modal__total-output'>0000</div>
+                <div class='services-modal__total-output'>0</div>
               </div>
             </div>
             <div class='col-lg-4 col-md-12 col-sm-12 col-xs-12'>
@@ -718,10 +728,12 @@
                     Введите фамилию, имя и&nbsp;отчество:
                   </label>
                   <input class='services-modal__callback-input-name' type='text' id='services-modal__name'
-                         placeholder='Иванов Андрей Александрович'>
+                         placeholder='Иванов Андрей Александрович'
+                         autofocus required pattern='([А-ЯЁ][а-яё]+[\-\s]?){3,}'>
                   <label class='services-modal__callback-text' for='services-modal__phone'>Введите телефон:</label>
                   <input class='services-modal__callback-input-phone'
-                         type='tel' id='services-modal__phone' placeholder='+ 7 923 548-21-32'>
+                         type='tel' id='services-modal__phone' placeholder='+ 7 923 548-21-32'
+                         required pattern='^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'>
                   <button class='services-modal__callback-button' type='submit'>Отправить заявку</button>
                 </form> <!-- /modal-services__callback -->
               </div> <!-- /modal-services__form -->
@@ -767,13 +779,16 @@
     <div class='modal-dialog modal-lg' role='document'>
       <div class='modal-content feedback-modal-1__content'>
         <div class='feedback-modal-1__wrap'>
+          <button type='button' class='close feedback-modal-1__button-close' data-dismiss='modal' aria-label='Close'>
+            <span aria-hidden='true'>&times;</span>
+          </button>
           <h1 class='feedback-modal-1__heading'>Форма для отзыва</h1>
           <form class='feedback-modal-1__callback'>
             <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12'>
               <div class='row'>
                 <label class='feedback-modal-1__callback-text' for='feedback-modal-1__name'>Введите имя:</label>
                 <input class='feedback-modal-1__callback-input-name'  type='text' id='feedback-modal-1__name'
-                       placeholder='Андрей'>
+                       placeholder='Андрей' autofocus required pattern='([А-ЯЁ][а-яё]+[\-\s]?){1,}'>
               </div>
             </div>
             <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12'>
@@ -782,7 +797,8 @@
                   Введите телефон:
                 </label>
                 <input class='feedback-modal-1__callback-input-phone margin-left'
-                       type='tel' id='feedback-modal-1__phone' placeholder='+ 7 923 548-21-32'>
+                       type='tel' id='feedback-modal-1__phone' placeholder='+ 7 923 548-21-32'
+                       required pattern='^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'>
               </div>
             </div>
             <textarea id='feedback-modal-1__text-area' class='feedback-modal-1__callback-text-area'></textarea>
@@ -797,24 +813,29 @@
     <div class='modal-dialog modal-lg' role='document'>
       <div class='modal-content feedback-modal-2__content'>
         <div class='feedback-modal-2__wrap'>
+          <button type='button' class='close feedback-modal-2__button-close' data-dismiss='modal' aria-label='Close'>
+            <span aria-hidden='true'>&times;</span>
+          </button>
           <h1 class='feedback-modal-2__heading'>Задайте вопрос врачу</h1>
           <form class='feedback-modal-2__callback'>
             <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12'>
               <div class='row'>
                 <label class='feedback-modal-2__callback-text' for='feedback-modal-2__name'>Введите имя:</label>
                 <input class='feedback-modal-2__callback-input-name'  type='text' id='feedback-modal-2__name'
-                       placeholder='Андрей'>
+                       placeholder='Андрей' autofocus required pattern='([А-ЯЁ][а-яё]+[\-\s]?){1,}'>
                 <label class='feedback-modal-2__callback-text' for='feedback-modal-2__phone'>Введите телефон:</label>
                 <input class='feedback-modal-2__callback-input-phone'
-                       type='tel' id='feedback-modal-2__phone' placeholder='+ 7 923 548-21-32'>
+                       type='tel' id='feedback-modal-2__phone' placeholder='+ 7 923 548-21-32'
+                       required pattern='^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'>
                 <label class='feedback-modal-2__callback-text' for='feedback-modal-2__email'>Введите почту:</label>
                 <input class='feedback-modal-2__callback-input-email'
-                       type='email' id='feedback-modal-2__email' placeholder='vashapochta@gmail.com'>
+                       type='email' id='feedback-modal-2__email' placeholder='vashapochta@gmail.com' required>
               </div>
             </div>
             <div class='col-lg-6 col-md-12 col-sm-12 col-xs-12'>
               <div class="row">
-                <textarea id='feedback-modal-2__text-area' class='feedback-modal-2__callback-text-area'></textarea>
+                <textarea id='feedback-modal-2__text-area'
+                          class='feedback-modal-2__callback-text-area' required></textarea>
               </div>
             </div>
             <button class='feedback-modal-2__callback-button' type='submit'>Отправить</button>
@@ -828,164 +849,6 @@
   <script src='vendor/owlCarousel/owl.carousel.min.js'></script>
   <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBmqj7SWiFJuGn-DLHBw2mPxzyuWdKwFIg'></script>
   <script src='vendor/gmaps/gmaps.min.js'></script>
-  <script>
-    $(document).ready(function() {
-      $('#owl-carousel_1').owlCarousel({
-        navText: ['', ''],
-        dots: false,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          768: {
-            items: 3,
-            margin: 54,
-            nav: false
-          },
-          992: {
-            items: 4,
-            margin: 36
-
-          },
-          1200: {
-            items: 5,
-            margin: 92
-          }
-        }
-      });
-
-      $('#owl-carousel_2').owlCarousel({
-        nav: true,
-        navText: ['', ''],
-        dots: false,
-        loop: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          768: {
-            items: 1,
-            nav: false
-          },
-          992: {
-            items: 1
-          },
-          1200: {
-            items: 1
-          }
-        }
-      });
-
-      $('#owl-carousel_modal').owlCarousel({
-        navText: ['', ''],
-        dots: false,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          768: {
-            items: 3,
-            margin: 54,
-            nav: false
-          },
-          992: {
-            items: 3,
-            margin: 36
-
-          },
-          1200: {
-            items: 3,
-            margin: 13
-          }
-        }
-      });
-
-      $('#owl-carousel_3').owlCarousel({
-        nav: true,
-        navText: ['', ''],
-        dots: false,
-        loop: true,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          768: {
-            items: 3,
-            margin: 54,
-            nav: false
-          },
-          992: {
-            items: 4,
-            margin: 36
-
-          },
-          1200: {
-            items: 5,
-            margin: 28
-          }
-        }
-      });
-
-      var map = new GMaps({
-        div: '#map',
-        zoom: 16,
-        /*lat: 54.966481,
-        lng: 73.393569,*/
-        lat: 54.966366,
-        lng: 73.381755,
-        scrollwheel: false
-      });
-
-      map.addMarker({
-        lat: 54.966366,
-        lng: 73.381755,
-        title: 'Карла Маркса проспект, 18 кopпyc 28'
-      });
-
-      $('.services-modal__table-checkbox').click(function() {
-        var outputValue = +($('.services-modal__total-output').text());
-        var checkboxValue = +($(this).closest('.services-modal__table-service-price').text());
-
-        if (this.checked) {
-          $(this).closest('.services-modal__table-main-row').find(
-            '.services-modal__table-main-cell_1, .services-modal__table-main-cell_2'
-          ).css(
-            'background', 'rgb(232, 233, 233)'
-          );
-          $('.services-modal__total-output').text(outputValue + checkboxValue);
-        } else {
-          $(this).closest('.services-modal__table-main-row').find(
-            '.services-modal__table-main-cell_1, .services-modal__table-main-cell_2'
-          ).css(
-            'background', 'inherit'
-          );
-          $('.services-modal__total-output').text(outputValue - checkboxValue);
-        }
-      });
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

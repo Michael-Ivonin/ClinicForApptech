@@ -234,7 +234,7 @@ body {
   display: inline-block;
   padding-right: 42px;
   padding-right: 0;
-  height: 31px;
+  height: 35px;
 }
 .menu__list-item-link {
   font-size: 12px;
@@ -262,6 +262,7 @@ body {
   outline: 2px solid #b1e06f;
   text-transform: uppercase;
   border: none;
+  line-height: normal;
 }
 .header__button:hover {
   background: #ffffff;
@@ -443,7 +444,7 @@ body {
   outline: none;
   border: none;
   font-size: 21px;
-  color: #9b9eac;
+  color: #f7f8f8;
 }
 .search-for-services__search-form-item-text::-webkit-input-placeholder {
   color: #9b9eac;
@@ -496,14 +497,13 @@ body {
 }
 .services__group-heading {
   width: 51px;
-  height: 50px;
   text-align: center;
   font-size: 39px;
   font-weight: 700;
   color: #7c7d83;
-  padding: 3px 0;
   border: 2px solid #b1e06f;
   margin-bottom: 29px;
+  line-height: 46px;
 }
 .services__group-item {
   font-size: 21px;
@@ -537,6 +537,7 @@ body {
   text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
+  line-height: normal;
 }
 .feedback__review-button:hover {
   background: #ffffff;
@@ -570,6 +571,7 @@ body {
   text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
+  line-height: normal;
   width: 304px;
   margin-left: 0;
   margin-right: -63px;
@@ -699,7 +701,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 19px;
+  padding-top: 17px;
   border-radius: 0;
   border: none;
 }
@@ -830,6 +832,7 @@ body {
   text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
+  line-height: normal;
   color: #ffffff;
   display: block;
   margin: 32px auto 0 auto;
@@ -932,11 +935,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
 }
@@ -980,6 +983,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   float: right;
+  line-height: normal;
 }
 .blog__subscription-button:hover {
   background: none;
@@ -1037,6 +1041,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   float: right;
+  line-height: normal;
   width: 135px;
   margin-right: -5px;
 }
@@ -1121,11 +1126,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1147,11 +1152,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   width: 350px;
   margin-bottom: 26px;
@@ -1181,6 +1186,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
+  line-height: normal;
 }
 .contacts__callback-button:hover {
   background: #b1e06f;
@@ -1191,6 +1197,14 @@ body {
 }
 .map {
   height: 580px;
+}
+.map__infoWindow-heading {
+  text-transform: uppercase;
+  color: #292c3a;
+  font-weight: 700;
+}
+.map__infoWindow-address {
+  text-align: center;
 }
 .footer {
   background: #292c3a;
@@ -1234,6 +1248,11 @@ body {
   background: #ffffff;
   padding: 42px 42px 36px 41px;
 }
+.header-modal__button-close {
+  position: relative;
+  top: -30px;
+  right: -25px;
+}
 .header-modal__heading {
   color: #292c3a;
   font-size: 24px;
@@ -1263,11 +1282,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1290,11 +1309,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   width: 350px;
   margin-bottom: 26px;
@@ -1325,6 +1344,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
+  line-height: normal;
   margin-right: 0;
 }
 .header-modal__callback-button:hover {
@@ -1472,11 +1492,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1499,11 +1519,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   width: 350px;
   margin-bottom: 26px;
@@ -1544,6 +1564,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
+  line-height: normal;
   margin-right: 0;
 }
 .services-modal__callback-button:hover {
@@ -1563,6 +1584,11 @@ body {
   background: #ffffff;
   padding: 38px 53px 43px 45px;
   float: left;
+}
+.feedback-modal-1__button-close {
+  position: relative;
+  top: -30px;
+  right: -35px;
 }
 .feedback-modal-1__heading {
   color: #292c3a;
@@ -1587,11 +1613,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1613,11 +1639,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   width: 350px;
   margin-bottom: 26px;
@@ -1657,6 +1683,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
+  line-height: normal;
   margin-right: 0;
 }
 .feedback-modal-1__callback-button:hover {
@@ -1677,6 +1704,11 @@ body {
   padding: 38px 53px 43px 45px;
   float: left;
   padding: 41px 50px 38px 51px;
+}
+.feedback-modal-2__button-close {
+  position: relative;
+  top: -30px;
+  right: -35px;
 }
 .feedback-modal-2__heading {
   color: #292c3a;
@@ -1702,11 +1734,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1729,11 +1761,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1756,11 +1788,11 @@ body {
   width: 321px;
   height: 57px;
   background: #f3f3f3;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: #bfbfc2;
+  color: #292c3a;
   float: left;
   margin-bottom: 29px;
   width: 350px;
@@ -1801,6 +1833,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
+  line-height: normal;
   margin-right: 0;
 }
 .feedback-modal-2__callback-button:hover {
@@ -2269,6 +2302,7 @@ body {
   }
   .search-for-services__search-form-item-text {
     width: 93%;
+    color: #f7f8f8;
   }
   .services {
     padding: 40px 0;

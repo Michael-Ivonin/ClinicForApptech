@@ -250,7 +250,7 @@ body {
 .menu__list-item_no-padding {
   .menu__list-item;
   padding-right: 0;
-  height: 31px;
+  height: 35px;
 }
 
 .menu__list-item-link {
@@ -282,6 +282,7 @@ body {
   outline: 2px solid @light-green;
   text-transform: uppercase;
   border: none;
+  line-height: normal;
 
   &:hover {
     background: @white;
@@ -462,10 +463,6 @@ body {
   margin-bottom: 25px;
 }
 
-.search-for-services__search-form {
-
-}
-
 .wrap {
   display: inline-block;
   width: 500px;
@@ -480,7 +477,7 @@ body {
   outline: none;
   border: none;
   font-size: 21px;
-  color: @light-grey;
+  color: @dark-white;
 
   &::-webkit-input-placeholder {
     color: @light-grey;
@@ -539,14 +536,15 @@ body {
 
 .services__group-heading {
   width: 51px;
-  height: 50px;
+  //height: 50px;
   text-align: center;
   font-size: 39px;
   font-weight: 700;
   color: @dark-grey;
-  padding: 3px 0;
+  //padding: 3px 0;
   border: 2px solid @light-green;
   margin-bottom: 29px;
+  line-height: 46px;
 }
 
 .services__group-item {
@@ -585,6 +583,7 @@ body {
   text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
+  line-height: normal;
 
   &:hover {
     background: @white;
@@ -757,7 +756,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 19px;
+  padding-top: 17px;
   border-radius: 0;
   border: none;
 
@@ -989,11 +988,11 @@ body {
   width: 321px;
   height: 57px;
   background: @super-dark-white;
-  padding: 22px 22px;
+  padding: 0 22px;
   outline: none;
   border: none;
   font-size: 18px;
-  color: @super-light-grey;
+  color: @medium-blue;
   float: left;
   margin-bottom: 29px;
 
@@ -1047,6 +1046,7 @@ body {
   font-size: 12px;
   font-weight: 600;
   float: right;
+  line-height: normal;
 
   &:hover {
     background: none;
@@ -1195,6 +1195,7 @@ body {
   border: none;
   outline: none;
   margin-right: -6px;
+  line-height: normal;
 
   &:hover {
     background: @light-green;
@@ -1205,6 +1206,16 @@ body {
 
 .map {
   height: 580px;
+}
+
+.map__infoWindow-heading {
+  text-transform: uppercase;
+  color: @medium-blue;
+  font-weight: 700;
+}
+
+.map__infoWindow-address {
+  text-align: center;
 }
 
 .footer {
@@ -1263,6 +1274,12 @@ body {
   float: left;
   background: @white;
   padding: 42px 42px 36px 41px;
+}
+
+.header-modal__button-close {
+  position: relative;
+  top: -30px;
+  right: -25px;
 }
 
 .header-modal__heading {
@@ -1470,6 +1487,12 @@ body {
   float: left;
 }
 
+.feedback-modal-1__button-close {
+  position: relative;
+  top: -30px;
+  right: -35px;
+}
+
 .feedback-modal-1__heading {
   .contacts__callback-heading;
   padding-bottom: 15px;
@@ -1517,6 +1540,10 @@ body {
 .feedback-modal-2__wrap {
   .feedback-modal-1__wrap;
   padding: 41px 50px 38px 51px;
+}
+
+.feedback-modal-2__button-close {
+  .feedback-modal-1__button-close;
 }
 
 .feedback-modal-2__heading {
@@ -2138,6 +2165,7 @@ body {
 
   .search-for-services__search-form-item-text {
     width: 93%;
+    color: @dark-white;
   }
 
   .services {
