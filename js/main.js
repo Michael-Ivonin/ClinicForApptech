@@ -4,27 +4,24 @@
 
 $(document).ready(function() {
   $('#owl-carousel_1').owlCarousel({
+    nav: false,
     navText: ['', ''],
     dots: false,
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
-        nav: false
+        items: 1
       },
       480: {
-        items: 1,
-        nav: false
+        items: 1
       },
       768: {
         items: 3,
-        margin: 54,
-        nav: false
+        margin: 54
       },
       992: {
         items: 4,
         margin: 36
-
       },
       1200: {
         items: 5,
@@ -40,16 +37,13 @@ $(document).ready(function() {
     loop: true,
     responsive: {
       0: {
-        items: 1,
-        nav: false
+        items: 1
       },
       480: {
-        items: 1,
-        nav: false
+        items: 1
       },
       768: {
-        items: 1,
-        nav: false
+        items: 1
       },
       992: {
         items: 1
@@ -61,22 +55,20 @@ $(document).ready(function() {
   });
 
   $('#owl-carousel_modal').owlCarousel({
+    nav: false,
     navText: ['', ''],
     dots: false,
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
-        nav: false
+        items: 1
       },
       480: {
-        items: 1,
-        nav: false
+        items: 1
       },
       768: {
         items: 3,
-        margin: 54,
-        nav: false
+        margin: 54
       },
       992: {
         items: 3,
@@ -98,22 +90,18 @@ $(document).ready(function() {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1,
-        nav: false
+        items: 1
       },
       480: {
-        items: 1,
-        nav: false
+        items: 1
       },
       768: {
         items: 3,
-        margin: 54,
-        nav: false
+        margin: 54
       },
       992: {
         items: 4,
         margin: 36
-
       },
       1200: {
         items: 5,

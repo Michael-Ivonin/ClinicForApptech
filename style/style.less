@@ -119,6 +119,10 @@
     .stitches-sprite(-691px, -212px, 65px, 24px);
   }
 
+  &.sprite-important {
+    .stitches-sprite(-827px, -5px, 2px, 15px);
+  }
+
   &.sprite-list {
     .stitches-sprite(-434px, -246px, 151px, 150px);
   }
@@ -530,21 +534,20 @@ body {
   padding-left: 80px;
 
   &:nth-child(3) {
-    padding-left: 60px;
+    padding-left: 59px;
   }
 }
 
 .services__group-heading {
   width: 51px;
-  //height: 50px;
+  height: 50px;
   text-align: center;
   font-size: 39px;
   font-weight: 700;
   color: @dark-grey;
-  //padding: 3px 0;
-  border: 2px solid @light-green;
+  padding: 5px 0;
+  outline: 2px solid @light-green;
   margin-bottom: 29px;
-  line-height: 46px;
 }
 
 .services__group-item {
@@ -768,15 +771,15 @@ body {
 
   &:focus {
     outline: 2px solid @medium-blue;
-    padding-top: 18px;
+    padding-top: 17px;
     color: @medium-blue;
   }
 }
 
 .offers .nav-tabs>li.active>a {
   border: none;
-  outline: none;
-  padding-top: 18px;
+  outline: 2px solid @medium-blue;
+  padding-top: 17px;
   color: @medium-blue;
 
   &:focus {
@@ -835,9 +838,13 @@ body {
   color: @white;
   font-size: 15px;
   text-align: center;
-  padding-top: 6px;
+  padding-top: 7px;
   float: right;
   margin-bottom: 38px;
+}
+
+.sprite-important {
+  display: inline-block;
 }
 
 .offers__description-heading {
@@ -1087,12 +1094,22 @@ body {
   color: @from-grey-to-blue;
   font-size: 23px;
   margin-bottom: 7px;
+
+  &:hover {
+    text-decoration: none;
+    color: @light-green;
+  }
+
+  &:focus {
+    text-decoration: none;
+    //outline: none;
+  }
 }
 
 .blog__description-article-text {
   color: @medium-grey;
   font-size: 16px;
-  height: 218px;
+  height: 225px;
 }
 
 .blog__description-button {
@@ -1103,7 +1120,7 @@ body {
 
 .contacts {
   padding: 82px 0 49px 0;
-  background: linear-gradient(to right, @medium-blue 59.2%, @white 59.3%, @white);
+  background: linear-gradient(to right, @medium-blue 59.2%, @white 59.2%, @white);
 }
 
 .contacts .col-lg-7._shorter {
@@ -1678,6 +1695,10 @@ body {
     margin-right: 0;
   }
 
+  .experts .owl-prev {
+    margin-left: 0;
+  }
+
   .offers .nav-tabs__list-item_margins {
     margin: 0;
   }
@@ -1715,7 +1736,7 @@ body {
   }
 
   .blog__description-article-text {
-    height: 139px;
+    height: 146px;
   }
 
   .blog__description-button {
@@ -1723,7 +1744,7 @@ body {
   }
 
   .contacts {
-    background: linear-gradient(to right, @medium-blue 57%, @white 57.1%, @white);
+    background: linear-gradient(to right, @medium-blue 57%, @white 57%, @white);
   }
 
   .contacts .col-md-5._shorter {
@@ -1915,7 +1936,11 @@ body {
   }
 
   .experts {
-    padding: 70px 0 10px 0;
+    padding: 70px 0;
+  }
+
+  .experts .owl-prev {
+    margin-left: 0;
   }
 
   .offers {
@@ -1967,7 +1992,7 @@ body {
   }
 
   .contacts {
-    background: linear-gradient(to bottom, @medium-blue 58%, @white 58.1%, @white);
+    background: linear-gradient(to bottom, @medium-blue 58%, @white 58%, @white);
     padding: 41px 0;
   }
 
@@ -2123,6 +2148,10 @@ body {
     line-height: normal;
   }
 
+  .about-clinic .owl-nav {
+    top: 80%;
+  }
+
   .about-clinic .col-lg-6._shorter {
     padding-left: 15px;
   }
@@ -2206,7 +2235,11 @@ body {
   }
 
   .experts {
-    padding: 70px 0 10px 0;
+    padding: 70px 0;
+  }
+
+  .experts .owl-prev {
+    margin-left: 0;
   }
 
   .offers {
@@ -2314,7 +2347,7 @@ body {
   }
 
   .contacts {
-    background: linear-gradient(to bottom, @medium-blue 61%, @white 61.1%, @white);
+    background: linear-gradient(to bottom, @medium-blue 61%, @white 61%, @white);
     padding: 41px 0;
   }
 
