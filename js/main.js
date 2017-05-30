@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function() {
-  $('#owl-carousel_1').owlCarousel({
+  $('#benefits__owl-carousel').owlCarousel({
     nav: false,
     navText: ['', ''],
     dots: false,
@@ -30,7 +30,7 @@ $(document).ready(function() {
     }
   });
 
-  $('#owl-carousel_2').owlCarousel({
+  $('#about-clinic__owl-carousel').owlCarousel({
     nav: true,
     navText: ['', ''],
     dots: false,
@@ -54,35 +54,7 @@ $(document).ready(function() {
     }
   });
 
-  $('#owl-carousel_modal').owlCarousel({
-    nav: false,
-    navText: ['', ''],
-    dots: false,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      480: {
-        items: 1
-      },
-      768: {
-        items: 3,
-        margin: 54
-      },
-      992: {
-        items: 3,
-        margin: 36
-
-      },
-      1200: {
-        items: 3,
-        margin: 13
-      }
-    }
-  });
-
-  $('#owl-carousel_3').owlCarousel({
+  $('#experts__owl-carousel').owlCarousel({
     nav: true,
     navText: ['', ''],
     dots: false,
@@ -106,6 +78,34 @@ $(document).ready(function() {
       1200: {
         items: 5,
         margin: 28
+      }
+    }
+  });
+
+  $('#services-modal__owl-carousel').owlCarousel({
+    nav: false,
+    navText: ['', ''],
+    dots: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 1
+      },
+      768: {
+        items: 3,
+        margin: 54
+      },
+      992: {
+        items: 3,
+        margin: 36
+
+      },
+      1200: {
+        items: 3,
+        margin: 13
       }
     }
   });
@@ -159,4 +159,8 @@ $(document).ready(function() {
       $('.services-modal__total-output').text(outputValue - checkboxValue);
     }
   });
+
+
+  $('.contacts__callback-input-phone, .header-modal__callback-input-phone, .services-modal__callback-input-phone,' +
+    '.feedback-modal-1__callback-input-phone, .feedback-modal-2__callback-input-phone').mask('+7 (999) 999-9999');
 });

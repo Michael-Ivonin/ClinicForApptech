@@ -205,7 +205,7 @@
 
 
 
-// Page
+// Page-styles
 body {
   font-family: "MyriadPro", sans-serif;
 }
@@ -827,7 +827,7 @@ body {
 
 .offers__description {
   background: @dark-white;
-  padding: 0 37px 28px 37px;
+  padding: 0 30px 29px 37px;
   float: left;
 }
 
@@ -840,7 +840,7 @@ body {
   text-align: center;
   padding-top: 7px;
   float: right;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .sprite-important {
@@ -852,27 +852,29 @@ body {
   color: @dark-blue;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
+  line-height: 21px;
 }
 
 .offers__description-text {
   .offers__description-heading;
   color: @medium-grey;
-  margin-bottom: 84px;
-  line-height: 21px;
+  margin-bottom: 77px;
+  line-height: 22.25px;
 }
 
 .offers__description-participate-button {
   background: none;
-  width: 119px;
+  width: 115px;
   height: 31px;
   box-sizing: content-box;
   border: 2px solid @medium-blue;
   outline: none;
   text-transform: uppercase;
   float: right;
-  margin-right: -8px;
+  margin-right: -9px;
   font-size: 13px;
+  padding: 1px 8px;
 
   &:hover {
     background: @medium-blue;
@@ -968,15 +970,19 @@ body {
   margin-bottom: 60px;
 }
 
+.video-container {
+  height: 432px;
+}
+
 .blog__video {
   width: 100%;
-  height: 432px;
+  height: 100%;
   border-width: 0;
 }
 
 .blog__subscription {
   background: @white;
-  margin-top: 22px;
+  margin-top: 25px;
   padding: 61px 59px 30px 53px;
   float: left;
 }
@@ -1102,7 +1108,6 @@ body {
 
   &:focus {
     text-decoration: none;
-    //outline: none;
   }
 }
 
@@ -1120,15 +1125,19 @@ body {
 
 .contacts {
   padding: 82px 0 49px 0;
-  background: linear-gradient(to right, @medium-blue 59.2%, @white 59.2%, @white);
+  background: linear-gradient(to right, @medium-blue 59.3%, @white 59.3%, @white);
 }
 
 .contacts .col-lg-7._shorter {
-  padding-right: 128px;
+  padding-right: 130px;
 }
 
 .contacts .col-lg-5._shorter {
   padding-left: 127px;
+}
+
+.contacts__info .row {
+  margin: 0 -15px;
 }
 
 .contacts__info-heading {
@@ -1153,7 +1162,7 @@ body {
 }
 
 .contacts__info-time {
-  margin-left: 42px;
+  margin-left: 37px;
 }
 
 .contacts__info-time-heading {
@@ -1170,6 +1179,10 @@ body {
   .contacts__info-time-text;
   color: @light-green;
   margin-bottom: 27px;
+}
+
+.contacts__callback .row {
+  margin: 0 -15px;
 }
 
 .contacts__callback-heading {
@@ -1191,7 +1204,7 @@ body {
 
 .contacts__callback-input-name {
   .blog__subscription-email;
-  width: 350px;
+  width: 100%;
   margin-bottom: 26px;
 }
 
@@ -1211,7 +1224,6 @@ body {
   float: right;
   border: none;
   outline: none;
-  margin-right: -6px;
   line-height: normal;
 
   &:hover {
@@ -1708,11 +1720,15 @@ body {
   }
 
   .offers__description-text {
-    margin-bottom: 87px;
+    margin-bottom: 96px;
   }
 
   .blog .col-md-4 {
     padding-left: 0;
+  }
+
+  .video-container {
+    height: 351px;
   }
 
   .blog__video {
@@ -1747,8 +1763,16 @@ body {
     background: linear-gradient(to right, @medium-blue 57%, @white 57%, @white);
   }
 
+  .contacts__info .row {
+    margin: 0 -15px;
+  }
+
   .contacts .col-md-5._shorter {
     padding-left: 38px;
+  }
+
+  .contacts__callback .row {
+    margin: 0 -15px;
   }
 
   .contacts__callback-input-name {
@@ -1757,10 +1781,6 @@ body {
 
   .contacts__callback-input-phone {
     width: 100%;
-  }
-
-  .contacts__callback-button {
-    margin-right: 15px;
   }
 
   .feedback-modal-1__callback-text {
@@ -1814,6 +1834,10 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   .header .row {
     margin: 0;
+  }
+
+  .navbar-header {
+    padding: 0 15px;
   }
 
   .navbar-toggle {
@@ -2000,6 +2024,18 @@ body {
     padding: 0 15px;
   }
 
+  .contacts__info .row {
+    margin: 0 -15px;
+  }
+
+  .contacts__info-time {
+    margin-left: 122px;
+  }
+
+  .contacts__callback .row {
+    margin: 0 -15px;
+  }
+
   .contacts__callback {
     margin-top: 40px;
   }
@@ -2015,10 +2051,6 @@ body {
 
   .contacts__callback-input-phone {
     width: 100%;
-  }
-
-  .contacts__callback-button {
-    margin-right: 15px;
   }
 
   .feedback-modal-1__callback-text {
@@ -2270,6 +2302,11 @@ body {
     margin: 0 0 20px 0;
   }
 
+  .offers__paragraphs-item {
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+  }
+
   .offers .col-sm-12._longer {
     width: 100%;
   }
@@ -2355,8 +2392,16 @@ body {
     padding: 0 15px;
   }
 
+  .contacts__info .row {
+    margin: 0 -15px;
+  }
+
   .contacts__info-time {
     margin-left: 0;
+  }
+
+  .contacts__callback .row {
+    margin: 0 -15px;
   }
 
   .contacts__callback {
@@ -2374,10 +2419,6 @@ body {
 
   .contacts__callback-input-phone {
     width: 100%;
-  }
-
-  .contacts__callback-button {
-    margin-right: 15px;
   }
 
   .map {
