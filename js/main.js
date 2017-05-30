@@ -163,4 +163,23 @@ $(document).ready(function() {
 
   $('.contacts__callback-input-phone, .header-modal__callback-input-phone, .services-modal__callback-input-phone,' +
     '.feedback-modal-1__callback-input-phone, .feedback-modal-2__callback-input-phone').mask('+7 (999) 999-9999');
+
+
+  $('.menu__list-item-link, .footer__up').click(function (e) {
+    e.preventDefault();
+
+    var target = $(this.hash);
+    $('html, body').stop().animate({
+      'scrollTop': target.offset().top
+    }, 1500);
+  });
+  
+  
+  $('.navbar-toggle').click(function () {
+    if ($('.header__presentation').is(':visible')) {
+      $('.header__presentation').hide();
+    } else {
+      $('.header__presentation').show();
+    }
+  });
 });
