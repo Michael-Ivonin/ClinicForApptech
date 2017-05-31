@@ -1630,6 +1630,7 @@ body {
   margin-bottom: 29px;
   width: 100%;
   margin-bottom: 26px;
+  width: 350px;
 }
 .feedback-modal-1__callback-input-name::-webkit-input-placeholder {
   color: #bfbfc2;
@@ -1653,9 +1654,10 @@ body {
   font-size: 18px;
   color: #292c3a;
   float: left;
+  margin-bottom: 29px;
   width: 100%;
   margin-bottom: 26px;
-  margin-bottom: 29px;
+  width: 350px;
 }
 .feedback-modal-1__callback-input-phone::-webkit-input-placeholder {
   color: #bfbfc2;
@@ -1750,6 +1752,7 @@ body {
   margin-bottom: 29px;
   width: 100%;
   margin-bottom: 26px;
+  width: 350px;
   margin-bottom: 16px;
 }
 .feedback-modal-2__callback-input-name::-webkit-input-placeholder {
@@ -1777,6 +1780,7 @@ body {
   margin-bottom: 29px;
   width: 100%;
   margin-bottom: 26px;
+  width: 350px;
   margin-bottom: 16px;
 }
 .feedback-modal-2__callback-input-phone::-webkit-input-placeholder {
@@ -1804,6 +1808,7 @@ body {
   margin-bottom: 29px;
   width: 100%;
   margin-bottom: 26px;
+  width: 350px;
   margin-bottom: 16px;
   margin-bottom: 0;
 }
