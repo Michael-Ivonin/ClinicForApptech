@@ -546,20 +546,24 @@ body {
   width: 51px;
   height: 50px;
   text-align: center;
-  font-size: 39px;
+  font-size: 2.45rem;
   font-weight: 700;
   color: @dark-grey;
-  padding: 5px 0;
+  padding: 0.3rem 0;
   outline: 2px solid @light-green;
   margin-bottom: 29px;
+  float: left;
+  clear: both;
 }
 
 .services__group-item {
   font-size: 21px;
   font-weight: 700;
   color: @dark-grey;
-  display: block;
+  display: inline-block;
   margin-bottom: 26px;
+  float: left;
+  clear: both;
 
   &:hover {
     text-decoration: none;
@@ -813,7 +817,7 @@ body {
   padding-bottom: 55px;
   border-bottom: 2px solid @light-green;
   margin-bottom: 49px;
-  line-height: 28px;
+  line-height: 1.26em;
 
   &:hover {
     text-decoration: none;
@@ -826,7 +830,7 @@ body {
   border: none;
   padding-bottom: 0;
   margin-bottom: 0;
-  line-height: normal;
+  //line-height: normal;
 }
 
 .offers__description {
@@ -857,14 +861,14 @@ body {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 28px;
-  line-height: 21px;
+  line-height: 1.21em;
 }
 
 .offers__description-text {
   .offers__description-heading;
   color: @medium-grey;
   margin-bottom: 77px;
-  line-height: 22.25px;
+  line-height: 1.25em;
 }
 
 .offers__description-participate-button {
@@ -1724,15 +1728,23 @@ body {
   }
 
   .offers .nav-tabs__list-item_margins {
-    margin: 0;
+    margin: 0 22px;
   }
 
   .offers .col-lg-7._shorter {
     margin-right: 8px;
   }
 
+  .offers__description {
+    padding-left: 36px;
+  }
+
   .offers__description-text {
     margin-bottom: 96px;
+  }
+
+  .offers__description-participate-button {
+    margin-right: 0;
   }
 
   .blog .col-md-4 {
@@ -1748,7 +1760,7 @@ body {
   }
 
   .blog__subscription {
-    padding: 20px 19px 20px 19px;
+    padding: 20px 19px 20px 18px;
   }
 
   .blog__subscription-email {
@@ -2036,12 +2048,17 @@ body {
     width: 100%;
   }
 
+  .offers__description-participate-button {
+    margin-right: 0;
+  }
+
   .blog {
     padding: 60px 0;
   }
 
   .blog__subscription {
     margin-bottom: 22px;
+    padding-left: 52px;
   }
 
   .blog__subscription-email {
@@ -2348,6 +2365,10 @@ body {
   .offers .col-sm-12._shorter {
     width: 100%;
     margin: 0 0 20px 0;
+  }
+
+  .offers__description-participate-button {
+    margin-right: 0;
   }
 
   .offers__paragraphs-item {
