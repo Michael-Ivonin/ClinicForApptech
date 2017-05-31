@@ -24,178 +24,153 @@
   background-repeat: no-repeat;
   display: block;
 }
-.sprite.sprite-Bogdan {
-  background-position: -5px -5px;
-  width: 204px;
-  height: 205px;
-}
-.sprite.sprite-Davalchenko {
-  background-position: -219px -5px;
-  width: 205px;
-  height: 205px;
-}
-.sprite.sprite-Pashkina {
-  background-position: -5px -220px;
-  width: 205px;
-  height: 205px;
-}
-.sprite.sprite-Vakulenchik {
-  background-position: -220px -220px;
-  width: 204px;
-  height: 205px;
-}
-.sprite.sprite-Zolin {
-  background-position: -434px -5px;
-  width: 204px;
-  height: 205px;
-}
 .sprite.sprite-about-clinic-left {
-  background-position: -648px -5px;
+  background-position: -5px -5px;
   width: 18px;
   height: 36px;
 }
 .sprite.sprite-about-clinic-left_hover {
-  background-position: -676px -5px;
+  background-position: -33px -5px;
   width: 18px;
   height: 36px;
 }
 .sprite.sprite-about-clinic-right {
-  background-position: -704px -5px;
+  background-position: -61px -5px;
   width: 18px;
   height: 36px;
 }
 .sprite.sprite-about-clinic-right_hover {
-  background-position: -732px -5px;
+  background-position: -89px -5px;
   width: 18px;
   height: 36px;
 }
 .sprite.sprite-close {
-  background-position: -760px -5px;
+  background-position: -117px -5px;
   width: 13px;
   height: 13px;
 }
 .sprite.sprite-doctor {
-  background-position: -648px -51px;
+  background-position: -140px -5px;
   width: 151px;
   height: 151px;
 }
 .sprite.sprite-experts-left {
-  background-position: -783px -5px;
+  background-position: -301px -5px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-experts-left_hover {
-  background-position: -805px -5px;
+  background-position: -323px -5px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-experts-right {
-  background-position: -809px -35px;
+  background-position: -345px -5px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-experts-right_hover {
-  background-position: -809px -65px;
+  background-position: -367px -5px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-facebook {
-  background-position: -809px -95px;
+  background-position: -117px -35px;
   width: 10px;
   height: 18px;
 }
 .sprite.sprite-facebook_hover {
-  background-position: -809px -123px;
+  background-position: -301px -35px;
   width: 10px;
   height: 18px;
 }
 .sprite.sprite-feedback-logo {
-  background-position: -648px -212px;
+  background-position: -321px -35px;
   width: 33px;
   height: 57px;
 }
 .sprite.sprite-footer-logo {
-  background-position: -691px -212px;
+  background-position: -5px -102px;
   width: 65px;
   height: 24px;
 }
 .sprite.sprite-important {
-  background-position: -827px -5px;
+  background-position: -389px -5px;
   width: 2px;
   height: 15px;
 }
 .sprite.sprite-list {
-  background-position: -434px -246px;
+  background-position: -5px -166px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-logo {
-  background-position: -691px -246px;
+  background-position: -166px -166px;
   width: 133px;
   height: 50px;
 }
 .sprite.sprite-loupe {
-  background-position: -809px -151px;
+  background-position: -364px -35px;
   width: 16px;
   height: 17px;
 }
 .sprite.sprite-loupe_hover {
-  background-position: -809px -178px;
+  background-position: -5px -62px;
   width: 16px;
   height: 17px;
 }
 .sprite.sprite-network {
-  background-position: -595px -306px;
+  background-position: -166px -226px;
   width: 150px;
   height: 150px;
 }
 .sprite.sprite-ok {
-  background-position: -809px -205px;
+  background-position: -31px -62px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-ok_hover {
-  background-position: -595px -235px;
+  background-position: -53px -62px;
   width: 12px;
   height: 20px;
 }
 .sprite.sprite-placeholder {
-  background-position: -5px -466px;
+  background-position: -401px -5px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-time {
-  background-position: -166px -466px;
+  background-position: -326px -165px;
   width: 151px;
   height: 150px;
 }
 .sprite.sprite-up {
-  background-position: -617px -235px;
+  background-position: -487px -165px;
   width: 20px;
   height: 20px;
 }
 .sprite.sprite-up_hover {
-  background-position: -755px -306px;
+  background-position: -517px -165px;
   width: 20px;
   height: 20px;
 }
 .sprite.sprite-vk {
-  background-position: -785px -306px;
+  background-position: -487px -195px;
   width: 16px;
   height: 10px;
 }
 .sprite.sprite-vk_hover {
-  background-position: -811px -306px;
+  background-position: -513px -195px;
   width: 16px;
   height: 10px;
 }
 .sprite.sprite-youTube {
-  background-position: -785px -326px;
+  background-position: -539px -195px;
   width: 14px;
   height: 11px;
 }
 .sprite.sprite-youTube_hover {
-  background-position: -809px -326px;
+  background-position: -487px -216px;
   width: 14px;
   height: 11px;
 }
@@ -346,25 +321,25 @@ body {
 }
 .about-clinic .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -648px -5px;
+  background-position: -5px -5px;
   width: 18px;
   height: 36px;
   float: left;
   margin-left: 4%;
 }
 .about-clinic .owl-prev:hover {
-  background-position: -676px -5px;
+  background-position: -33px -5px;
 }
 .about-clinic .owl-next {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -704px -5px;
+  background-position: -61px -5px;
   width: 18px;
   height: 36px;
   float: right;
   margin-right: 4%;
 }
 .about-clinic .owl-next:hover {
-  background-position: -732px -5px;
+  background-position: -89px -5px;
 }
 .about-clinic .col-lg-6._shorter {
   padding-left: 34px;
@@ -616,20 +591,21 @@ body {
 .experts .owl-stage-outer {
   margin-bottom: 68px;
 }
-.item .sprite {
-  display: inline-block;
-}
-.item .sprite:hover .item-bg {
+.item .wrapper:hover .item-bg {
   visibility: visible;
 }
 .item-bg {
   visibility: hidden;
-  height: 100%;
+  height: 68%;
   border-radius: 100%;
   background: rgba(41, 44, 58, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 .item-bg__button {
   width: 115px;
@@ -662,25 +638,25 @@ body {
 }
 .experts .owl-prev {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -783px -5px;
+  background-position: -301px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
   margin-left: 21px;
 }
 .experts .owl-prev:hover {
-  background-position: -805px -5px;
+  background-position: -323px -5px;
 }
 .experts .owl-next {
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -809px -35px;
+  background-position: -345px -5px;
   width: 12px;
   height: 20px;
   display: inline-block;
   margin-left: 30px;
 }
 .experts .owl-next:hover {
-  background-position: -809px -65px;
+  background-position: -367px -5px;
 }
 .offers {
   padding: 78px 0 59px 0;
@@ -1578,6 +1554,9 @@ body {
 }
 .services-modal .item {
   text-align: center;
+}
+.services-modal .item-bg {
+  height: 69%;
 }
 .services-modal .item__name {
   color: #7c7d83;
