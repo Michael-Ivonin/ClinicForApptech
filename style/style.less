@@ -632,9 +632,16 @@ body {
   }
 }
 
+.wrapper {
+  width: 205px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .item-bg {
   visibility: hidden;
-  height: 68%;
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
   background: rgba(41, 44, 58, 0.7);
   display: flex;
@@ -642,8 +649,6 @@ body {
   justify-content: center;
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
 }
 
 .item-bg__button {
@@ -1472,10 +1477,6 @@ body {
 
 .services-modal .item {
   text-align: center;
-}
-
-.services-modal .item-bg {
-  height: 69%;
 }
 
 .services-modal .item__name {
