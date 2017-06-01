@@ -231,13 +231,13 @@ body {
   padding-right: 42px;
 }
 
-.phone {
+._phone {
   .menu__list-item;
   padding-right: 0;
 }
 
-.button {
-  .phone;
+._button {
+  ._phone;
   height: 47px;
 }
 
@@ -259,32 +259,36 @@ body {
   font-size: 19px;
 }
 
+.btn-reset {
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+
+  .btn-animation;
+}
+
+.btn-animation {
+  &:active {
+    position: relative;
+    top: 2px;
+  }
+}
+
 .header__button {
-  width: 156px;
-  height: 31px;
+  .btn-reset;
+  padding: 8px 16px;
   margin-top: 12px;
   margin-left: 56px;
-  background: none;
   font-size: 11px;
   font-weight: 700;
   outline: 2px solid @light-green;
-  text-transform: uppercase;
-  border: none;
-  line-height: normal;
 
   &:hover {
     background: @white;
     color: @dark-grey;
     outline-color: @white;
-  }
-
-  .button-animation;
-}
-
-.button-animation {
-  &:active {
-    position: relative;
-    top: 2px;
   }
 }
 
@@ -482,9 +486,7 @@ body {
 }
 
 .search-for-services__search-form-item-button {
-  border: none;
-  outline: none;
-  background: none;
+  .btn-reset;
   position: relative;
   top: 2px;
   padding: 0;
@@ -522,18 +524,21 @@ body {
   }
 }
 
-.services__group-heading {
+.services__group-wrapper {
   width: 51px;
   height: 50px;
   text-align: center;
-  font-size: 2.45rem;
+  font-size: 39px;
   font-weight: 700;
   color: @dark-grey;
-  padding: 0.3rem 0;
   outline: 2px solid @light-green;
   margin-bottom: 29px;
   float: left;
   clear: both;
+}
+
+.services__group-heading {
+  vertical-align: middle;
 }
 
 .services__group-item {
@@ -563,24 +568,18 @@ body {
 }
 
 .feedback__review-button {
-  width: 287px;
-  height: 58px;
+  .btn-reset;
+  padding: 17px 64px;
   background: @light-green;
-  border: none;
-  outline: none;
   color: @dark-blue;
   font-size: 19px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
-  line-height: normal;
 
   &:hover {
     background: @white;
   }
-
-  .button-animation;
 }
 
 .feedback__logo-text {
@@ -600,7 +599,7 @@ body {
 
 .feedback__question-button {
   .feedback__review-button;
-  width: 304px;
+  padding: 17px 48px;
   margin-left: 0;
   margin-right: -63px;
 }
@@ -652,21 +651,16 @@ body {
 }
 
 .item-bg__button {
-  width: 115px;
-  height: 33px;
-  background: none;
+  .btn-reset;
+  padding: 5px 16px;
   color: @white;
   font-size: 15px;
-  text-transform: uppercase;
   border: 2px solid @white;
-  outline: none;
 
   &:hover {
     background: @white;
     color: @medium-blue;
   }
-
-  .button-animation;
 }
 
 .item__name {
@@ -740,14 +734,14 @@ body {
 
 .offers .offers__item {
   width: 287px;
-  height: 57px;
+  padding: 18px 0;
+  line-height: normal;
   background: @medium-blue;
   color: @white;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 17px;
   border-radius: 0;
   border: none;
 
@@ -759,7 +753,6 @@ body {
 
   &:focus {
     outline: 2px solid @medium-blue;
-    padding-top: 17px;
     color: @medium-blue;
   }
 }
@@ -767,7 +760,6 @@ body {
 .offers .nav-tabs>li.active>a {
   border: none;
   outline: 2px solid @medium-blue;
-  padding-top: 17px;
   color: @medium-blue;
 
   &:focus {
@@ -810,7 +802,6 @@ body {
   border: none;
   padding-bottom: 0;
   margin-bottom: 0;
-  //line-height: normal;
 }
 
 .offers__description {
@@ -852,28 +843,22 @@ body {
 }
 
 .offers__description-participate-button {
-  background: none;
-  width: 115px;
-  height: 31px;
-  box-sizing: content-box;
+  .btn-reset;
+  padding: 9px 25px;
   border: 2px solid @medium-blue;
-  outline: none;
-  text-transform: uppercase;
   float: right;
   margin-right: -9px;
   font-size: 13px;
-  padding: 1px 8px;
 
   &:hover {
     background: @medium-blue;
     color: @white;
   }
-
-  .button-animation;
 }
 
 .offers__appointment-button {
   .feedback__review-button;
+  padding: 17px 38px;
   color: @white;
   display: block;
   margin: 32px auto 0 auto;
@@ -1037,25 +1022,19 @@ body {
 }
 
 .blog__subscription-button {
-  width: 121px;
-  height: 37px;
+  .btn-reset;
+  padding: 11px 21px;
   background: @light-green;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
   color: @white;
   font-size: 12px;
   font-weight: 600;
   float: right;
-  line-height: normal;
 
   &:hover {
     background: none;
     color: @medium-blue;
     outline: 2px solid @medium-blue;
   }
-
-  .button-animation;
 }
 
 .blog__description {
@@ -1107,8 +1086,8 @@ body {
 
 .blog__description-button {
   .blog__subscription-button;
-  width: 135px;
-  margin-right: -5px;
+  padding: 11px 23px;
+  margin-right: -8px;
 }
 
 .contacts {
@@ -1202,23 +1181,17 @@ body {
 }
 
 .contacts__callback-button {
-  width: 199px;
-  height: 46px;
+  .btn-reset;
+  padding: 13px 29px;
   background: @medium-blue;
   color: @white;
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
   float: right;
-  border: none;
-  outline: none;
-  line-height: normal;
 
   &:hover {
     background: @light-green;
   }
-
-  .button-animation;
 }
 
 .map {
@@ -1545,6 +1518,7 @@ body {
 
 .feedback-modal-1__callback-button {
   .contacts__callback-button;
+  padding: 13px 40px;
   margin-right: 0;
 }
 
@@ -1618,12 +1592,12 @@ body {
     padding: 0 10px;
   }
 
-  .phone {
+  ._phone {
     padding: 0;
   }
 
-  .button {
-    .phone;
+  ._button {
+    ._phone;
   }
 
   .header__phone {
@@ -1849,8 +1823,7 @@ body {
     display: block;
     border: 2px solid @light-green;
     margin-right: 0;
-
-    .button-animation;
+    .btn-animation;
   }
 
   .navbar-toggle .icon-bar {
@@ -1887,11 +1860,11 @@ body {
     font-size: 14px;
   }
 
-  .phone {
+  ._phone {
     float: left;
   }
 
-  .button {
+  ._button {
     float: right;
     margin-left: 200px;
     height: 34px;
@@ -1985,7 +1958,7 @@ body {
   }
 
   .feedback__question-button {
-    width: 287px;
+    padding: 17px 40px;
     margin-right: 0;
   }
 
@@ -2154,8 +2127,7 @@ body {
     display: block;
     border: 2px solid @light-green;
     margin-right: 0;
-
-    .button-animation;
+    .btn-animation;
   }
 
   .navbar-toggle .icon-bar {
@@ -2308,7 +2280,7 @@ body {
   }
 
   .feedback__question-button {
-    width: 287px;
+    padding: 17px 40px;
     margin-right: 0;
   }
 

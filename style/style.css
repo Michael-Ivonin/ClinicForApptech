@@ -210,12 +210,12 @@ body {
   display: inline-block;
   padding-right: 42px;
 }
-.phone {
+._phone {
   display: inline-block;
   padding-right: 42px;
   padding-right: 0;
 }
-.button {
+._button {
   display: inline-block;
   padding-right: 42px;
   padding-right: 0;
@@ -236,31 +236,42 @@ body {
   margin-left: 36px;
   font-size: 19px;
 }
+.btn-reset {
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.btn-reset:active {
+  position: relative;
+  top: 2px;
+}
+.btn-animation:active {
+  position: relative;
+  top: 2px;
+}
 .header__button {
-  width: 156px;
-  height: 31px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 8px 16px;
   margin-top: 12px;
   margin-left: 56px;
-  background: none;
   font-size: 11px;
   font-weight: 700;
   outline: 2px solid #b1e06f;
-  text-transform: uppercase;
-  border: none;
-  line-height: normal;
-}
-.header__button:hover {
-  background: #ffffff;
-  color: #7c7d83;
-  outline-color: #ffffff;
 }
 .header__button:active {
   position: relative;
   top: 2px;
 }
-.button-animation:active {
-  position: relative;
-  top: 2px;
+.header__button:hover {
+  background: #ffffff;
+  color: #7c7d83;
+  outline-color: #ffffff;
 }
 .header__presentation {
   text-align: center;
@@ -444,12 +455,18 @@ body {
   color: #9b9eac;
 }
 .search-for-services__search-form-item-button {
+  background: none;
   border: none;
   outline: none;
-  background: none;
+  line-height: normal;
+  text-transform: uppercase;
   position: relative;
   top: 2px;
   padding: 0;
+}
+.search-for-services__search-form-item-button:active {
+  position: relative;
+  top: 2px;
 }
 .search-for-services__search-form-item-button:hover .sprite-loupe {
   display: none;
@@ -480,18 +497,20 @@ body {
 .services .padding-left:nth-child(3) {
   padding-left: 59px;
 }
-.services__group-heading {
+.services__group-wrapper {
   width: 51px;
   height: 50px;
   text-align: center;
-  font-size: 2.45rem;
+  font-size: 39px;
   font-weight: 700;
   color: #7c7d83;
-  padding: 0.3rem 0;
   outline: 2px solid #b1e06f;
   margin-bottom: 29px;
   float: left;
   clear: both;
+}
+.services__group-heading {
+  vertical-align: middle;
 }
 .services__group-item {
   font-size: 21px;
@@ -516,25 +535,25 @@ body {
   text-align: center;
 }
 .feedback__review-button {
-  width: 287px;
-  height: 58px;
-  background: #b1e06f;
+  background: none;
   border: none;
   outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 17px 64px;
+  background: #b1e06f;
   color: #282a33;
   font-size: 19px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
-  line-height: normal;
-}
-.feedback__review-button:hover {
-  background: #ffffff;
 }
 .feedback__review-button:active {
   position: relative;
   top: 2px;
+}
+.feedback__review-button:hover {
+  background: #ffffff;
 }
 .feedback__logo-text {
   color: #7c7d83;
@@ -550,28 +569,28 @@ body {
   margin: 0 auto;
 }
 .feedback__question-button {
-  width: 287px;
-  height: 58px;
-  background: #b1e06f;
+  background: none;
   border: none;
   outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 17px 64px;
+  background: #b1e06f;
   color: #282a33;
   font-size: 19px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
-  line-height: normal;
-  width: 304px;
+  padding: 17px 48px;
   margin-left: 0;
   margin-right: -63px;
-}
-.feedback__question-button:hover {
-  background: #ffffff;
 }
 .feedback__question-button:active {
   position: relative;
   top: 2px;
+}
+.feedback__question-button:hover {
+  background: #ffffff;
 }
 .experts {
   padding: 141px 0 83px 0;
@@ -612,22 +631,23 @@ body {
   top: 0;
 }
 .item-bg__button {
-  width: 115px;
-  height: 33px;
   background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 5px 16px;
   color: #ffffff;
   font-size: 15px;
-  text-transform: uppercase;
   border: 2px solid #ffffff;
-  outline: none;
-}
-.item-bg__button:hover {
-  background: #ffffff;
-  color: #292c3a;
 }
 .item-bg__button:active {
   position: relative;
   top: 2px;
+}
+.item-bg__button:hover {
+  background: #ffffff;
+  color: #292c3a;
 }
 .item__name {
   color: #ffffff;
@@ -689,14 +709,14 @@ body {
 }
 .offers .offers__item {
   width: 287px;
-  height: 57px;
+  padding: 18px 0;
+  line-height: normal;
   background: #292c3a;
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 17px;
   border-radius: 0;
   border: none;
 }
@@ -707,13 +727,11 @@ body {
 }
 .offers .offers__item:focus {
   outline: 2px solid #292c3a;
-  padding-top: 17px;
   color: #292c3a;
 }
 .offers .nav-tabs > li.active > a {
   border: none;
   outline: 2px solid #292c3a;
-  padding-top: 17px;
   color: #292c3a;
 }
 .offers .nav-tabs > li.active > a:focus {
@@ -801,48 +819,48 @@ body {
 }
 .offers__description-participate-button {
   background: none;
-  width: 115px;
-  height: 31px;
-  box-sizing: content-box;
-  border: 2px solid #292c3a;
+  border: none;
   outline: none;
+  line-height: normal;
   text-transform: uppercase;
+  padding: 9px 25px;
+  border: 2px solid #292c3a;
   float: right;
   margin-right: -9px;
   font-size: 13px;
-  padding: 1px 8px;
-}
-.offers__description-participate-button:hover {
-  background: #292c3a;
-  color: #ffffff;
 }
 .offers__description-participate-button:active {
   position: relative;
   top: 2px;
 }
+.offers__description-participate-button:hover {
+  background: #292c3a;
+  color: #ffffff;
+}
 .offers__appointment-button {
-  width: 287px;
-  height: 58px;
-  background: #b1e06f;
+  background: none;
   border: none;
   outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 17px 64px;
+  background: #b1e06f;
   color: #282a33;
   font-size: 19px;
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 36px;
   margin-left: -85px;
-  line-height: normal;
+  padding: 17px 38px;
   color: #ffffff;
   display: block;
   margin: 32px auto 0 auto;
 }
-.offers__appointment-button:hover {
-  background: #ffffff;
-}
 .offers__appointment-button:active {
   position: relative;
   top: 2px;
+}
+.offers__appointment-button:hover {
+  background: #ffffff;
 }
 .offers__appointment-button:hover {
   background: #292c3a;
@@ -976,26 +994,26 @@ body {
   display: none;
 }
 .blog__subscription-button {
-  width: 121px;
-  height: 37px;
-  background: #b1e06f;
-  text-transform: uppercase;
+  background: none;
   border: none;
   outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 11px 21px;
+  background: #b1e06f;
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   float: right;
-  line-height: normal;
+}
+.blog__subscription-button:active {
+  position: relative;
+  top: 2px;
 }
 .blog__subscription-button:hover {
   background: none;
   color: #292c3a;
   outline: 2px solid #292c3a;
-}
-.blog__subscription-button:active {
-  position: relative;
-  top: 2px;
 }
 .blog__description {
   background: #ffffff;
@@ -1041,28 +1059,28 @@ body {
   height: 225px;
 }
 .blog__description-button {
-  width: 121px;
-  height: 37px;
-  background: #b1e06f;
-  text-transform: uppercase;
+  background: none;
   border: none;
   outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 11px 21px;
+  background: #b1e06f;
   color: #ffffff;
   font-size: 12px;
   font-weight: 600;
   float: right;
-  line-height: normal;
-  width: 135px;
-  margin-right: -5px;
+  padding: 11px 23px;
+  margin-right: -8px;
+}
+.blog__description-button:active {
+  position: relative;
+  top: 2px;
 }
 .blog__description-button:hover {
   background: none;
   color: #292c3a;
   outline: 2px solid #292c3a;
-}
-.blog__description-button:active {
-  position: relative;
-  top: 2px;
 }
 .contacts {
   padding: 82px 0 49px 0;
@@ -1191,24 +1209,24 @@ body {
   color: #bfbfc2;
 }
 .contacts__callback-button {
-  width: 199px;
-  height: 46px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 13px 29px;
   background: #292c3a;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
   float: right;
-  border: none;
-  outline: none;
-  line-height: normal;
-}
-.contacts__callback-button:hover {
-  background: #b1e06f;
 }
 .contacts__callback-button:active {
   position: relative;
   top: 2px;
+}
+.contacts__callback-button:hover {
+  background: #b1e06f;
 }
 .map {
   height: 580px;
@@ -1346,25 +1364,25 @@ body {
   color: #bfbfc2;
 }
 .header-modal__callback-button {
-  width: 199px;
-  height: 46px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 13px 29px;
   background: #292c3a;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
   float: right;
-  border: none;
-  outline: none;
-  line-height: normal;
   margin-right: 0;
-}
-.header-modal__callback-button:hover {
-  background: #b1e06f;
 }
 .header-modal__callback-button:active {
   position: relative;
   top: 2px;
+}
+.header-modal__callback-button:hover {
+  background: #b1e06f;
 }
 .services-modal .modal-lg {
   width: 88%;
@@ -1563,25 +1581,25 @@ body {
   color: #7c7d83;
 }
 .services-modal__callback-button {
-  width: 199px;
-  height: 46px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 13px 29px;
   background: #292c3a;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
   float: right;
-  border: none;
-  outline: none;
-  line-height: normal;
   margin-right: 0;
-}
-.services-modal__callback-button:hover {
-  background: #b1e06f;
 }
 .services-modal__callback-button:active {
   position: relative;
   top: 2px;
+}
+.services-modal__callback-button:hover {
+  background: #b1e06f;
 }
 .feedback-modal-1__content {
   background: none;
@@ -1683,25 +1701,26 @@ body {
   margin-bottom: 12px;
 }
 .feedback-modal-1__callback-button {
-  width: 199px;
-  height: 46px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 13px 29px;
   background: #292c3a;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
   float: right;
-  border: none;
-  outline: none;
-  line-height: normal;
+  padding: 13px 40px;
   margin-right: 0;
-}
-.feedback-modal-1__callback-button:hover {
-  background: #b1e06f;
 }
 .feedback-modal-1__callback-button:active {
   position: relative;
   top: 2px;
+}
+.feedback-modal-1__callback-button:hover {
+  background: #b1e06f;
 }
 .feedback-modal-2__content {
   background: none;
@@ -1835,25 +1854,26 @@ body {
   margin-top: 29px;
 }
 .feedback-modal-2__callback-button {
-  width: 199px;
-  height: 46px;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 13px 29px;
   background: #292c3a;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
-  text-transform: uppercase;
   float: right;
-  border: none;
-  outline: none;
-  line-height: normal;
+  padding: 13px 40px;
   margin-right: 0;
-}
-.feedback-modal-2__callback-button:hover {
-  background: #b1e06f;
 }
 .feedback-modal-2__callback-button:active {
   position: relative;
   top: 2px;
+}
+.feedback-modal-2__callback-button:hover {
+  background: #b1e06f;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .header .row {
@@ -1868,10 +1888,10 @@ body {
   .menu__list-item {
     padding: 0 10px;
   }
-  .phone {
+  ._phone {
     padding: 0;
   }
-  .button {
+  ._button {
     padding: 0;
   }
   .header__phone {
@@ -2079,10 +2099,10 @@ body {
   .menu__list-item-link {
     font-size: 14px;
   }
-  .phone {
+  ._phone {
     float: left;
   }
-  .button {
+  ._button {
     float: right;
     margin-left: 200px;
     height: 34px;
@@ -2158,7 +2178,7 @@ body {
     margin: 0 0 36px 0;
   }
   .feedback__question-button {
-    width: 287px;
+    padding: 17px 40px;
     margin-right: 0;
   }
   .experts {
@@ -2416,7 +2436,7 @@ body {
     font-size: 14px;
   }
   .feedback__question-button {
-    width: 287px;
+    padding: 17px 40px;
     margin-right: 0;
   }
   .experts {

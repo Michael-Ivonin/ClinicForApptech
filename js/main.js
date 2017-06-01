@@ -171,7 +171,7 @@ $(document).ready(function() {
     var target = $(this.hash);
     $('html, body').stop().animate({
       'scrollTop': target.offset().top
-    }, 1500);
+    }, 1000);
   });
   
   
