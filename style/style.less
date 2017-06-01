@@ -1037,6 +1037,16 @@ body {
   }
 }
 
+.blog__subscription-text-done {
+  text-transform: uppercase;
+  color: @medium-blue;
+  font-size: 13px;
+  font-weight: 600;
+  float: right;
+  margin: 12px 0;
+  display: none;
+}
+
 .blog__description {
   background: @white;
   padding: 48px 54px 30px 48px;
@@ -1428,6 +1438,12 @@ body {
   text-transform: none;
 }
 
+.services-modal__callback {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
 .services-modal__callback-text {
   .contacts__callback-text;
   text-transform: none;
@@ -1459,6 +1475,19 @@ body {
 .services-modal__callback-button {
   .contacts__callback-button;
   margin-right: 0;
+}
+
+.services-modal__text-done {
+  text-transform: uppercase;
+  color: @dark-grey;
+  font-size: 15px;
+  //margin: 70% 0 0 47%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -78px;
+  margin-top: -7px;
+  display: none;
 }
 
 
@@ -2255,16 +2284,14 @@ body {
     margin-bottom: 50px;
   }
 
-  .services__group-item {
-    font-size: 15px;
+  ._mobile-symbol {
+    clear: none;
+    cursor: pointer;
+    margin: 0 15px 10px 0;
   }
 
-  .services .padding-left {
-    padding-left: 15px;
-
-    &:nth-child(3) {
-      padding-left: 15px;
-    }
+  ._mobile-group {
+    display: none;
   }
 
   .feedback {

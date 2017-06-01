@@ -1015,6 +1015,15 @@ body {
   color: #292c3a;
   outline: 2px solid #292c3a;
 }
+.blog__subscription-text-done {
+  text-transform: uppercase;
+  color: #292c3a;
+  font-size: 13px;
+  font-weight: 600;
+  float: right;
+  margin: 12px 0;
+  display: none;
+}
 .blog__description {
   background: #ffffff;
   padding: 48px 54px 30px 48px;
@@ -1511,6 +1520,11 @@ body {
   font-size: 15px;
   text-transform: none;
 }
+.services-modal__callback {
+  float: left;
+  width: 100%;
+  position: relative;
+}
 .services-modal__callback-text {
   color: #7c7d83;
   font-size: 18px;
@@ -1600,6 +1614,17 @@ body {
 }
 .services-modal__callback-button:hover {
   background: #b1e06f;
+}
+.services-modal__text-done {
+  text-transform: uppercase;
+  color: #7c7d83;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -78px;
+  margin-top: -7px;
+  display: none;
 }
 .feedback-modal-1__content {
   background: none;
@@ -2417,14 +2442,13 @@ body {
   .services__heading {
     margin-bottom: 50px;
   }
-  .services__group-item {
-    font-size: 15px;
+  ._mobile-symbol {
+    clear: none;
+    cursor: pointer;
+    margin: 0 15px 10px 0;
   }
-  .services .padding-left {
-    padding-left: 15px;
-  }
-  .services .padding-left:nth-child(3) {
-    padding-left: 15px;
+  ._mobile-group {
+    display: none;
   }
   .feedback {
     padding: 52px 0;

@@ -165,7 +165,7 @@ $(document).ready(function() {
     '.feedback-modal-1__callback-input-phone, .feedback-modal-2__callback-input-phone').mask('+7 (999) 999-9999');
 
 
-  $('.menu__list-item-link, .footer__up').click(function (e) {
+  $('.menu__list-item-link, .footer__up').click(function(e) {
     e.preventDefault();
 
     var target = $(this.hash);
@@ -175,11 +175,34 @@ $(document).ready(function() {
   });
   
   
-  $('.navbar-toggle').click(function () {
+  $('.navbar-toggle').click(function() {
     if ($('.header__presentation').is(':visible')) {
       $('.header__presentation').hide();
     } else {
       $('.header__presentation').show();
     }
+  });
+
+
+  $('._mobile-symbol').click(function() {
+    $('._mobile-symbol').hide();
+    $(this).next().show();
+  });
+
+  $('.services__group-close').click(function() {
+    $('._mobile-group').hide();
+    $('._mobile-symbol').show();
+  });
+
+
+  $('.blog__subscription').submit(function() {
+    $('.blog__subscription-button').hide();
+    $('.blog__subscription-text-done').show();
+  });
+
+  $('.services-modal__callback').submit(function() {
+    $('.services-modal__text, .services-modal__callback-text, .services-modal__callback-input-name, ' +
+      '.services-modal__callback-input-phone, .services-modal__callback-button').hide();
+    $('.services-modal__text-done').show();
   });
 });
