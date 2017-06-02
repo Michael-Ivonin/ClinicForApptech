@@ -3,6 +3,8 @@
  */
 
 $(document).ready(function() {
+
+  // Sliders
   $('#benefits__owl-carousel').owlCarousel({
     nav: false,
     navText: ['', ''],
@@ -77,7 +79,7 @@ $(document).ready(function() {
       },
       1200: {
         items: 5,
-        margin: 28
+        margin: 27
       }
     }
   });
@@ -111,6 +113,7 @@ $(document).ready(function() {
   });
 
 
+  // Google map
   var map = new GMaps({
    div: '#map',
    zoom: 16,
@@ -139,6 +142,7 @@ $(document).ready(function() {
   });
 
 
+  // Checkbox and total price
   $('.services-modal__table-checkbox').click(function() {
     var outputValue = +($('.services-modal__total-output').text());
     var checkboxValue = +($(this).closest('.services-modal__table-service-price').text());
@@ -161,10 +165,12 @@ $(document).ready(function() {
   });
 
 
+  // Mask for phones
   $('.contacts__callback-input-phone, .header-modal__callback-input-phone, .services-modal__callback-input-phone,' +
     '.feedback-modal-1__callback-input-phone, .feedback-modal-2__callback-input-phone').mask('+7 (999) 999-9999');
 
 
+  // Smooth scroll
   $('.menu__list-item-link, .footer__up').click(function(e) {
     e.preventDefault();
 
@@ -174,7 +180,8 @@ $(document).ready(function() {
     }, 1000);
   });
   
-  
+
+  // Hide or show main heading
   $('.navbar-toggle').click(function() {
     if ($('.header__presentation').is(':visible')) {
       $('.header__presentation').hide();
@@ -184,6 +191,7 @@ $(document).ready(function() {
   });
 
 
+  // Hide or show symbols and group items
   $('._mobile-symbol').click(function() {
     $('._mobile-symbol').hide();
     $(this).next().show();
@@ -195,6 +203,7 @@ $(document).ready(function() {
   });
 
 
+  // Show done-text
   $('.blog__subscription').submit(function() {
     $('.blog__subscription-button').hide();
     $('.blog__subscription-text-done').show();

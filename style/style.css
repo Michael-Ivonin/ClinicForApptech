@@ -1405,7 +1405,7 @@ body {
 .services-modal__wrap {
   float: left;
   background: #ffffff;
-  padding: 22px 60px 14px 60px;
+  padding: 22px 60px 55px 60px;
 }
 .services-modal__button-close {
   position: relative;
@@ -1501,6 +1501,8 @@ body {
 .services-modal__form {
   position: relative;
   top: -41px;
+  margin-bottom: -68px;
+  min-height: 437px;
 }
 .services-modal__heading {
   color: #292c3a;
@@ -1524,6 +1526,7 @@ body {
   float: left;
   width: 100%;
   position: relative;
+  min-height: 300px;
 }
 .services-modal__callback-text {
   color: #7c7d83;
@@ -1620,10 +1623,9 @@ body {
   color: #7c7d83;
   font-size: 15px;
   position: absolute;
-  top: 50%;
+  top: 37%;
   left: 50%;
   margin-left: -78px;
-  margin-top: -7px;
   display: none;
 }
 .feedback-modal-1__content {
@@ -1980,6 +1982,7 @@ body {
     margin-left: 0;
   }
   .feedback__question-button {
+    padding: 17px 40px;
     margin-right: 0;
   }
   .experts .owl-prev {
@@ -2187,14 +2190,13 @@ body {
   .services__heading {
     margin-bottom: 60px;
   }
-  .services__group-item {
-    font-size: 15px;
+  ._mobile-symbol {
+    clear: none;
+    cursor: pointer;
+    margin: 0 15px 10px 0;
   }
-  .services .padding-left {
-    padding-left: 20px;
-  }
-  .services .padding-left:nth-child(3) {
-    padding-left: 40px;
+  ._mobile-group {
+    display: none;
   }
   .feedback {
     padding: 52px 0;
@@ -2236,6 +2238,10 @@ body {
   }
   .offers .col-sm-12._longer {
     width: 100%;
+  }
+  .offers__paragraphs-item {
+    padding-bottom: 27px;
+    margin-bottom: 27px;
   }
   .offers__description-participate-button {
     margin-right: 0;
@@ -2632,7 +2638,3 @@ body {
     width: 100%;
   }
 }
-/*
-.header, .benefits, .about-clinic, .search-for-services, .services, .feedback, .experts, .offers, .blog, .contacts, .map, .footer {
-  display: none;
-}*/
