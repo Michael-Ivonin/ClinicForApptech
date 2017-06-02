@@ -2608,6 +2608,7 @@ body {
   }
   .services-modal__form {
     position: static;
+    margin-top: 20px;
   }
   .services-modal__text {
     float: none;
