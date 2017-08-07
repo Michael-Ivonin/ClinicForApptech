@@ -2102,6 +2102,9 @@ body {
   .navbar-toggle .icon-bar {
     background: #b1e06f;
   }
+  .navbar-collapse {
+    margin-top: 38%;
+  }
   .navbar-collapse.collapse {
     display: none !important;
   }
@@ -2348,6 +2351,7 @@ body {
   }
   .navbar-collapse {
     box-shadow: none;
+    margin-top: 38%;
   }
   .menu {
     position: absolute;

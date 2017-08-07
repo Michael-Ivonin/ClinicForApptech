@@ -186,7 +186,9 @@ $(document).ready(function() {
     if ($('.header__presentation').is(':visible')) {
       $('.header__presentation').hide();
     } else {
-      $('.header__presentation').show();
+      setTimeout(function() {
+        $('.header__presentation').show();
+      }, 350);
     }
   });
 
